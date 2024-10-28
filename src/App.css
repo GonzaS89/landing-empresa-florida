@@ -1,0 +1,19 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menuOpen{
+  animation: menuOpen .5s ease-out forwards;
+}
+
+@keyframes menuOpen {
+  from{height:0px}
+  to{height: 200px}
+}
+
+.menuClosed{
+  height:0px;
+}
+
