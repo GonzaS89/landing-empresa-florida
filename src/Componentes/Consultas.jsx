@@ -3,12 +3,12 @@ import { Consulta } from '../Minicomponentes/Consulta'
 
 export const Consultas = () => {
   return (
-    <div className='bg-[#F4F6FF] pt-12'>
-        <div className='flex flex-col px-6 gap-12'>
-            <h1 className='text-4xl uppercase text-center'>Nuevo sistema de consultas</h1>
-            <div className='flex flex-col'>
-                <Consulta titulo = {'Consulta de horarios'} clase = {'horarios-img'} refe = {'hora'}/>
-                <Consulta titulo = {'Cotizador de abonos'} clase = {'abonos-img'} refe = {'abonos'}/>
+    <div className='px-6 py-12'>
+        <div className='flex flex-col gap-12'>
+            <h1 className='uppercase text-3xl font-bold text-center'>Nuevo sistema de Consultas</h1>
+            <div>   
+                <Consulta titulo={'Consulta de horarios'} img={'horarios-img'} boton={'Consultar horarios'}/>
+                <Consulta titulo={'Cotizador de abonos'} img={'abonos-img'} boton={'Cotizar mi abono'}/>
             </div>
         </div>
     </div>

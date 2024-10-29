@@ -25,9 +25,9 @@ export const Header = () => {
             </nav>
         </div>
         <nav className={`navbar-small bg-rojofuerte w-full flex flex-col justify-around items-center text-white overflow-hidden	 ${menuOpen()}`}>
-                <a href="" className='py-2'>Sistema de consultas</a>
-                <a href="" className='py-2'>Institucion</a>
-                <a href="" className='py-2'>Contacto</a>
+                <a href="" className='py-2 uppercase font-bold'>Sistema de consultas</a>
+                <a href="" className='py-2 uppercase font-bold'>Institucion</a>
+                <a href="" className='py-2 uppercase font-bold'>Contacto</a>
             </nav>
     </div>
   )
