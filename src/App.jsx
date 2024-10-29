@@ -1,9 +1,10 @@
 import './App.css'
 import { Header } from './Componentes/Header'
-import { Nosotros } from './Componentes/Abonos'
-import { Portada } from './Componentes/Horarios'
 import { Front } from './Componentes/Front'
-import { Institucion } from './Componentes/Institucion'
+import { Nosotros } from './Componentes/Nosotros'
+import { Servicios } from './Componentes/Servicios'
+import { Consultas } from './Componentes/Consultas'
+
 
 function App() {
 
@@ -12,9 +13,10 @@ function App() {
    <div>
        <Header />
        <Front/>
-       <Institucion/>
-       <Portada />
        <Nosotros/>
+       <Consultas/>
+       {/* <Portada />
+       <Nosotros/> */}
       
    </div>
      

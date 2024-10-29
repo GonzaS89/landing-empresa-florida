@@ -12,7 +12,7 @@ p,a{
 
 @keyframes menuOpen {
   from{height:0px;}
-  to{height: 200px}
+  to{height: 150px}
 }
 
 .menuClosed{
@@ -20,69 +20,70 @@ p,a{
 }
 
 @keyframes menuClosed {
-  from{height:200px}
+  from{height:150px}
   to{height: 0px}
 }
 
-.front-img{
-  background-image:url("https://img.freepik.com/foto-gratis/hombre-dos-amigas-disfrutando-fiesta-contra-fondo-rosa_23-2147865630.jpg?t=st=1730163587~exp=1730167187~hmac=f0fc85d9fed3035e4a8fe0eee46b0367982b9801752a7300bda56e8940a58332&w=826");
-  height: 400px;
-  width:100%;
-  background-size: cover;
+@media (min-width: 768px){
+  .navbar-small{
+    display: none;
+  }
+
+  .navbar-large{
+    display:flex
+  }
+
+  .icono-navbar{
+    display: none
+  }
 }
 
+@media (max-width: 767px){
+  .navbar-small{
+    display:flex;
+  }
+
+  .navbar-large{
+    display:none
+  }
+
+  .icono-navbar{
+    display: flex
+  }
+}
 
 .front-img2{
-  background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.7)),url("./IMG/20210731_095954.jpg");
+  background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url("https://img.freepik.com/free-photo/interior-public-bus-transport_53876-63434.jpg?t=st=1730203320~exp=1730206920~hmac=01bc6eec21d678608d6b6d6f28ee334e518cae04337a42f84c1c201b1b1e5932&w=740");
   height: 400px;
   width:100%;
   background-size: cover;
-}
-
-.logo-empresa{
-  background-image: url("/src/IMG/Logo_sinfondo.png");
-  width:150px;
-  height: 120px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-
-
-.portada-img{
- background-image:url("https://img.freepik.com/foto-gratis/mujer-joven-viajando-autobus_23-2147918806.jpg?semt=ais_hybrid");
- width:100%;
- height:600px;
- background-size: cover; 
- background-position: center;
-}
-
-.abonos-img{
-  background-image:url("https://img.freepik.com/foto-gratis/vista-cerca-mano-que-sostiene-tarjeta-pago-verde-mostrandosela-al-conductor-mientras-aborda-publico_7502-10659.jpg?t=st=1730172410~exp=1730176010~hmac=d19afea78c378fb7914383ca066fdd1dfa8de34c8811d3f28aad16071b1e1f22&w=1380");
- width:100%;
- height:600px;
- background-size: cover; 
- background-position: center;
 }
 
 .nosotros-img{
-  background-image: url("..//src/IMG/20210731_094414.jpg");
-  height: 600px;
+  background-image: url("../src/IMG/descarga.png");
   width: 100%;
-  background-size:cover
+  height: 400px;
+  background-size: cover;
+  background-position: center
 }
 
-@media (min-width: 1200px){
-  .front-img2{
-    height:750px;
-    background-position:0% 80%
-  }
+.horarios-img, .abonos-img{
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center
+}
 
-  .portada-img{
-    width:50%;
-  }
-  .nosotros-img{
-    width:50%
-  }
+.horarios-img{
+  background-image: url("https://img.freepik.com/free-photo/medium-shot-woman-holding-phone_23-2148989577.jpg?uid=R154796507&ga=GA1.1.275457000.1728572361&semt=ais_hybrid");
+}
+
+.abonos-img{
+  background-image: url("https://img.freepik.com/free-photo/close-up-view-hand-holding-green-payment-card-showing-driver-while-boarding-public_7502-10659.jpg?uid=R154796507&ga=GA1.1.275457000.1728572361&semt=ais_hybrid");
+}
+
+.border-card{
+  box-shadow: 2px 2px 1px black;
+  border: 1px solid grey;
 }
 
