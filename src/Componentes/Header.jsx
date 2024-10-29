@@ -19,7 +19,7 @@ export const Header = () => {
             {isOpen ? <IoCloseSharp className='text-4xl text-white'/> : <IoMenu className='text-4xl text-white'/>}
             </div>
         </div>
-        <nav className={`bg-black w-full flex flex-col justify-around text-white ${menuOpen()}`}>
+        <nav className={`bg-rojofuerte w-full flex flex-col justify-around text-white overflow-hidden	 ${menuOpen()}`}>
                 <a href="" className='py-2'>Nosotros</a>
                 <a href="" className='py-2'>Nosotros</a>
                 <a href="" className='py-2'>Nosotros</a>

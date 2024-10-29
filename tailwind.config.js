@@ -5,10 +5,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        rojofuerte : '#fc4311'
+        rojofuerte : '#CC2B52'
       },
       fontFamily: {
-        principal : 'Poppins'
+        principal : 'Lato'
       }
     },
   },

@@ -1,7 +1,9 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  text-align: center;
+
+h1,h2,h3{
+  font-family: "Lato", sans-serif;
+}
+p,a{
+  font-family: "Open Sans", sans-serif;
 }
 
 .menuOpen{
@@ -9,7 +11,7 @@
 }
 
 @keyframes menuOpen {
-  from{height:0px}
+  from{height:0px;}
   to{height: 200px}
 }
 
@@ -20,5 +22,67 @@
 @keyframes menuClosed {
   from{height:200px}
   to{height: 0px}
+}
+
+.front-img{
+  background-image:url("https://img.freepik.com/foto-gratis/hombre-dos-amigas-disfrutando-fiesta-contra-fondo-rosa_23-2147865630.jpg?t=st=1730163587~exp=1730167187~hmac=f0fc85d9fed3035e4a8fe0eee46b0367982b9801752a7300bda56e8940a58332&w=826");
+  height: 400px;
+  width:100%;
+  background-size: cover;
+}
+
+
+.front-img2{
+  background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.7)),url("./IMG/20210731_095954.jpg");
+  height: 400px;
+  width:100%;
+  background-size: cover;
+}
+
+.logo-empresa{
+  background-image: url("/src/IMG/Logo_sinfondo.png");
+  width:150px;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+.portada-img{
+ background-image:url("https://img.freepik.com/foto-gratis/mujer-joven-viajando-autobus_23-2147918806.jpg?semt=ais_hybrid");
+ width:100%;
+ height:600px;
+ background-size: cover; 
+ background-position: center;
+}
+
+.abonos-img{
+  background-image:url("https://img.freepik.com/foto-gratis/vista-cerca-mano-que-sostiene-tarjeta-pago-verde-mostrandosela-al-conductor-mientras-aborda-publico_7502-10659.jpg?t=st=1730172410~exp=1730176010~hmac=d19afea78c378fb7914383ca066fdd1dfa8de34c8811d3f28aad16071b1e1f22&w=1380");
+ width:100%;
+ height:600px;
+ background-size: cover; 
+ background-position: center;
+}
+
+.nosotros-img{
+  background-image: url("..//src/IMG/20210731_094414.jpg");
+  height: 600px;
+  width: 100%;
+  background-size:cover
+}
+
+@media (min-width: 1200px){
+  .front-img2{
+    height:750px;
+    background-position:0% 80%
+  }
+
+  .portada-img{
+    width:50%;
+  }
+  .nosotros-img{
+    width:50%
+  }
 }
 
