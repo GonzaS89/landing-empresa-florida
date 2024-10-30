@@ -9,7 +9,8 @@ export default {
       },
       fontFamily: {
         principal : 'Lato',
-        secundaria : "Antonio"
+        secundaria : "Antonio",
+        terciaria : 'Open Sans'
       }
     },
   },

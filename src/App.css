@@ -57,7 +57,7 @@ li{
 }
 
 .front-img2{
-  background-image:linear-gradient(to right, rgba(47, 137, 252, .4), rgba(47, 137, 252, .6)),url("https://img.freepik.com/free-photo/interior-public-bus-transport_53876-63434.jpg?t=st=1730203320~exp=1730206920~hmac=01bc6eec21d678608d6b6d6f28ee334e518cae04337a42f84c1c201b1b1e5932&w=740");
+  background-image:linear-gradient(to right, rgba(47, 137, 252, .4), rgba(47, 137, 252, .6)),url("https://drive.google.com/uc?export=view&id=1I_2YmUu7OCPuTpoMSK7xNUzeUht7bodn");
   height: 400px;
   width:100%;
   background-size: cover;
@@ -66,6 +66,10 @@ li{
 
 .nosotros-bg{
   background-image: linear-gradient(to bottom ,#F4F6FF 50%, #2F89FC 50%)
+}
+
+.consultas-bg{
+  background-image:linear-gradient(to bottom, #2f89fc 70%, #f4f6ff 30%)
 }
 
 .consulta-img{

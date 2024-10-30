@@ -1,33 +1,27 @@
-import React from 'react';
-import { AiOutlineFieldTime } from "react-icons/ai";
-import { FaMoneyCheckDollar } from "react-icons/fa6";
+import React from 'react'
 
 export const Consulta = (props) => {
 
-    const returnIcon = val => {
-        return val === 'hora' ? 
-        <AiOutlineFieldTime className='text-white text-[100px]'/> : 
-        <FaMoneyCheckDollar className='text-white text-[100px]' />
+    const returnBg = val => {
+        return val === 'Horarios' ? 
+        'bg-white' : 'bg-rojofuerte'
     }
 
-    const returnImg = val => {
-        return val === 'hora' ? 
-        'horarios-img' : 'abonos-img'
-        
+    const returnTextColor = val => {
+        return val === 'Horarios' ? 
+        '' : 'text-white'
     }
 
-    
+    const returnButtonStyle = val => {
+        return val === 'Horarios' ?
+        'bg-rojofuerte text-white' : 'bg-white text-rojofuerte'
+    }
 
   return (
-    <div className={`flex flex-col justify-evenly items-center w-[320px] bg-white relative py-4 px-4 rounded-b-3xl shadow-slate-700 shadow-2xl gap-4`}>
-        <span className={`rounded-full flex ${returnImg(props.refe)} border-rojofuerte border-8`}></span>
-        <h2 className='text-2xl font-bold'>{props.titulo}</h2>
-        <ul>
-            <li className='tracking-widest py-2 pl-2'>Fiabilidad</li>
-            <li className='tracking-widest py-2 pl-2'>Precio del boleto incluido</li>
-            <li className='tracking-widest py-2 pl-2'>Más puntos de parada</li>
-            <li className='tracking-widest py-2 pl-2'>Recorridos completos</li>
-        </ul>
+    <div className={`${returnBg(props.titulo)} h-[550px] w-[400px] flex flex-col justify-center items-start px-12 gap-8`}>
+        <h2 className={`${returnTextColor(props.titulo)} text-4xl uppercase font-bold`}>{props.titulo}</h2>
+        <p className={`${returnTextColor(props.titulo)} italic`}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo magni, nisi voluptates adipisci possimus accusantium et dolores</p>
+        <button className={`${returnButtonStyle(props.titulo)} min-w-44 p-4 uppercase font-bold text-lg font-secundaria tracking-wider`}>{props.boton}</button>
     </div>
   )
 }
