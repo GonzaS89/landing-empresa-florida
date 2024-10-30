@@ -1,6 +1,9 @@
 import React from 'react';
 import { FcAssistant } from "react-icons/fc";
 import { FcMultipleDevices } from "react-icons/fc";
+import { IoIosPhonePortrait } from "react-icons/io";
+
+
 
 export const Caract = (props) => {
 
@@ -15,10 +18,10 @@ export const Caract = (props) => {
     }
 
   return (
-    <div className={`flex flex-col items-center justify-around px-6 py-6 gap-8 ${returnBg(props.refe)} text-white`}>
-            <span>{returnIcon(props.refe)}</span>
+    <div className={`flex flex-col items-center justify-around px-6 py-6 gap-8 bg-white`}>
+            <span className='bg-gray-200 p-6 rounded-full'><IoIosPhonePortrait className='text-6xl text-gray-700'/></span>
             <h2 className='uppercase text-2xl font-bold'>{props.titulo}</h2>
-            <p className='text-lg lg:text-center'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorum corrupti placeat, cumque deserunt quam iste eius aut quos maxime. Asperiores veniam voluptate mollitia, officiis nostrum consequatur voluptas neque molestias.</p>
+            <p className='lg:text-center leading-loose'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorum corrupti placeat, cumque deserunt quam iste eius aut quos maxime. Asperiores veniam voluptate mollitia</p>
         </div>
   )
 }

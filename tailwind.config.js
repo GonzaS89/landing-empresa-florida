@@ -8,7 +8,8 @@ export default {
         rojofuerte : '#CC2B52'
       },
       fontFamily: {
-        principal : 'Lato'
+        principal : 'Lato',
+        secundaria : "Antonio"
       }
     },
   },

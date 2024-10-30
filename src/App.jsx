@@ -3,7 +3,7 @@ import { Header } from './Componentes/Header'
 import { Front } from './Componentes/Front'
 import { Nosotros } from './Componentes/Nosotros'
 import { Nosotros2 } from './Componentes/Nosotros2'
-import { Consultas } from './Componentes/Consultas'
+// import { Consultas } from './Componentes/Consultas'
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
        <Header />
        <Front/>
        <Nosotros/>
-       <Consultas/>
+       {/* <Consultas/> */}
       <Nosotros2 />
 
         
