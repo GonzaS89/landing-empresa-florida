@@ -63,14 +63,6 @@ li{
   background-size: cover;
 }
 
-.nosotros-img{
-  background-image: url("../src/IMG/descarga.png");
-  width: 100%;
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-  mask-image: linear-gradient(black 80%, transparent)
-}
 
 .nosotros-bg{
   background-image: linear-gradient(to bottom ,#F4F6FF 50%, #2F89FC 50%)

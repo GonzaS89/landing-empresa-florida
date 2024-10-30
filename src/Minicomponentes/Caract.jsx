@@ -25,7 +25,7 @@ export const Caract = (props) => {
     <div className={`flex flex-col items-center ${returnAnimation(props.index)} justify-around px-6 py-6 gap-8 bg-white`}>
             <span className='bg-gray-200 p-6 rounded-full'><IoIosPhonePortrait className='text-6xl text-gray-700'/></span>
             <h2 className='uppercase text-2xl font-bold'>{props.titulo}</h2>
-            <p className='lg:text-center leading-loose'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorum corrupti placeat, cumque deserunt quam iste eius aut quos maxime. Asperiores veniam voluptate mollitia</p>
+            <p className='lg:text-center leading-loose italic'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorum corrupti placeat, cumque deserunt quam iste eius aut quos maxime. Asperiores veniam voluptate mollitia</p>
         </div>
   )
 }
