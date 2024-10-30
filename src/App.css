@@ -2,8 +2,12 @@
 h1,h2,h3,a{
   font-family: "Lato", sans-serif;
 }
-p{
+p, li{
   font-family: "Open Sans", sans-serif;
+}
+
+li{
+  list-style-type:"—"
 }
 
 .menuOpen{
@@ -67,19 +71,25 @@ p{
   background-position: center
 }
 
-.horarios-img, .abonos-img{
+.consulta-img{
+  background-image: url("/src/IMG/app2.png");
   width: 100%;
-  height: 300px;
+  height: 400px;
   background-size: cover;
-  background-position: center
 }
 
 .horarios-img{
-  background-image: url("https://img.freepik.com/free-photo/medium-shot-woman-holding-phone_23-2148989577.jpg?uid=R154796507&ga=GA1.1.275457000.1728572361&semt=ais_hybrid");
+  background-image: url("https://img.freepik.com/foto-gratis/mujer-cabello-rizado-viajando-bus_23-2148753448.jpg?semt=ais_siglip")
 }
 
 .abonos-img{
-  background-image: url("https://img.freepik.com/free-photo/close-up-view-hand-holding-green-payment-card-showing-driver-while-boarding-public_7502-10659.jpg?uid=R154796507&ga=GA1.1.275457000.1728572361&semt=ais_hybrid");
+  background-image: url("https://img.freepik.com/foto-gratis/joven-contacto-paga-transporte-publico_169016-5426.jpg?semt=ais_siglip")
+}
+
+.horarios-img, .abonos-img{
+  width:250px;
+  height:250px;
+  background-size:cover;
 }
 
 .nosotros2-img{
@@ -95,5 +105,22 @@ p{
   height:100%;
   background-size:cover;
   background-position:center
+}
+
+@media (min-width: 1024px){
+  .front-img2{
+    height:750px;
+  }
+  .nosotros-img{
+    height: 600px
+  }
+  .consulta-img{
+    width:50%;
+    height: 650px;
+    background-position: top
+  }
+  .nosotros2-img, .nosotros2-img{
+    height:100%
+  }
 }
 

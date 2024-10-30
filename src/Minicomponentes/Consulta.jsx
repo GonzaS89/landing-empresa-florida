@@ -1,14 +1,31 @@
-import React from 'react'
+import React from 'react';
+import { AiOutlineFieldTime } from "react-icons/ai";
+import { FaMoneyCheckDollar } from "react-icons/fa6";
 
 export const Consulta = (props) => {
+
+    const returnIcon = val => {
+        return val === 'hora' ? 
+        <AiOutlineFieldTime className='text-white text-[100px]'/> : 
+        <FaMoneyCheckDollar className='text-white text-[100px]' />
+    }
+
+    const returnImg = val => {
+        return val === 'hora' ? 
+        'horarios-img' : 'abonos-img'
+        
+    }
+
   return (
-    <div className='bg-[#F4F6FF]'>
-        <div className='flex flex-col gap-6 px-8 py-6 font-semibold'>
-            <h2 className='uppercase text-2xl font-bold'>{props.titulo}</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus odit alias perspiciatis rem eum sequi dignissimos repellat tempora adipisci officia, vero, atque illo aliquam officiis sit harum tenetur laboriosam fugiat.</p>
-            <button className='bg-[#10375C] text-white font-normal uppercase py-4 font-principal rounded-2xl'>{props.boton}</button>
-        </div>
-        <span className={`${props.img} flex`}></span>
+    <div className='flex flex-col justify-evenly items-center w-[320px] bg-white relative py-4 px-4 rounded-b-3xl shadow-slate-700 shadow-2xl gap-4'>
+        <span className={`rounded-full flex ${returnImg(props.refe)} border-rojofuerte border-8`}></span>
+        <h2 className='text-2xl font-bold'>{props.titulo}</h2>
+        <ul>
+            <li className='tracking-widest py-2 pl-2'>Fiabilidad</li>
+            <li className='tracking-widest py-2 pl-2'>Precio del boleto incluido</li>
+            <li className='tracking-widest py-2 pl-2'>Más puntos de parada</li>
+            <li className='tracking-widest py-2 pl-2'>Recorridos completos</li>
+        </ul>
     </div>
   )
 }
