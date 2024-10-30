@@ -16,8 +16,10 @@ export const Consulta = (props) => {
         
     }
 
+    
+
   return (
-    <div className='flex flex-col justify-evenly items-center w-[320px] bg-white relative py-4 px-4 rounded-b-3xl shadow-slate-700 shadow-2xl gap-4'>
+    <div className={`flex flex-col justify-evenly items-center w-[320px] bg-white relative py-4 px-4 rounded-b-3xl shadow-slate-700 shadow-2xl gap-4`}>
         <span className={`rounded-full flex ${returnImg(props.refe)} border-rojofuerte border-8`}></span>
         <h2 className='text-2xl font-bold'>{props.titulo}</h2>
         <ul>
