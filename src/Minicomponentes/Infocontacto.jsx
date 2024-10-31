@@ -20,7 +20,7 @@ export const Infocontacto = (props) => {
         {returnIcon(props.refe)}
         <div>
         <h2 className='uppercase text-gray-400 text-center md:text-lg xl:text-2xl'>{props.titulo}</h2>
-          <h3 className='xl:text-lg uppercase'>{props.contenido}</h3>
+          <h3 className='text-center xl:text-lg uppercase'>{props.contenido}</h3>
         </div>
         </div>
   )
