@@ -57,7 +57,7 @@ li{
 }
 
 .front-img2{
-  background-image:linear-gradient(to right, rgba(47, 137, 252, .4), rgba(47, 137, 252, .6)),url("https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730329855/bgfjbxiko7fipzj07zgi.jpg");
+  background-image:linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)),url("https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730329855/bgfjbxiko7fipzj07zgi.jpg");
   height: 400px;
   width:100%;
   background-size: cover;

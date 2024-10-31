@@ -12,10 +12,10 @@ export const Header = () => {
     }
 
   return (
-    <div className='bg-rojofuerte'>
-        <div className='max-w-7xl h-28 my-0 mx-auto'>
+    <div className='bg-rojofuerte px-8'>
+        <div className='max-w-7xl h-20 md:h-28 my-0 mx-auto'>
           <div className='flex items-center h-full justify-between'>
-          <h1 className='text-white text-7xl basis-2/3 font-terciaria'>LOGO</h1>
+          <h1 className='text-white text-2xl xl:text-7xl basis-2/3 font-terciaria'>LOGO</h1>
           <div onClick={()=> setIsOpen(!isOpen)}>
             {isOpen ? <IoCloseSharp className='text-4xl text-white icono-navbar'/> : <IoMenu className='text-4xl text-white icono-navbar'/>}
             </div>

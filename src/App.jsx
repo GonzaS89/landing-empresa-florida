@@ -6,6 +6,7 @@ import { Nosotros2 } from './Componentes/Nosotros2'
 import { Infoconsultas } from './Componentes/Infoconsultas'
 import { Galeria } from './Componentes/Galeria'
 import { Contacto } from './Componentes/Contacto'
+// import { Prueba } from './Componentes/Prueba'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Nosotros2 />
       <Infoconsultas/>
       <Galeria />
+      {/* <Prueba/> */}
       <Contacto />
       
    </div>
