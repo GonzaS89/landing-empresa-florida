@@ -10,10 +10,10 @@ import FooterPick from '../assets/footer-pick.png'
 export const Contacto = () => {
   return (
     <div className="bg-slate-900 md:px-12 pt-12">
-      <div className="max-w-7xl my-0 mx-auto flex">
+      <div className="max-w-7xl my-0 mx-auto flex flex-col sm:items-center md:flex-row">
         <div className=" text-white flex flex-col gap-8 basis-1/2">
-          <h1 className='font-terciaria text-6xl'>LOGO</h1>
-          <div className='flex justify-between md:py-8'>
+          <h1 className='text-center font-terciaria text-6xl'>LOGO</h1>
+          <div className='flex flex-col items-center sm:flex-row justify-center gap-12 md:py-8'>
           <div className="flex flex-col gap-8">
             <Infocontacto refe={'dirección'} titulo = {'encontrános en'} contenido={'Amadeo Jacques 1852 - S.M. de Tucumán'} />
             <Infocontacto refe={'horario'} titulo = {'horarios'} contenido={'Lunes-Viernes: 08:00 a 15:00 hrs'} />
@@ -31,8 +31,8 @@ export const Contacto = () => {
             </div>
           </div>
         </div>
-        <span className='basis-1/2 relative'>
-          <img src={FooterPick} alt="" className='flex h-5/6 object-cover object-left-center drop-shadow-custom absolute bottom-0'/>
+        <span className='flex justify-centerbasis-1/2 relative'>
+          <img src={FooterPick} alt="" className='flex sm:h-[500px] md:h-5/6 object-cover object-left-center drop-shadow-custom md:absolute bottom-0'/>
         </span>
       </div>
     </div>

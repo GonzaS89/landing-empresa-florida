@@ -65,7 +65,7 @@ li{
 
 
 .nosotros-bg{
-  background-image: linear-gradient(to bottom ,#F4F6FF , #2F89FC)
+  background-image: linear-gradient(to bottom ,#F4F6FF 50%, #2F89FC 50%)
 }
 
 .consultas-bg{

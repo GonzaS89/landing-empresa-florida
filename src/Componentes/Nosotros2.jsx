@@ -5,7 +5,7 @@ import { Caract } from '../Minicomponentes/Caract';
 export const Nosotros2 = () => {
 
   return (
-    <div className='flex md:px-12 xl:px-0 py-12 nosotros-bg'>
+    <div className='flex px-8 sm:px-12 xl:px-0 py-12 nosotros-bg'>
       <div className='max-w-7xl my-0 mx-auto flex flex-col gap-32 mt-36'> 
         <div className='flex flex-col xl:h-[500px] md:grid md:grid-cols-2 xl:grid-cols-4 gap-4'>
             <Caract titulo={'Vía telefónica'} refe={'atencion'} index={0}/>

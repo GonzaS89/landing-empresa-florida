@@ -16,10 +16,10 @@ export const Infocontacto = (props) => {
     }
 
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
         {returnIcon(props.refe)}
         <div>
-        <h2 className='uppercase text-gray-400 md:text-lg xl:text-2xl'>{props.titulo}</h2>
+        <h2 className='uppercase text-gray-400 text-center md:text-lg xl:text-2xl'>{props.titulo}</h2>
           <h3 className='xl:text-lg uppercase'>{props.contenido}</h3>
         </div>
         </div>
