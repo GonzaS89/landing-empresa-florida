@@ -4,7 +4,8 @@ import { Front } from './Componentes/Front'
 import { Nosotros } from './Componentes/Nosotros'
 import { Nosotros2 } from './Componentes/Nosotros2'
 import { Infoconsultas } from './Componentes/Infoconsultas'
-// import { Consultas } from './Componentes/Consultas'
+import { Galeria } from './Componentes/Galeria'
+import { Contacto } from './Componentes/Contacto'
 
 
 function App() {
@@ -17,8 +18,8 @@ function App() {
        <Nosotros/>
       <Nosotros2 />
       <Infoconsultas/>
-
-        
+      <Galeria />
+      <Contacto />
       
    </div>
      

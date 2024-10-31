@@ -57,7 +57,7 @@ li{
 }
 
 .front-img2{
-  background-image:linear-gradient(to right, rgba(47, 137, 252, .4), rgba(47, 137, 252, .6)),url("https://drive.google.com/uc?export=view&id=1I_2YmUu7OCPuTpoMSK7xNUzeUht7bodn");
+  background-image:linear-gradient(to right, rgba(47, 137, 252, .4), rgba(47, 137, 252, .6)),url("https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730329855/bgfjbxiko7fipzj07zgi.jpg");
   height: 400px;
   width:100%;
   background-size: cover;
@@ -69,15 +69,20 @@ li{
 }
 
 .consultas-bg{
-  background-image:linear-gradient(to bottom, #2f89fc 70%, #f4f6ff 30%)
+  background-image:linear-gradient(to bottom, #2f89fc 50%, #f4f6ff 50%)
 }
 
-.consulta-img{
-  background-image: url("/src/IMG/app2.png");
-  width: 100%;
-  height: 400px;
-  background-size: cover;
+.galeria-bg{
+  background-image: linear-gradient(to bottom ,#F4F6FF 50%, #CC2B52 50%)
 }
+
+.contacto-bg{
+  background-image: url('https://img.freepik.com/foto-gratis/pago-tecnologia-facil-e-inalambrico_23-2149105216.jpg?t=st=1730334754~exp=1730338354~hmac=bf63020443e8a2075e221e9c8906486067c5bf1ca4a98ca446dc156457d72ca0&w=1380');
+  background-size:cover;
+  width:100%;
+  background-position:left;
+}
+
 
 .horarios-img{
   background-image: url("https://img.freepik.com/foto-gratis/mujer-cabello-rizado-viajando-bus_23-2148753448.jpg?semt=ais_siglip")
@@ -128,4 +133,6 @@ li{
 .componentUp{
   transform: translateY(-20px)
 }
+
+
 
