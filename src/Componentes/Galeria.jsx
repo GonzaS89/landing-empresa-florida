@@ -29,8 +29,8 @@ export const Galeria = () => {
     ]
 
   return (
-    <div className='galeria-bg py-24'>
-        <div className="max-w-7xl my-0 mx-auto flex flex-col gap-12 lg:px-12">
+    <div className='galeria-bg py-24 md:px-12'>
+        <div className="max-w-7xl my-0 mx-auto flex flex-col gap-12">
             <h1 className='text-6xl font-terciaria font-bold text-[#2f89fc] text-center'>Galeria</h1>
             <div className='grid grid-cols-3 gap-1'>
                 {arrayUrlsGalery.map( (element,index) => (

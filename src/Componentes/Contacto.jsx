@@ -9,7 +9,7 @@ import FooterPick from '../assets/footer-pick.png'
 
 export const Contacto = () => {
   return (
-    <div className="bg-slate-900">
+    <div className="bg-slate-900 md:px-12">
       <div className="max-w-7xl my-0 mx-auto flex">
         <div className=" text-white flex flex-col py-12 gap-16 basis-1/2">
           <h1 className='font-terciaria text-6xl'>LOGO</h1>
