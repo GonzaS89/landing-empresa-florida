@@ -11,7 +11,10 @@ export default {
         principal : 'Lato',
         secundaria : "Antonio",
         terciaria : 'Open Sans'
-      }
+      },
+      dropShadow: {
+        'custom': '2px 2px 10px grey',
+      },
     },
   },
   plugins: [flowbite.plugin()],

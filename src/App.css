@@ -76,6 +76,7 @@ li{
   background-image: linear-gradient(to bottom ,#F4F6FF 50%, #CC2B52 50%)
 }
 
+
 .contacto-bg{
   background-image: url('https://img.freepik.com/foto-gratis/pago-tecnologia-facil-e-inalambrico_23-2149105216.jpg?t=st=1730334754~exp=1730338354~hmac=bf63020443e8a2075e221e9c8906486067c5bf1ca4a98ca446dc156457d72ca0&w=1380');
   background-size:cover;
@@ -105,6 +106,8 @@ li{
 .nosotros2-img2{
   background-image: url('https://img.freepik.com/free-photo/nice-job-proud-you-portrait-satisfied-supportive-friendly-male-entrepreneur-with-beard-pierced-nose-afro-hairstyle-showing-thumbs-up-gesture-smiling-pleased-gray-wall_176420-43319.jpg?t=st=1730222157~exp=1730225757~hmac=3499898bc1f23b8ce14d28e6978a0534c2509e4082cd2ce57908130e6cc99d89&w=740')
 }
+
+
 
 .nosotros2-img, .nosotros2-img2{
   width:100%;

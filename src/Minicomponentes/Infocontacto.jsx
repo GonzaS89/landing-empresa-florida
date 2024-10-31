@@ -1,21 +1,28 @@
 import React from 'react';
-import { HiLocationMarker } from "react-icons/hi";
-import { GiSmartphone } from "react-icons/gi";
-import { HiOutlineMail } from "react-icons/hi";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelopeOpenText } from "react-icons/fa";
+import { FaClock } from "react-icons/fa";
+;
+
 
 export const Infocontacto = (props) => {
 
     const returnIcon = val => {
-        if(val === 'teléfono'){return <GiSmartphone className='text-7xl'/>}
-        if(val === 'dirección'){return <HiLocationMarker className='text-7xl'/>}
-        else{return <HiOutlineMail className='text-7xl'/>}
+        if(val === 'teléfono'){return <FaPhoneAlt className='w-[40px] h-[40px]'/>}
+        if(val === 'dirección'){return <FaMapMarkerAlt className='w-[40px] h-[40px]'/>}
+        if(val === 'horario'){return <FaClock className='w-[40px] h-[40px]'/>}
+        else{return <FaEnvelopeOpenText className='w-[40px] h-[40px]'/>}
     }
 
   return (
-    <div className="flex flex-col items-center gap-2">
-        {returnIcon(props.titulo)}
-        <h2 className='text-3xl'>{props.titulo}</h2>
-        <h3>{props.contenido}</h3>
-    </div>
+    <div className="flex items-center gap-4">
+        {returnIcon(props.refe)}
+        <div>
+        <h2 className='uppercase text-gray-400 text-2xl'>{props.titulo}</h2>
+          <h3 className='text-lg uppercase'>{props.contenido}</h3>
+        </div>
+        
+        </div>
   )
 }
