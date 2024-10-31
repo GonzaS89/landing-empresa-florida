@@ -12,17 +12,19 @@ export const Header = () => {
     }
 
   return (
-    <div className='flex flex-col'>
-        <div className='w-full h-28 flex items-center justify-between text px-8 z-50 bg-rojofuerte'>
-            <h1 className='text-white text-3xl'>LOGO</h1>
-            <div onClick={()=> setIsOpen(!isOpen)}>
+    <div className='bg-rojofuerte'>
+        <div className='max-w-7xl h-28 my-0 mx-auto'>
+          <div className='flex items-center h-full justify-between'>
+          <h1 className='text-white text-7xl basis-2/3 font-terciaria'>LOGO</h1>
+          <div onClick={()=> setIsOpen(!isOpen)}>
             {isOpen ? <IoCloseSharp className='text-4xl text-white icono-navbar'/> : <IoMenu className='text-4xl text-white icono-navbar'/>}
             </div>
-            <nav className='navbar-large'>
-              <a href="">Sistema de consultas</a>
-              <a href="">Institución</a>
-              <a href="">Contacto</a>
+            <nav className='navbar-large flex justify-between gap-4 basis-1/2'>
+              <a href="" className='text-white text-2xl tracking-wider'>Sistema de consultas</a>
+              <a href="" className='text-white text-2xl tracking-wider'>Institución</a>
+              <a href="" className='text-white text-2xl tracking-wider'>Contacto</a>
             </nav>
+          </div>
         </div>
         <nav className={`navbar-small bg-rojofuerte w-full flex flex-col justify-around items-center text-white overflow-hidden	 ${menuOpen()}`}>
                 <a href="" className='py-2 uppercase font-bold'>Sistema de consultas</a>
