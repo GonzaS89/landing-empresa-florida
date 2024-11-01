@@ -65,11 +65,11 @@ li{
 
 
 .nosotros-bg{
-  background-image: linear-gradient(to bottom ,#F4F6FF 50%, #2F89FC 50%)
+  background-image: linear-gradient(to bottom ,#cc2b52 70%, #2F89FC 30%)
 }
 
 .consultas-bg{
-  background-image:linear-gradient(to bottom, #2f89fc 50%, #f4f6ff 50%)
+  background-image:linear-gradient(to bottom, #2f89fc 70%, #f4f6ff 30%)
 }
 
 .galeria-bg{

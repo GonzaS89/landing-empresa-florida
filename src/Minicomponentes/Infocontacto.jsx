@@ -19,8 +19,8 @@ export const Infocontacto = (props) => {
     <div className="flex flex-col lg:flex-row items-center gap-2 sm:gap-4">
         {returnIcon(props.refe)}
         <div>
-        <h2 className='uppercase text-gray-400 text-center lg:text-left md:text-2xl xl:text-3xl'>{props.titulo}</h2>
-          <h3 className='text-center lg:text-left md:text-2xl uppercase'>{props.contenido}</h3>
+        <h2 className='uppercase text-gray-400 text-center lg:text-left md:text-xl xl:text-xl'>{props.titulo}</h2>
+          <h3 className='text-center lg:text-left md:text-xl uppercase'>{props.contenido}</h3>
         </div>
         </div>
   )

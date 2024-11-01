@@ -7,5 +7,5 @@ export const Fotogaleria = (props) => {
         'col-span-2 object-top' : ''
     }
 
-  return (<img src={props.url} alt="" className={`${returnGridColumn(props.index)} w-full h-96 object-cover`}/>)
+  return (<img src={props.url} alt="" className={`${returnGridColumn(props.index)} w-full h-80 object-cover`}/>)
 }

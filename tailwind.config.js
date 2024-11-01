@@ -5,7 +5,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        rojofuerte : '#CC2B52'
+        rojofuerte : '#CC2B52',
+        azulclaro : '#2f89fc'
       },
       fontFamily: {
         principal : 'Lato',
