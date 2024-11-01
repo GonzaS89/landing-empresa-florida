@@ -9,9 +9,9 @@ import FooterPick from '../assets/footer-pick.png'
 
 export const Contacto = () => {
   return (
-    <div className="bg-slate-900 md:px-12 pt-6 lg:pt-0">
-      <div className="max-w-7xl my-0 mx-auto flex flex-col gap-8 sm:items-center lg:flex-row md:items-end">
-        <div className=" text-white flex flex-col gap-8 basis-1/2">
+    <div className="bg-slate-900 md:px-12 lg:px-4 pt-6 lg:pt-0">
+      <div className="flex flex-col gap-8 sm:items-center lg:flex-row md:items-end">
+        <div className=" text-white flex flex-col gap-8 basis-2/3">
           <h1 className='text-center lg:text-left font-terciaria text-5xl'>LOGO</h1>
           <div className='flex flex-col items-center lg:items-start lg:flex-row justify-center gap-12 md:py-8 lg:py-2'>
           <div className="grid grid-cols-2 lg:flex flex-col gap-4">
@@ -32,7 +32,7 @@ export const Contacto = () => {
           </div>
         </div>
         <span className='flex justify-center basis-1/2 relative'>
-          <img src={FooterPick} alt="" className='flex h-[450px] md:h-[500px] lg:h-[400px] object-cover rop-shadow-custom'/>
+          <img src={FooterPick} alt="" className='flex h-[450px] md:h-[500px] lg:h-[400px] object-cover drop-shadow-custom'/>
         </span>
       </div>
     </div>

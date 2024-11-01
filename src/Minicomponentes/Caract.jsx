@@ -18,14 +18,14 @@ export const Caract = (props) => {
     }
 
     const returnAnimation = i => {
-      return i % 2 !== 0 ? 'md:-translate-y-16' : ''
+      return i % 2 !== 0 ? 'xl:-translate-y-16' : ''
   }
 
   return (
-    <div className={`flex flex-col items-center ${returnAnimation(props.index)} justify-around px-6 py-6 gap-8 bg-white xl:max-w-auto`}>
+    <div className={`flex flex-col items-center ${returnAnimation(props.index)} justify-around px-6 py-4 gap-2 bg-white xl:max-w-auto`}>
             <span className='bg-gray-200 p-6 rounded-full'><IoIosPhonePortrait className='text-6xl text-gray-700'/></span>
             <h2 className='uppercase text-2xl font-bold'>{props.titulo}</h2>
-            <p className='text-center leading-loose italic'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorum corrupti placeat, cumque deserunt quam iste eius aut quos maxime. Asperiores veniam voluptate mollitia</p>
+            <p className='text-center leading-loose italic lg:text-sm xl:text-base'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorum corrupti placeat, cumque deserunt quam iste eius aut quos maxime. Asperiores veniam voluptate mollitia</p>
         </div>
   )
 }
