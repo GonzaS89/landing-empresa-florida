@@ -14,7 +14,7 @@ export const Header = () => {
 
   return (
     <div className='bg-[#EEEEEE] px-8'>
-        <div className='px-12 h-20 md:h-36 my-0 mx-auto'>
+        <div className='px-12 md:h-24 md:h-36 my-0 mx-auto'>
           <div className='flex items-center h-full justify-between'>
           <div className='flex h-4/5'>
             <img src={Logo} alt=""/>

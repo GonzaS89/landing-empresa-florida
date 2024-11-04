@@ -8,7 +8,7 @@ export const Nosotros = () => {
   return (
     <div className="px-8 sm:px-12 xl:px-0 pt-8 bg-rojofuerte">
       <div className="max-w-7xl my-o mx-auto flex flex-col lg:flex-row gap-8 items-center">
-        <div className="flex items-center relative h-[450px] md:h-[550px] lg:h-[700px] w-full lg:w-5/12">
+        <div className="flex items-center relative h-[450px] md:h-[550px] lg:h-[450px] xl:h-[700px] w-full lg:w-5/12">
             <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-azulclaro flex rounded-2xl"></div>
             <div className="z-30 h-5/6 bg-white w-5/6 my-0 mx-auto rounded-2xl flex flex-col ">
             <Carousel slide={false} leftControl={

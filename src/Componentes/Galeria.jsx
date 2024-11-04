@@ -32,10 +32,10 @@ export const Galeria = ({url}) => {
     ]
 
   return (
-    <div className='galeria-bg py-24 px-8 sm:px-12'>
+    <div className='galeria-bg py-12 px-8 sm:px-12'>
         <div className="max-w-7xl my-0 mx-auto flex flex-col gap-12">
-            <h1 className='text-4xl md:text-5xl font-bold text-[#2f89fc] text-center'>Te invitamos a hacer un repaso por nuestra historia</h1>
-            <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-1'>
+            <h1 className='text-4xl xl:text-5xl font-bold text-[#2f89fc] text-center'>Te invitamos a hacer un repaso por nuestra historia</h1>
+            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-1'>
                 {arrayUrlsGalery.map( (element,index) => (
                     <Fotogaleria url={element.url} index={index} enviarUrl={url}/>
                 ))}
