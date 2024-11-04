@@ -1,11 +1,11 @@
 import React from 'react'
 
-export const Fotogaleria = (props) => {
+export const Fotogaleria = ({url , enviarUrl}) => {
 
-    // const returnGridColumn = i => {
-    //     return i === 0  || i === 5 ? 
-    //     'col-span-2 object-top' : ''
-    // }
 
-  return (<img src={props.url} alt="" className='w-full h-48 object-cover'/>)
+  return (
+    <div className="h-48 cursor-pointer" onClick={()=> enviarUrl(url)}>
+        <img src={url} alt="" className='w-full h-full object-fill'/>
+    </div>
+)
 }
