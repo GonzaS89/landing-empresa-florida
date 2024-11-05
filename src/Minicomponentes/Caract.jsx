@@ -5,8 +5,6 @@ import { FaBusAlt } from "react-icons/fa";
 import { FaChildren } from "react-icons/fa6";
 
 
-
-
 export const Caract = (props) => {
 
     const returnIcon = val => {
@@ -24,8 +22,8 @@ export const Caract = (props) => {
   return (
     <div className={`flex flex-col items-center ${returnAnimation(props.index)} justify-start px-6 py-4 md:py-8 gap-6 bg-white xl:max-w-auto shadow-2xl shadow-gray-700`}>
             <span className='bg-gray-200 p-6 rounded-full'>{returnIcon(props.titulo)}</span>
-            <h2 className='uppercase text-xl md:text-2xl font-bold'>{props.titulo}</h2>
-            <p className='text-center leading-loose italic text-sm xl:text-lg'>{props.contenido}</p>
+            <h2 className='uppercase text-xl md:text-xl font-bold'>{props.titulo}</h2>
+            <p className='text-center leading-loose italic text-sm xl:text-base'>{props.contenido}</p>
         </div>
   )
 }

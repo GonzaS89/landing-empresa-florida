@@ -20,11 +20,11 @@ li{
 
 @keyframes menuOpen {
   from{height:0px;}
-  to{height: 150px}
+  to{height: 210px}
 }
 
 .menuClosed{
-  height:150px;
+  height:210px;
   animation: menuClosed .5s ease-out forwards;
 }
 
@@ -197,15 +197,9 @@ li{
 
 @media (min-width: 1290px){
   .carousel-imgs{
-    height:550px;
+    height:450px;
   }
 }
-
-
-
-
-
-
 
 @keyframes cambiarFoto{
   0%{background-image: url('https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730436494/x78krvtel9ferbilid0z.jpg')}
@@ -222,6 +216,4 @@ li{
   100%{background-image: url('https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730696281/nzw6de81zntawpdyeh5c.jpg')}
  
 }
-
-
 

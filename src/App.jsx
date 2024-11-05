@@ -6,9 +6,7 @@ import { Nosotros2 } from './Componentes/Nosotros2'
 import { Infoconsultas } from './Componentes/Infoconsultas'
 import { Galeria } from './Componentes/Galeria'
 import { Contacto } from './Componentes/Contacto'
-import { Modalfoto } from './Componentes/Modalfoto'
 import { useState } from 'react'
-// import { Prueba } from './Componentes/Prueba'
 
 
 function App() {
@@ -30,8 +28,6 @@ function App() {
       <Nosotros2 />
       <Infoconsultas/>
       <Galeria url={recibirUrl}/>
-      <Modalfoto img = {url} click = {isClick}/>
-      {/* <Prueba/> */}
       <Contacto />
       
    </div>
