@@ -2,16 +2,15 @@ import React from 'react';
 import { Infocontacto } from '../Minicomponentes/Infocontacto';
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import Logo from '../assets/logo.png'
 
 export const Contacto = () => {
   return (
     <div className="bg-slate-900 md:px-12 lg:px-4 pt-6 lg:pt-0">
-      <div className="flex flex-col gap-8 sm:items-center lg:flex-row lg:items-end">
-        <div className=" text-white flex flex-col justify-around items-center lg:flex-row gap-8 lg:gap-4 basis-2/3 px-4 py-4 lg:pt-2 lg:pb-0">
-          <img src={Logo} alt="" className='h-32 w-44 md:h-52 md:w-72 lg:h-32 lg:w-48 xl:h-48 xl:w-56'/>
-          <div className='flex flex-col items-center lg:items-start lg:flex-row justify-center lg:justify-start gap-12 md:py-8 lg:py-2'>
-          <div className="grid grid-cols-2 lg:flex flex-col gap-4 lg:gap-2 xl:gap-4">
+      <div className="max-w-7xl my-0 mx-auto flex flex-col gap-8 sm:items-center lg:flex-row lg:items-around">
+        <div className=" text-white flex flex-col justify-around items-center lg:flex-row gap-4 lg:gap-4 basis-2/3 px-4 py-4 lg:pt-2 lg:pb-0">
+          {/* <img src={Logo} alt="" className='h-32 w-44 md:h-52 md:w-72 lg:h-32 lg:w-48 xl:h-48 xl:w-56'/> */}
+          <div className='flex flex-col items-center lg:items-start lg:flex-row justify-center  lg:justify-start gap-12 md:py-8 lg:py-2 w-full h-full'>
+          <div className="flex flex-col  gap-8 lg:gap-2 xl:gap-4">
             <Infocontacto refe={'dirección'} titulo = {'encontrános en'} contenido={'Amadeo Jacques 1852 - S.M. de Tucumán'} />
             <Infocontacto refe={'horario'} titulo = {'horarios'} contenido={'Lunes-Viernes: 08:00 a 15:00 hrs'} />
             <Infocontacto refe={'teléfono'} titulo = {'contactanos al'} contenido={'(0381) - 4680416'} />

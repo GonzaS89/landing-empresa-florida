@@ -9,10 +9,10 @@ import { FaClock } from "react-icons/fa";
 export const Infocontacto = (props) => {
 
     const returnIcon = val => {
-        if(val === 'teléfono'){return <FaPhoneAlt className='w-[40px] h-[40px] lg:w-[30px] lg:h-[30px]'/>}
-        if(val === 'dirección'){return <FaMapMarkerAlt className='w-[40px] h-[40px] lg:w-[30px] lg:h-[30px]'/>}
-        if(val === 'horario'){return <FaClock className='w-[40px] h-[40px] lg:w-[30px] lg:h-[30px]'/>}
-        else{return <FaEnvelopeOpenText className='w-[40px] h-[40px] lg:w-[30px] lg:h-[30px]'/>}
+        if(val === 'teléfono'){return <FaPhoneAlt className='w-[30px] h-[30px] md:w-[45px] md:h-[45px] lg:w-[30px] lg:h-[30px]'/>}
+        if(val === 'dirección'){return <FaMapMarkerAlt className='w-[30px] h-[30px] md:w-[45px] md:h-[45px] lg:w-[30px] lg:h-[30px]'/>}
+        if(val === 'horario'){return <FaClock className='w-[30px] h-[30px] md:w-[45px] md:h-[45px] lg:w-[30px] lg:h-[30px]'/>}
+        else{return <FaEnvelopeOpenText className='w-[30px] h-[30px] md:w-[45px] md:h-[45px] lg:w-[30px] lg:h-[30px]'/>}
     }
 
   return (

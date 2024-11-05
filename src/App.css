@@ -10,6 +10,10 @@ li{
   list-style-type:"—"
 }
 
+.navbar-small{
+  height:0px;
+}
+
 .menuOpen{
   animation: menuOpen .5s ease-out forwards;
 }
@@ -20,6 +24,7 @@ li{
 }
 
 .menuClosed{
+  height:150px;
   animation: menuClosed .5s ease-out forwards;
 }
 
@@ -166,10 +171,16 @@ li{
 .carousel-imgs{
   animation: cambiarFoto 45s linear infinite;
   width:100%;
-  height:700px;
+  height:600px;
   background-size:cover;
   background-position:center;
   background-image:url('https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730436494/x78krvtel9ferbilid0z.jpg')
+}
+
+@media (min-width: 390px){
+  .carousel-imgs{
+    height:450px;
+  }
 }
 
 @media (min-width: 768px){
@@ -178,11 +189,23 @@ li{
   }
 }
 
-@media (min-width: 390px){
+@media (min-width: 1024px){
   .carousel-imgs{
     height:450px;
   }
 }
+
+@media (min-width: 1290px){
+  .carousel-imgs{
+    height:550px;
+  }
+}
+
+
+
+
+
+
 
 @keyframes cambiarFoto{
   0%{background-image: url('https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730436494/x78krvtel9ferbilid0z.jpg')}

@@ -18,10 +18,10 @@ export const Consulta = (props) => {
     }
 
   return (
-    <div className={`${returnBg(props.titulo)} md:h-[550px] lg:h-auto flex flex-col justify-center lg:justify-evenly items-start py-8 px-8 pr-16 gap-8  md:gap-10 lg:gap-4 xl:gap-2`}>
+    <div className={`${returnBg(props.titulo)} sm:h-[450px] lg:h-auto flex flex-col justify-center lg:justify-evenly items-start py-8 px-8 pr-16 gap-8  md:gap-10 lg:gap-4 xl:gap-2`}>
         <h2 className={`${returnTextColor(props.titulo)} text-3xl xl:text-4xl uppercase font-bold`}>{props.titulo}</h2>
         <p className={`${returnTextColor(props.titulo)} italic xl:text-xl`}>{props.contenido}</p>
-        <button className={`${returnButtonStyle(props.titulo)} min-w-44 p-2 lg:p-4 xl:p-6 uppercase font-bold xl:text-2xl font-secundaria tracking-wider hover:bg-slate-800 hover:text-white transition-all duration-300`}>{props.boton}</button>
+        <button className={`${returnButtonStyle(props.titulo)} min-w-44 p-2 md:p-4 xl:p-6 uppercase font-bold md:text-lg xl:text-2xl font-secundaria tracking-wider hover:bg-slate-800 hover:text-white transition-all duration-300`}>{props.boton}</button>
     </div>
   )
 }

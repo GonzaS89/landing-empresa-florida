@@ -14,13 +14,13 @@ export const Header = () => {
 
   return (
     <div className='bg-[#EEEEEE] px-8'>
-        <div className='px-12 md:h-24 md:h-36 my-0 mx-auto'>
-          <div className='flex items-center h-full justify-between'>
-          <div className='flex h-4/5'>
-            <img src={Logo} alt=""/>
+        <div className='h-24 my-0 mx-auto flex'>
+          <div className='flex items-center justify-between w-full'>
+          <div className='flex h-[70px]'>
+            <img src={Logo} alt="" className='justify-stretch'/>
           </div>
           <div onClick={()=> setIsOpen(!isOpen)}>
-            {isOpen ? <IoCloseSharp className='text-4xl text-white icono-navbar'/> : <IoMenu className='text-4xl text-white icono-navbar'/>}
+            {isOpen ? <IoCloseSharp className='text-4xl icono-navbar'/> : <IoMenu className='text-4xl icono-navbar'/>}
             </div>
             <nav className='navbar-large flex justify-center gap-6 basis-1/2'>
               <a href="" className='text-2xl uppercase'>Institucion</a>

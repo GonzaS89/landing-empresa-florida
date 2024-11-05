@@ -7,7 +7,7 @@ export const Nosotros2 = () => {
   return (
     <div className='flex px-8 sm:px-12 xl:px-0 py-12 nosotros-bg'>
       <div className='max-w-7xl my-0 mx-auto flex flex-col gap-12 lg:gap-12'> 
-        <h1 className='text-center font-bold text-4xl md:text-5xl lg:text-4xl xl:text-5xl text-white md:px-12'>Estos servicios te ofrecemos como empresa</h1>
+        <h1 className='text-center font-bold text-4xl md:text-4xl xl:text-5xl text-white md:px-12'>Estos servicios te ofrecemos como empresa</h1>
         <div className='flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 xl:mt-24'>
             <Caract titulo={'cobertura'} index={0} contenido={'Te contamos que nuestros servicios tienen gran cobertura en localidades del este tucumano. Incluso llegando a Las Cejas y 7 de abril (Santiago del Estero)'}/>
             <Caract titulo={'escolares'} index={1} contenido={'Al margen de nuestro amplio listado de servicios diarios, contamos con algunos servicios en establecimientos escolares. Tanto al ingreso como a la salida'}/>
