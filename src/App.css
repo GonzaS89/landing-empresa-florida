@@ -201,7 +201,7 @@ li{
   }
 }
 
-@keyframes cambiarFoto{
+/* @keyframes cambiarFoto{
   0%{background-image: url('https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730436494/x78krvtel9ferbilid0z.jpg')}
   19%{background-image: url('https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730436494/x78krvtel9ferbilid0z.jpg')}
   20%{background-image: url('https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730696288/gogv3gi4ootipfd5pv3n.jpg')}
@@ -215,5 +215,5 @@ li{
   80%{background-image: url('https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730696281/nzw6de81zntawpdyeh5c.jpg')}
   100%{background-image: url('https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730696281/nzw6de81zntawpdyeh5c.jpg')}
  
-}
+} */
 
