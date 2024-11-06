@@ -24,9 +24,9 @@ function App() {
    <div className="relative">
        <Header />
        <Front/>
-       <Nosotros/>
       <Nosotros2 />
       <Infoconsultas/>
+      <Nosotros/>
       <Galeria url={recibirUrl}/>
       <Contacto />
       
