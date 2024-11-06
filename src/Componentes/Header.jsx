@@ -24,11 +24,11 @@ export const Header = () => {
             {isOpen ? <IoCloseSharp className='text-4xl icono-navbar'/> : <IoMenu className='text-4xl icono-navbar'/>}
             </div>
             <nav className='navbar-large flex justify-end gap-6 basis-1/2'>
-              <Link to='institucion' smooth={true} duration={500} className='text-2xl uppercase cursor-pointer'>Institucion</Link>
-              <Link to='servicios' smooth={true} duration={500} className='text-2xl uppercase cursor-pointer'>Servicios</Link>
-              <Link to='consultas' smooth={true} duration={500} className='text-2xl uppercase cursor-pointer'>Consultas</Link>
-              <Link to='galeria' smooth={true} duration={500} className='text-2xl uppercase cursor-pointer'>Galeria</Link>
-              <Link to='contacto' smooth={true} duration={500} className='text-2xl uppercase cursor-pointer'>Contacto</Link>
+              <Link to='institucion' smooth={true} duration={500} className='lg:text-xl xl:text-2xl uppercase cursor-pointer'>Institucion</Link>
+              <Link to='servicios' smooth={true} duration={500} className='lg:text-xl xl:text-2xl uppercase cursor-pointer'>Servicios</Link>
+              <Link to='consultas' smooth={true} duration={500} className='lg:text-xl xl:text-2xl uppercase cursor-pointer'>Consultas</Link>
+              <Link to='galeria' smooth={true} duration={500} className='lg:text-xl xl:text-2xl uppercase cursor-pointer'>Galeria</Link>
+              <Link to='contacto' smooth={true} duration={500} className='lg:text-xl xl:text-2xl uppercase cursor-pointer'>Contacto</Link>
             </nav>
           </div>
         </div>

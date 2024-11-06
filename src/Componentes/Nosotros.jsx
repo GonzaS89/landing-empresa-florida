@@ -10,19 +10,19 @@ import { useInView } from "react-intersection-observer";
 export const Nosotros = () => {
 
   const { ref, inView } = useInView({
-    triggerOnce: true, // Se anima una sola vez
-    threshold: 0.5, // Se activa cuando el 50% del elemento está en viewport
+    triggerOnce: false, // Se anima una sola vez
+    threshold: 0.3, // Se activa cuando el 50% del elemento está en viewport
   });
 
   return (
     <Element name="institucion">
-      <div className="px-8 pt-8 bg-rojofuerte" ref={ref}>
+      <div className="px-8 pt-8 bg-rojofuerte overflow-hidden" ref={ref}>
         <div className="max-w-6xl my-o mx-auto flex flex-col items-center gap-12">
           <motion.h1 
-          initial={{opacity:0 , y:-200}}
+          initial={{opacity:0 , y:-50}}
           animate={inView ? {opacity:1, y:0} : {}}
           transition={{duration: 1}}
-          className="text-white text-3xl xl:text-4xl font-bold uppercase">
+          className="text-white text-3xl md:text-4xl font-bold uppercase">
             Institución
           </motion.h1>
           <div className="flex flex-col lg:flex-row gap-8 items-center w-full">
