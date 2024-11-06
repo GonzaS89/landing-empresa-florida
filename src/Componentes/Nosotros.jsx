@@ -46,7 +46,7 @@ export const Nosotros = () => {
                     </button>
                   }
                 >
-                  <Descripcion titulo={"Nuestra historia"} />
+                  <Descripcion titulo={"Nuestra historia"} contenido={'El recorrido inicial y original de la firma fue el tramo que une la ciudad de San Miguel de Tucumán con la localidad de Florida. Al recorrido inicial que era la línea San Miguel de Tucumán- Florida se fueron incorporando otros tramos'}/>
                   <Descripcion titulo={"Nuestra historia"} />
                   <Descripcion titulo={"Nuestra historia"} />
                 </Carousel>
