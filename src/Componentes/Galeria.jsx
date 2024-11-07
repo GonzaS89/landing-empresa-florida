@@ -9,6 +9,7 @@ import { useInView } from "react-intersection-observer";
 export const Galeria = ({url}) => {
 
     const { ref, inView } = useInView({
+        triggerOnce:true,
         threshold: 0.3, // Se activa cuando el 50% del elemento está en viewport
       });
 

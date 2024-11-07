@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 export const Consulta = forwardRef((props, ref) => {
 
     const { ref: inViewRef, inView } = useInView({
-        triggerOnce: false,  // Se ejecuta cada vez que el componente entra/sale
+        triggerOnce: true,  // Se ejecuta cada vez que el componente entra/sale
         threshold: 0.3,      // El componente se considera visible cuando el 50% está en vista
       });
 

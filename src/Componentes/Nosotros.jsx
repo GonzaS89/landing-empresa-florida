@@ -10,7 +10,7 @@ import { useInView } from "react-intersection-observer";
 export const Nosotros = () => {
 
   const { ref, inView } = useInView({
-    triggerOnce: false, // Se anima una sola vez
+    triggerOnce: true, // Se anima una sola vez
     threshold: 0.3, // Se activa cuando el 50% del elemento está en viewport
   });
 
