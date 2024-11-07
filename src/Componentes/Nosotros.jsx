@@ -32,7 +32,7 @@ export const Nosotros = () => {
             transition={{ duration: 1, delay:.3 }}
             className="flex items-center relative w-full h-[450px] md:h-[550px] lg:h-[450px] xl:h-[450px] lg:w-1/2 xl:w-5/12">
               <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-azulclaro flex rounded-2xl"></div>
-              <div className="z-30 h-5/6 lg:h-full bg-white w-5/6 my-0 mx-auto rounded-2xl flex flex-col">
+              <div className="z-10 h-5/6 lg:h-full bg-white w-5/6 my-0 mx-auto rounded-2xl flex flex-col">
                 <Carousel
                   slide={false}
                   leftControl={
