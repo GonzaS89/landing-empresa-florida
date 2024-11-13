@@ -34,10 +34,6 @@ export const Header = () => {
   ]
 
   const [isOpen, setIsOpen] = useState(false);
-  
-  const menuOpen = () => {
-    return isOpen ? 'menuOpen' : 'menuClosed'
-  }
 
   return (
 
@@ -46,8 +42,8 @@ export const Header = () => {
       <div className='h-24 my-0 mx-auto flex'>
         <div className='flex items-center justify-between w-full'>
           <Link to='header' smooth={true} duration={500}>
-          <div className='flex h-[70px] lg:h-[80px] cursor-pointer'>
-            <img src={Logo} alt="" className='justify-stretch' />
+          <div className='flex h-[70px] lg:h-[80px] cursor-pointer' onClick={()=> setIsOpen(false)}>
+            <img src={Logo} alt=""/>
           </div>
           </Link>
           <div onClick={() => setIsOpen(!isOpen)}>

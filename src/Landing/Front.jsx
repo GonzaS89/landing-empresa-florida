@@ -4,12 +4,12 @@ import { Portada } from "../Minicomponentes/Portada";
 
 export const Front = () => {
   return (
-    <div className="h-[600px] lg:h-[650px] xl:h-[750px]">
+    <div className="h-[600px] lg:h-[650px] xl:h-[850px]">
       <Carousel slideInterval={7000}>
         <Portada
           titulo={"70 años juntos a vos brindándote el mejor servicio"}
           contenido={
-            "Empresa Florida SRL comenzó a funcionar un 10 de noviembre de 1954. Su fundador fue Belarmino Fernandez Barrioso: Y nuestro comprimiso con nuestros usuarios sigue intacto como hace 70 años."
+            "Estamos cumpliendo 70 años de servicio ininterrumpido junto a nuestros usuarios"
           }
           urlimg={
             "https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730495713/a6cw6vbvjgedounmyxl0.jpg"
