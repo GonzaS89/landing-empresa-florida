@@ -3,9 +3,10 @@ import { useHeight } from '../HooksCons/useHeight';
 import { Bloquelocalidadesorigen } from '../Componentes/Abonos/Bloquelocalidadesorigen';
 import { Bloquelocalidadesdestino } from '../Componentes/Abonos/Bloquelocalidadesdestino';
 import { Containerviajestarifas } from '../Componentes/Abonos/Containerviajestarifas';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
-
-export const Maincons = () => {
+export const Maincons = ({enviarParametrosAbonos}) => {
     useEffect(() => {
         // Función que maneja la acción de retroceder
         const handleBackButton = (event) => {
@@ -47,11 +48,19 @@ export const Maincons = () => {
   return (
     <div className='flex justify-center bg-black'>
       <div className="bg-rojofuerte w-full lg:max-w-3xl">
-    <div className={`overflow-hidden flex flex-col  items-center h-screen-dvh pt-6  h-screen  relative ${hLg ? 'gap-6' : 'gap-2'}`}>
+    <div className={`overflow-hidden flex flex-col  items-center h-screen-dvh pt-6  h-screen  w-full relative ${hLg ? 'gap-6' : 'gap-2'}`}>
       <h1 className='uppercase'>Calculá el precio de tu abono</h1>
       <Bloquelocalidadesorigen origen={localidadOrigen} recibirLocalidad={recibirLocalidad}/>
       <Bloquelocalidadesdestino origen={localidadOrigen} destino={localidadDestino} recibirVia={recibirVia} recibirLocalidadDestino={recibirLocalidadDestino} />
       <Containerviajestarifas enviarTarifaElegida={recibirTarifaElegida} enviarViajesIngresados={recibirViajesIngresados} destino={localidadDestino} />
+     <Link to='/cotizacion'>
+     <motion.div 
+           initial= {{y: '100%'}}
+           animate={{y: botonDisponible ? 0 : '100%'}}
+           transition={{duration: .5, ease:'easeInOut'}}
+           className={`${botonDisponible ?  'bg-red-700' : 'bg-gray-600'} uppercase py-4  text-3xl absolute bottom-0 w-full`}
+           onClick={() => enviarParametrosAbonos(localidadOrigen, localidadDestino, viajesIngresados, tarifaElegida, via)}>calcular</motion.div>
+     </Link>
     </div>
   </div>
     </div>
