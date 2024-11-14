@@ -57,10 +57,10 @@ export const Header = () => {
   return (
 
     <Element name='header'>
-       <div className={`${isScrolled ? 'bg-opacity-90' : 'bg-opacity-100'} bg-[#EEEEEE] px-8 fixed z-20 w-full`}>
+       <div className={`${isScrolled ? 'bg-opacity-90' : 'bg-opacity-100'} bg-[#EEEEEE] px-8 fixed top-0 left-0 right-0 z-20 w-full`}>
       <div className='h-24 xl:h-auto xl:py-2 my-0 mx-auto flex'>
         <div className='flex items-center justify-around w-full'>
-          <Link to='header' smooth={true} duration={500}>
+          <Link to='header' smooth={true} duration={500} offset={-96}>
           <div className='flex h-[70px] lg:h-[80px] cursor-pointer' onClick={()=> setIsOpen(false)}>
             <img src={Logo} alt=""/>
           </div>

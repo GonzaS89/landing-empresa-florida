@@ -4,18 +4,6 @@ export const Paradas = ({ nombre, index, length, origen, destino }) => {
 
     const nombreOrigenDestino = nombre === origen || nombre === destino;
 
-    const definirClaseParadas = () => {
-        if(nombre === origen || nombre === destino){
-          return 'container-parada paradaSeleccionada'
-        }else{return 'container-parada'}
-      }
-
-    // const definirClaseIconoBus = (a , b) => {
-    //   if(a === nombre){return 'parada-bus-icono bushacialaderecha'}
-    //   else if(b === nombre){return 'parada-bus-icono bushacialaizquierda'}
-    //   else{return 'hidden'}
-    // }
-
   return (
 
     <>

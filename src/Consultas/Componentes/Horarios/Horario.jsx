@@ -11,7 +11,6 @@ export const Horario = forwardRef(
       nombre,
       index,
       indiceDeBusqueda,
-      claseNormalizadora,
       origen,
       destino,
       horaDeReferencia,
@@ -26,8 +25,6 @@ export const Horario = forwardRef(
     const [lengthRecorrido, setLengthRecorrido] = useState(null);
     const [horas, setHoras] = useState(null);
     const [minutos, setMinutos] = useState(null)
-    
-    const esIndiceBuscado = index === indiceDeBusqueda
 
     useEffect(() => {
       setHoraSalidaEnMInutos(
@@ -42,13 +39,6 @@ export const Horario = forwardRef(
       horaDeReferencia,
       recorrido,
     ]);
-
-    useEffect(() => {
-      if (claseNormalizadora !== null) {
-        setClaseServicioNoRefereido(claseNormalizadora);
-        setClaseServicioRefereido(claseNormalizadora);
-      }
-    }, [claseNormalizadora]);
 
     useEffect(()=> {
         let partes = nombre.split(":");

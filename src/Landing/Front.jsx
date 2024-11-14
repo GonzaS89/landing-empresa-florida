@@ -4,7 +4,7 @@ import { Portada } from "../Minicomponentes/Portada";
 
 export const Front = () => {
   return (
-    <div className="h-[600px] lg:h-[650px] xl:h-[850px]">
+    <div className="h-[600px] lg:h-[650px] xl:h-[850px] mt-24">
       <Carousel slideInterval={10000}>
         <Portada
           titulo={"70 años juntos a vos brindándote el mejor servicio"}
