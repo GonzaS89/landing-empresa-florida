@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import grillab from "../../../React/simuladorabonos/src/grillasb.json";
+import grillab from "../Data/grillasb.json";
 
 export const useDiaDeLaSemana = ( val ) => {
 

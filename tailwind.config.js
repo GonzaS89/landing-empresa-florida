@@ -11,7 +11,8 @@ export default {
       fontFamily: {
         principal : 'Lato',
         secundaria : "Antonio",
-        terciaria : 'Open Sans'
+        terciaria : 'Open Sans',
+        jockey: '"Jockey One", sans-serif;'
       },
       dropShadow: {
         'custom': '2px 2px 10px grey',

@@ -47,9 +47,9 @@ export const Maincons = ({enviarParametrosAbonos}) => {
 
   return (
     <div className='flex justify-center bg-black'>
-      <div className="bg-rojofuerte w-full lg:max-w-3xl">
-    <div className={`overflow-hidden flex flex-col  items-center h-screen-dvh pt-6  h-screen  w-full relative ${hLg ? 'gap-6' : 'gap-2'}`}>
-      <h1 className='uppercase'>Calculá el precio de tu abono</h1>
+      <div className="bg-gradient-to-t to-red-700 from-blue-950 w-full lg:max-w-3xl">
+    <div className={`overflow-hidden text-white flex flex-col  items-center h-screen-dvh pt-6  h-screen  w-full relative ${hLg ? 'gap-6' : 'gap-2'}`}>
+      <h1 className='uppercase  font-jockey text-2xl'>Calculá el precio de tu abono</h1>
       <Bloquelocalidadesorigen origen={localidadOrigen} recibirLocalidad={recibirLocalidad}/>
       <Bloquelocalidadesdestino origen={localidadOrigen} destino={localidadDestino} recibirVia={recibirVia} recibirLocalidadDestino={recibirLocalidadDestino} />
       <Containerviajestarifas enviarTarifaElegida={recibirTarifaElegida} enviarViajesIngresados={recibirViajesIngresados} destino={localidadDestino} />
@@ -58,7 +58,7 @@ export const Maincons = ({enviarParametrosAbonos}) => {
            initial= {{y: '100%'}}
            animate={{y: botonDisponible ? 0 : '100%'}}
            transition={{duration: .5, ease:'easeInOut'}}
-           className={`${botonDisponible ?  'bg-red-700' : 'bg-gray-600'} uppercase py-4  text-3xl absolute bottom-0 w-full`}
+           className={`${botonDisponible ?  'bg-red-700' : 'bg-gray-600'} uppercase py-4  text-3xl absolute bottom-0 left-0 w-full flex items-center justify-center font-jockey`}
            onClick={() => enviarParametrosAbonos(localidadOrigen, localidadDestino, viajesIngresados, tarifaElegida, via)}>calcular</motion.div>
      </Link>
     </div>

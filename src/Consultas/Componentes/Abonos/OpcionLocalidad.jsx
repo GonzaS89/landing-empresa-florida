@@ -25,13 +25,15 @@ export const OpcionLocalidad = ({
     initial={{y: '20%', opacity:0}}
     animate={{y: 0, opacity: 1}}
     transition={{duration:.25,  delay: index * .1, ease:'backOut'}}
-   onClick={clickearImg}>
-      <div className='flex relative 
+   onClick={clickearImg}
+   className='flex flex-col'
+   >
+      <div className='flex relative
       w-[80px] h-[80px] overflow-hidden rounded-3xl cursor-pointer'>
         <img
-          src={`public/img-consultas/${nombre}.avif`}
+          src={`/img-consultas/${nombre}.avif`}
           alt=""
-          className={`${localidadClickeada ? "sombrearImg" : '' } absolute h-full`}
+          className={`${localidadClickeada ? "filter brightness-50 blur-[1px]" : '' } absolute h-full object-cover`}
         />
         <motion.div 
         initial={{opacity: 0, scale:0}}
@@ -43,7 +45,7 @@ export const OpcionLocalidad = ({
         />
         </motion.div>
       </div>
-      <p className='text-xs uppercase text-white'>{nombre}</p>
+      <p className='text-xs uppercase text-center font-jockey'>{nombre}</p>
     </motion.div>
   )
 }

@@ -41,8 +41,8 @@ export const Consulta = forwardRef((props, ref) => {
     className={`${returnBg(props.titulo)} sm:h-[450px] lg:h-auto flex flex-col justify-center lg:justify-evenly items-start py-8 px-8 pr-16 gap-8  md:gap-10 lg:gap-4 xl:gap-2`}>
         <h2 className={`${returnTextColor(props.titulo)} text-3xl xl:text-3xl uppercase font-bold`}>{props.titulo}</h2>
         <p className={`${returnTextColor(props.titulo)} italic`}>{props.contenido}</p>
-        <Link to={'/consultas'}>
-        <button className={`${returnButtonStyle(props.titulo)} min-w-44 p-2 md:p-4 uppercase font-bold md:text-lg xl:text-xl font-secundaria tracking-wider hover:bg-slate-800 hover:text-white transition-all duration-300`}>{props.boton}</button>
+        <Link to={props.titulo === 'Abonos' ? '/menuabonos' : '/menuhorarios'}>
+        <button className={`${returnButtonStyle(props.titulo)} min-w-44 p-2 md:p-4 uppercase font-bold md:text-lg xl:text-xl font-secundaria tracking-wider hover:bg-slate-800 hover:text-white transition-all duration-300 sm:pointer-events-none`}>{props.boton}</button>
         </Link>
         
     </motion.div>

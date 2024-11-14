@@ -23,7 +23,7 @@ export const NumerosDeViajes = ({
 
   return (
     <div
-      className={`${opcionSelec ? 'bg-red-700 text-white' : 'bg-gray-300 text-black'} w-[50px] h-[50px] text-2xl rounded-full  grid place-items-center relative`}
+      className={`${opcionSelec ? 'bg-red-700 text-white' : 'bg-gray-300 text-black'} w-[50px] h-[50px] text-2xl rounded-full  grid place-items-center relative font-jockey`}
       onClick={clickEnNumViaje}
     >
       {numero}

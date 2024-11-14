@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  font-family : 'Poppins', sans-sefif
-}
-
 html {
   scroll-behavior: smooth;
   scroll-timing-function: ease-out; /* Esto aplica el 'ease-in' a todo el desplazamiento */

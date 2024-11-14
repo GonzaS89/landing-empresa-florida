@@ -17,7 +17,7 @@ export const Tipodetarifa = ({ tarifa, enviarTarifa, tarifaElegida }) => {
 
   return (
          <div
-      className={`${tarifaClickeada ? 'bg-red-700 text-white' : 'bg-gray-300 text-black'} uppercase h-12 w-36 text-xl rounded-md  grid place-items-center relative`}
+      className={`${tarifaClickeada ? 'bg-red-700 text-white' : 'bg-gray-300 text-black'} uppercase h-12 w-36 text-xl rounded-md  grid place-items-center relative font-jockey`}
       onClick={clickTarifa}
     >
       {tarifa} 
@@ -28,7 +28,6 @@ export const Tipodetarifa = ({ tarifa, enviarTarifa, tarifaElegida }) => {
       className={tarifaClickeada ? 'text-lg absolute -top-2 -right-1' : 'hidden'}>
   <FaCheckCircle />
   </motion.div>
-      
     </div>
   );
 };

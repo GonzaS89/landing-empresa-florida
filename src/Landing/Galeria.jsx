@@ -66,7 +66,7 @@ export const Galeria = ({url}) => {
             className='h-[300px] md:h-[400px] lg:h-[450px] xl:h-[450px]'>
                 <Carousel>
                      {arrayUrlsGalery.map( (element,index) => (
-                    <Fotogaleria url={element.url} index={index} enviarUrl={url}/>
+                    <Fotogaleria key={index} url={element.url} index={index} enviarUrl={url}/>
                 ))}
                 </Carousel>
                

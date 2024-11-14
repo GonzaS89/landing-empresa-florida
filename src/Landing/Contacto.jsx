@@ -26,12 +26,12 @@ export const Contacto = () => {
                 <Infocontacto
                   refe={"teléfono"}
                   titulo={"contactanos al"}
-                  contenido={"(0381) - 4680416"}
+                  contenido={"(0381) - 152605700"}
                 />
                 <Infocontacto
                   refe={"email"}
                   titulo={"envíanos un mail"}
-                  contenido={"empresaflorida@gmail.com"}
+                  contenido={"empresafloridatucuman@gmail.com"}
                 />
                 <div></div>
               </div>

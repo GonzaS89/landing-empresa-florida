@@ -20,7 +20,7 @@ import {
     codigo30,
     codigo34,
     codigo44
-} from "../../../React/simuladorabonos/src/tarifas";
+} from "../Data/tarifas";
 
 export const useGenerarCodigo = (origen, destino, via) => {
 

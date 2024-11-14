@@ -33,12 +33,13 @@ export const OpcionLocalidadDestino = ({
     initial={{y: '20%', opacity:0}}
     animate={{y: 0, opacity: 1}}
     transition={{duration:.25,  delay: index * .1, ease:'backOut'}}
-    onClick={clickearImg} >
-      <div className='flex relative overflow-hidden rounded-3xl cursor-pointer w-[80px] h-[80px]'>
+    onClick={clickearImg} 
+    className="flex flex-col items-center">
+      <div className='flex items-center justify-center relative overflow-hidden rounded-3xl cursor-pointer w-[80px] h-[80px]'>
       <img
-          src={`public/img-consultas/${nombre}.avif`}
+          src={`/img-consultas/${nombre}.avif`}
           alt=""
-          className={`${localidadClickeada ? "sombrearImg" : '' } absolute h-full`}/>
+          className={`${localidadClickeada ? "filter brightness-50 blur-[1px]" : '' } absolute h-full object-cover`}/>
          <motion.div 
         initial={{opacity: 0, scale:0}}
         animate={{opacity: confirmacionSeleccion ? 1 : 0, scale: confirmacionSeleccion ? 1:0}}
@@ -49,10 +50,7 @@ export const OpcionLocalidadDestino = ({
         />
         </motion.div>
         <div
-          className={
-            opcionesViasVisibles
-              ? "container-opciones-vias"
-              : "container-opciones-vias hidden"
+          className={opcionesViasVisibles ? "flex flex-col gap-2" : "hidden"
           }
         >
           <Opcionvia
@@ -69,7 +67,7 @@ export const OpcionLocalidadDestino = ({
           />
         </div>
       </div>
-      <p className='text-xs uppercase'>{nombre}</p>
+      <p className='text-xs uppercase text-center font-jockey'>{nombre}</p>
     </motion.div>
   )
 }
