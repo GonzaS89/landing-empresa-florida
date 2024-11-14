@@ -11,7 +11,7 @@ export const Nosotros = () => {
 
   const { ref, inView } = useInView({
     triggerOnce: true, // Se anima una sola vez
-    threshold: 0.3, // Se activa cuando el 50% del elemento está en viewport
+    threshold: 0.7, // Se activa cuando el 50% del elemento está en viewport
   });
 
   return (

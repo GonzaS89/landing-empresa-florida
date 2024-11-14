@@ -2,6 +2,9 @@ import React, { useEffect, useState, forwardRef } from "react";
 import { Paradas } from "./Paradas";
 import { useEstadoservicio } from "../../HooksCons/useEstadoservicio";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { div } from "framer-motion/client";
+import { brightness } from "@cloudinary/url-gen/actions/adjust";
 
 export const Horario = forwardRef(
   (
@@ -20,6 +23,12 @@ export const Horario = forwardRef(
     },
     ref
   ) => {
+
+    const { ref: inViewRef, inView } = useInView({
+      triggerOnce: false,  // Se ejecuta cada vez que el componente entra/sale
+      threshold: 0.7,      // El componente se considera visible cuando el 50% está en vista
+    });
+
     const [minutosDif, setMinutosDif] = useState(null);
     const [horaSalidaEnMinutos, setHoraSalidaEnMInutos] = useState(null);
     const [lengthRecorrido, setLengthRecorrido] = useState(null);
@@ -56,7 +65,20 @@ export const Horario = forwardRef(
 
 
     return (
-      <div
+      <motion.div
+      ref={(node) => {
+        // Combinamos el ref del padre con el ref de `useInView`
+        if (ref) ref.current = node;
+        inViewRef(node);
+      }}
+      initial={{ scale: 0.8, filter: "brightness(.1)" }}
+      animate={{
+        scale: inView ? 1 : 0.8,  // Si está visible, opacidad es 1, si no es 0
+        filter: inView ? "brightness(1)" : "brightness(.1)"
+      }}
+      transition={{ duration: 0.5 }}
+      >
+        <div
         className="flex h-auto text-white w-[300px] border-2 rounded-2xl"
         ref={ref}
       >
@@ -92,6 +114,8 @@ export const Horario = forwardRef(
           <p className="text-center font-jockey text-xl border-t-2 border-gray-500 py-4">BOLETO $ {codigo}</p>
         </div>
       </div>
+      </motion.div>
+      
     );
   }
 );
