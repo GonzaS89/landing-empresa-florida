@@ -17,6 +17,9 @@ export default {
       dropShadow: {
         'custom': '2px 2px 10px grey',
       },
+      boxShadow: {
+        'text': '2px 2px 10px rgba(0, 0, 0, 0.3)', // Personaliza la sombra de texto aquí
+      },
     },
   },
   plugins: [flowbite.plugin()],

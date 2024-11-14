@@ -201,6 +201,8 @@ li{
   }
 }
 
-
+.text-shadow{
+  text-shadow: 4px 2px 5px  black;
+}
 
 

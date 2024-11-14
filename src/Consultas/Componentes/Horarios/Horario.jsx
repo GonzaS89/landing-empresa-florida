@@ -57,20 +57,20 @@ export const Horario = forwardRef(
 
     return (
       <div
-        className="flex h-auto text-white w-[300px]"
+        className="flex h-auto text-white w-[300px] border-2 rounded-2xl"
         ref={ref}
       >
-        <div className="flex flex-col items-center justify-center h-auto bg-red-700 basis-1/4 rounded-tl-xl rounded-bl-xl">
-          <p className="font-jockey text-5xl">
+        <div className="flex flex-col items-center justify-center h-auto bg-[#EE4E4E] basis-[30%] rounded-tl-xl rounded-bl-xl">
+          <p className="font-jockey text-5xl text-shadow">
             {darFormatoHoraMinuto(horas)}
           </p>
-          <p className="font-jockey text-5xl">
+          <p className="font-jockey text-5xl text-shadow">
             {darFormatoHoraMinuto(minutos)}
           </p>
-          <h3 className="font-jockey text-4xl">HRS</h3>
+          <h3 className="font-jockey text-4xl text-shadow">HRS</h3>
         </div>
-        <div className="bg-blue-950 basis-3/4 rounded-tr-xl rounded-br-xl">
-          <div className="flex flex-col items-center gap-2 border-b-2 border-gray-500 py-2">
+        <div className="bg-[#242e48] basis-[70%] rounded-tr-xl rounded-br-xl">
+          <div className="flex flex-col items-center gap-2 border-b-2 border-gray-500 py-4">
             <p className="font-jockey text-lg uppercase">{diaAuto ? 'Estado del servicio' : `grilla de ${grilla}`}</p>
             <p className={`${estado === 'Inactivo' ? 'text-red-700 text-lg ' : 'text-white text-base'} font-jockey text-center uppercase`}>{diaAuto ? estado : ''}</p>
           </div>
@@ -89,7 +89,7 @@ export const Horario = forwardRef(
               ))}
             </div>
           </div>
-          <p className="text-center font-jockey text-xl border-t-2 border-gray-500 py-2">BOLETO $ {codigo}</p>
+          <p className="text-center font-jockey text-xl border-t-2 border-gray-500 py-4">BOLETO $ {codigo}</p>
         </div>
       </div>
     );
