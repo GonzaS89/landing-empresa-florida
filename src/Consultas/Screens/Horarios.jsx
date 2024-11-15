@@ -37,7 +37,7 @@ const Horarios = ({ grillaDefinitiva, origen, destino, horaAuto, horaManual, via
       <div className="container-main-horarios">
         <div className="logo-fondo"></div>
         <div className='container-resultadoshorarios'>
-          <div className="flex flex-col gap-8 items-center w-full py-4" onTouchMove={normalizarResultados}>
+          <div className="flex flex-col gap-2 items-center justify-center w-full py-4" onTouchMove={normalizarResultados}>
           {grillaDefinitiva?.length > 0 &&
             grillaDefinitiva.map((servicio, index) => (
               <Horario

@@ -26,7 +26,7 @@ export const Horario = forwardRef(
 
     const { ref: inViewRef, inView } = useInView({
       triggerOnce: false,  // Se ejecuta cada vez que el componente entra/sale
-      threshold: 0.7,      // El componente se considera visible cuando el 50% está en vista
+      threshold: 0.8,      // El componente se considera visible cuando el 50% está en vista
     });
 
     const [minutosDif, setMinutosDif] = useState(null);
@@ -76,7 +76,7 @@ export const Horario = forwardRef(
         scale: inView ? 1 : 0.8,  // Si está visible, opacidad es 1, si no es 0
         filter: inView ? "brightness(1)" : "brightness(.1)"
       }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: .5 , ease:"backInOut"}}
       >
         <div
         className="flex h-auto text-white w-[300px] border-2 rounded-2xl"
@@ -89,7 +89,7 @@ export const Horario = forwardRef(
           <p className="font-jockey text-5xl text-shadow">
             {darFormatoHoraMinuto(minutos)}
           </p>
-          <h3 className="font-jockey text-4xl text-shadow">HRS</h3>
+          <h3 className="font-jockey text-3xl text-shadow">HRS</h3>
         </div>
         <div className="bg-[#242e48] basis-[70%] rounded-tr-xl rounded-br-xl">
           <div className="flex flex-col items-center gap-2 border-b-2 border-gray-500 py-4">
