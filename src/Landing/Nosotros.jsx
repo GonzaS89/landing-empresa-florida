@@ -30,7 +30,7 @@ export const Nosotros = () => {
             initial={{ opacity: 0, x: -500, scale:0 }}
             animate={inView ? { opacity: 1, x: 0,scale:1 } : {}}
             transition={{ duration: 1, delay:.3 }}
-            className="flex items-center relative w-full h-[450px] md:h-[550px] lg:h-[450px] xl:h-[500px] lg:w-1/2 xl:w-5/12">
+            className="flex items-center relative w-full h-[450px] md:h-[550px] lg:h-full lg:w-1/2 lg:basis-1/2 xl:w-5/12 ">
               <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-azulclaro flex rounded-2xl"></div>
               <div className="z-10 h-5/6 lg:h-full bg-white w-5/6 my-0 mx-auto rounded-2xl flex flex-col">
                 <Carousel
@@ -57,7 +57,7 @@ export const Nosotros = () => {
             initial={{ opacity: 0, x: 500,scale:0}}
             animate={inView ? { opacity: 1, x: 0,scale:1} : {}}
             transition={{ duration: 1, delay: .5 }}
-            className="w-1/2 xl:w-7/12 rounded-2xl md:h-[500px] xl:h-[550px] carousel-imgs">
+            className="lg:w-1/2 xl:w-7/12 rounded-2xl md:h-full carousel-imgs lg:basis-1/2 xl:basis-auto">
               {/* <img src="https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730436494/x78krvtel9ferbilid0z.jpg" alt="" className="h-5/6"/>
         <img src="" alt="" /> */}
             </motion.div>
