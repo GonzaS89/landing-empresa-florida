@@ -68,7 +68,7 @@ export const Header = () => {
             <div onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <IoCloseSharp className='text-4xl icono-navbar' /> : <IoMenu className='text-4xl icono-navbar' />}
             </div>
-            <nav className='h-24 flex'>
+            <nav className='h-24 hidden lg:flex'>
               {arraySection.map((section, index) => (
                 <div className='relative flex w-32 justify-center items-center h-full group'>
                   <Link key={index} to={section.section} smooth={true} duration={500} offset={-96} className='z-40 lg:text-xl xl:text-2xl uppercase cursor-pointer group-hover:text-white transition-all duration-400 ease-in'>{section.name}</Link>

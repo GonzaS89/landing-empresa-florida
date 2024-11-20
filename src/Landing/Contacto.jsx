@@ -3,10 +3,8 @@ import { Infocontacto } from "../Minicomponentes/Infocontacto";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { Element } from "react-scroll";
-import { MdKeyboardDoubleArrowUp } from "react-icons/md";
-import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Link } from 'react-scroll';
+
 
 export const Contacto = () => {
 
@@ -18,17 +16,6 @@ const {ref, inView} = useInView({
   return (
     <Element name="contacto">
       <div className="bg-slate-900 md:px-12 lg:px-4 pt-6 lg:pt-0" ref={ref}>
-    <Link to="header">
-    <motion.span 
-        initial={{y:0}}
-        animate={{y:'-15%', 
-        transition:{duration:1, ease:'backInOut', repeat:Infinity}
-      }}
-        className={`fixed right-0 bottom-0 w-16 h-16 bg-white mr-12 mb-12 flex justify-center  items-center rounded-md cursor-pointer opacity-${inView ? 1 : 0}`}>
-          <MdKeyboardDoubleArrowUp className="text-4xl font-light" />
-        </motion.span>
-    </Link>
-
         <div className="max-w-6xl my-0 mx-auto flex flex-col gap-8 sm:items-center lg:flex-row lg:items-around relative">
           <div className=" text-white flex flex-col justify-around items-center lg:flex-row gap-4 lg:gap-4 basis-2/3 px-4 py-4 lg:pt-2 lg:pb-0">
             {/* <img src={Logo} alt="" className='h-32 w-44 md:h-52 md:w-72 lg:h-32 lg:w-48 xl:h-48 xl:w-56'/> */}
