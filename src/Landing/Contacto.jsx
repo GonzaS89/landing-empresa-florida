@@ -6,12 +6,15 @@ import { Element } from "react-scroll";
 import { useInView } from "react-intersection-observer";
 
 
-export const Contacto = () => {
+export const Contacto = ({isVisible}) => {
+
 
 const {ref, inView} = useInView({
   threshold:.3,
   triggerOnce:false
 })
+
+isVisible(inView)
 
   return (
     <Element name="contacto">

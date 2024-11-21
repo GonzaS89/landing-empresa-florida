@@ -43,7 +43,7 @@ export const CotizacionAbonos = ({
 
 
   return (
-    <div className="bg-gradient-to-t to-red-700 from-blue-950 flex flex-col justify-center h-screen gap-4">
+    <div className="bg-slate-800 flex flex-col justify-center h-screen gap-4">
       <div className="flex flex-col gap-4">
         <h1 className="text-4xl text-white text-center font-jockey">Cotización</h1>
         <div className="bg-slate-950 bg-opacity-25 w-full h-64 relative text-white">
