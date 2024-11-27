@@ -72,7 +72,8 @@ export const Header = () => {
               {arraySection.map((section, index) => (
                 <div className='relative flex w-32 justify-center items-center h-full group'>
                   <Link key={index} to={section.section} smooth={true} duration={500} offset={-96} className='z-40 lg:text-xl xl:text-2xl uppercase cursor-pointer group-hover:text-white transition-all duration-400 ease-in'>{section.name}</Link>
-                  <span className='absolute flex bg-gray-800 w-full h-0 top-0 group-hover:h-full transition-all duration-350 ease-out'></span>
+                  <span className='absolute flex bg-gray-800 w-full h-0 group-hover:h-full transition-all duration-350 ease-out'></span>
+                  <span className=' absolute h-[1px] w-0 bg-gray-800'></span>
                 </div>
 
               ))}
