@@ -46,7 +46,7 @@ export const Maincons = ({enviarParametrosAbonos}) => {
     const {hLg} = useHeight()
 
   return (
-    <div className='flex justify-center bg-black'>
+    <div className='flex justify-center bg-black w-full'>
       <div className="bg-slate-800 w-full lg:max-w-3xl">
     <div className={`overflow-hidden text-white flex flex-col  items-center h-screen-dvh pt-6  h-screen  w-full relative ${hLg ? 'gap-6' : 'gap-2'}`}>
       <h1 className='uppercase  font-jockey text-2xl'>Calculá el precio de tu abono</h1>
