@@ -27,7 +27,7 @@ isVisible(inView)
                 <Infocontacto
                   refe={"dirección"}
                   titulo={"encontrános en"}
-                  contenido={"Amadeo Jacques 1852 - S.M. de Tucumán"}
+                  contenido={"Amadeo Jacques 1186 - S.M. de Tucumán"}
                 />
                 <Infocontacto
                   refe={"horario"}
