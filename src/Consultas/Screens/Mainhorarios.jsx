@@ -82,8 +82,8 @@ export const Mainhorarios = ({ enviarParametrosHorarios }) => {
   };
 
   return (
-    <div className="50 bg-slate-800 w-full lg:max-w-3xl">
-      <div className={`overflow-hidden text-white flex flex-col  pt-6  h-screen  w-full relative ${hLg ? 'gap-6' : 'gap-2'}`}>
+    <div className="flex justify-center bg-slate-800 w-full">
+      <div className={`overflow-hidden text-white flex flex-col  pt-6  h-screen  w-full lg:max-w-xl relative ${hLg ? 'gap-6' : 'gap-2'}`}>
         <h1 className="uppercase text-3xl text-center font-jockey">
           Consulta de horarios
         </h1>
