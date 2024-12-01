@@ -18,10 +18,13 @@ isVisible(inView)
 
   return (
     <Element name="contacto">
-      <div className="bg-slate-900 md:px-12 lg:px-4 pt-6 lg:pt-0" ref={ref}>
-        <div className="max-w-6xl my-0 mx-auto flex flex-col gap-8 sm:items-center lg:flex-row lg:items-around relative">
-          <div className=" text-white flex flex-col justify-around items-center lg:flex-row gap-4 lg:gap-4 basis-2/3 px-4 py-4 lg:pt-2 lg:pb-0">
-            {/* <img src={Logo} alt="" className='h-32 w-44 md:h-52 md:w-72 lg:h-32 lg:w-48 xl:h-48 xl:w-56'/> */}
+      <div className="bg-slate-900 relative" ref={ref}>
+       <div className="flex flex-col xl:flex-row">
+       <iframe className="basis-1/2 " src="https://www.google.com/maps/embed?pb=!3m2!1ses!2sar!4v1732920529864!5m2!1ses!2sar!6m8!1m7!1sx9ZAvKR0laoB600teuOnyA!2m2!1d-26.83316322866028!2d-65.17931912005217!3f57.61311710782474!4f-7.054542274287783!5f0.7820865974627469" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       <div className="p-12 px-12 flex flex-col gap-6 basis-1/2">
+       <h1 className="uppercase text-white text-4xl font-bold">Ponete en contacto con nosotros</h1>
+       <div className=" flex flex-col gap-8 sm:items-center lg:flex-row lg:items-around">
+          <div className=" text-white flex flex-col justify-around items-center gap-4 lg:gap-4 basis-2/3 px-4 py-4 lg:pt-2 lg:pb-0">
             <div className="flex flex-col items-center lg:items-start lg:flex-row justify-center  lg:justify-start gap-12 md:py-8 lg:py-2 w-full h-full">
               <div className="flex flex-col  gap-8 lg:gap-2 xl:gap-4">
                 <Infocontacto
@@ -47,8 +50,8 @@ isVisible(inView)
                 <div></div>
               </div>
               <div className="flex flex-col gap-4 items-center lg:items-start">
-                <h2 className="md:text-xl lg:text-sm uppercase text-gray-400">
-                  Seguinos en nuestras redes
+                <h2 className="md:text-xl xl:text-xl uppercase text-gray-400">
+                  nuestras redes
                 </h2>
                 <div className="flex justify-center gap-4">
                   <a href="https://www.facebook.com/empresaflorida">
@@ -61,14 +64,11 @@ isVisible(inView)
               </div>
             </div>
           </div>
-          <span className="flex justify-center basis-1/2 relative">
-            <img
-              src="https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730669971/zwjh8jnbgocojgdsbkf0.png"
-              alt=""
-              className="flex h-[450px] md:h-[500px] lg:h-[300px] xl:h-[400px] object-cover drop-shadow-custom"
-            />
-          </span>
         </div>
+       </div>
+        <div>
+        </div>
+       </div>
       </div>
     </Element>
   );

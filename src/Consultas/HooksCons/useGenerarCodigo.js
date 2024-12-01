@@ -248,6 +248,19 @@ export const useGenerarCodigo = (origen, destino, via) => {
                 setCodigo(destinos[destino])
             }
         }
+
+        if(origen === 'cruz alta'){
+            const destinos = {
+                'cevil pozo':codigo06,
+                'colonia media agua':codigo06,
+                'banda del río salí':codigo08,
+                'los ralos':codigo10,
+                's. m. de tucumán':codigo15
+            }
+            if(destinos[destino]){
+                setCodigo(destinos[destino])
+            }
+        }
     }, [origen, destino, via]);
 
     return { codigo }

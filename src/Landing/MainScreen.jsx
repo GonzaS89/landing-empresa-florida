@@ -6,9 +6,11 @@ import { Header } from "./Header";
 import { Infoconsultas } from "./Infoconsultas";
 import { Nosotros } from "./Nosotros";
 import { Nosotros2 } from "./Nosotros2";
-import { inView, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import { Link } from "react-scroll";
+import { Footer } from "./Footer";
+
 
 export const MainScreen = () => {
 
@@ -35,6 +37,7 @@ export const MainScreen = () => {
           <MdKeyboardDoubleArrowUp className="text-4xl font-light" />
         </motion.span>
       </Link>
+      <Footer />
     </div>
   );
 };
