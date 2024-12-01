@@ -71,7 +71,7 @@ li{
 
 
 .nosotros-bg{
-  background-image: linear-gradient(to bottom ,#cc2b52 70%, #2F89FC 30%)
+  background-image: linear-gradient(to bottom ,#cc2b52 , #2F89FC)
 }
 
 .consultas-bg{
@@ -79,15 +79,11 @@ li{
 }
 
 .galeria-bg{
-  background-image: linear-gradient(to bottom ,#F4F6FF 50%, #CC2B52 50%)
+  background-image: linear-gradient(to bottom ,#F4F6FF , #CC2B52 )
 }
 
-
 .contacto-bg{
-  background-image: url('https://img.freepik.com/foto-gratis/pago-tecnologia-facil-e-inalambrico_23-2149105216.jpg?t=st=1730334754~exp=1730338354~hmac=bf63020443e8a2075e221e9c8906486067c5bf1ca4a98ca446dc156457d72ca0&w=1380');
-  background-size:cover;
-  width:100%;
-  background-position:left;
+  background-image: linear-gradient(to bottom ,#CC2B52  , #2f89fc )
 }
 
 

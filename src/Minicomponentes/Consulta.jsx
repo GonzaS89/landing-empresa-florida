@@ -42,7 +42,9 @@ export const Consulta = forwardRef((props, ref) => {
         <h2 className={`${returnTextColor(props.titulo)} text-3xl xl:text-3xl uppercase font-bold`}>{props.titulo}</h2>
         <p className={`${returnTextColor(props.titulo)} italic`}>{props.contenido}</p>
         <Link to={props.titulo === 'Abonos' ? '/menuabonos' : '/menuhorarios'}>
-        <button className={`${returnButtonStyle(props.titulo)} min-w-44 p-2 md:p-4 uppercase font-bold md:text-lg xl:text-xl font-secundaria tracking-wider hover:bg-slate-800 hover:text-white transition-all duration-300 sm:pointer-events-none`}>{props.boton}</button>
+        <button className={`${returnButtonStyle(props.titulo)} min-w-44 p-2 md:p-4 uppercase font-bold md:text-lg xl:text-xl font-secundaria tracking-wider hover:scale-110 transition-all duration-300 ease-in-out`}>
+          {props.boton}
+          </button>
         </Link>
         
     </motion.div>

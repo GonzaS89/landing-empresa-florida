@@ -1,10 +1,12 @@
 import React from "react";
 import { Carousel } from "flowbite-react";
 import { Portada } from "../Minicomponentes/Portada";
+import { Element } from "react-scroll";
 
 export const Front = () => {
   return (
-    <div className="h-[600px] lg:h-[650px] xl:h-[850px] mt-24">
+    <Element name="front">
+       <div className="h-[600px] lg:h-[650px] xl:h-[850px] mt-24">
       <Carousel slideInterval={10000}>
         <Portada
           titulo={"70 años juntos a vos brindándote el mejor servicio"}
@@ -39,5 +41,7 @@ export const Front = () => {
         />
       </Carousel>
     </div>
+    </Element>
+   
   );
 };

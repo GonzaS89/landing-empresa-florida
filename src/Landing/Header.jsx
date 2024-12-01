@@ -60,7 +60,7 @@ export const Header = () => {
       <div className={`${isScrolled ? 'bg-opacity-90' : 'bg-opacity-100'} bg-[#EEEEEE] px-8 fixed top-0 left-0 right-0 z-20 w-full`}>
         <div className='h-24 xl:h-auto my-0 mx-auto flex'>
           <div className='flex items-center justify-around w-full h-full'>
-            <Link to='/' smooth={true} duration={500} offset={-96}>
+            <Link to='front' smooth={true} duration={500} offset={-96}>
               <div className='flex h-[70px] lg:h-[80px] cursor-pointer' onClick={() => setIsOpen(false)}>
                 <img src={Logo} alt="" />
               </div>
@@ -68,13 +68,12 @@ export const Header = () => {
             <div onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <IoCloseSharp className='text-4xl icono-navbar' /> : <IoMenu className='text-4xl icono-navbar' />}
             </div>
-            <nav className='h-24 hidden md:flex'>
+            <nav className='h-24 hidden md:flex md:w-1/2 lg:w-auto'>
               {arraySection.map((section, index) => (
                 <div className='relative flex w-32 justify-center items-center h-full cursor-pointer group'>
                   <Link key={index} to={section.section} smooth={true} duration={500} offset={-96} className='z-40 lg:text-xl xl:text-2xl uppercase  group-hover:text-white transition-all duration-400 ease-in'>{section.name}</Link>
                   <span className='absolute flex bg-rojofuerte w-full h-0 group-hover:h-full transition-all duration-350  ease-out'></span>
                 </div>
-
               ))}
             </nav>
           </div>

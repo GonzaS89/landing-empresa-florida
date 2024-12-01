@@ -32,7 +32,7 @@ export const MainScreen = () => {
             x: isVisible ? 0 : '200px',
             transition: { duration: .5, ease: "backInOut"},
           }}
-          className='fixed right-0 bottom-0 w-16 h-16 mr-6 mb-12 flex justify-center items-center rounded-md cursor-pointer bg-gray-300'
+          className='fixed right-0 bottom-0 w-16 h-16 mr-4 md:mr-6 mb-32 md:mb-12 flex justify-center items-center rounded-md cursor-pointer bg-gray-300'
         >
           <MdKeyboardDoubleArrowUp className="text-4xl font-light" />
         </motion.span>

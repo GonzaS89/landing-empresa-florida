@@ -3,8 +3,6 @@ import { Paradas } from "./Paradas";
 import { useEstadoservicio } from "../../HooksCons/useEstadoservicio";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { div } from "framer-motion/client";
-import { brightness } from "@cloudinary/url-gen/actions/adjust";
 
 export const Horario = forwardRef(
   (
@@ -12,8 +10,6 @@ export const Horario = forwardRef(
       horaSalida,
       recorrido,
       nombre,
-      index,
-      indiceDeBusqueda,
       origen,
       destino,
       horaDeReferencia,
@@ -79,22 +75,22 @@ export const Horario = forwardRef(
       transition={{ duration: .5 , ease:"backInOut"}}
       >
         <div
-        className="flex h-auto text-white w-[300px] border-2 rounded-2xl"
+        className="flex h-auto text-white w-[350px] border-2 rounded-2xl"
         ref={ref}
       >
         <div className="flex flex-col items-center justify-center h-auto bg-[#EE4E4E] basis-[30%] rounded-tl-xl rounded-bl-xl">
-          <p className="font-jockey text-5xl text-shadow">
+          <p className="font-jockey text-6xl text-shadow">
             {darFormatoHoraMinuto(horas)}
           </p>
-          <p className="font-jockey text-5xl text-shadow">
+          <p className="font-jockey text-6xl text-shadow">
             {darFormatoHoraMinuto(minutos)}
           </p>
-          <h3 className="font-jockey text-3xl text-shadow">HRS</h3>
+          <h3 className="font-jockey text-4xl text-shadow">HRS</h3>
         </div>
         <div className="bg-[#242e48] basis-[70%] rounded-tr-xl rounded-br-xl">
           <div className="flex flex-col items-center gap-2 border-b-2 border-gray-500 py-4">
             <p className="font-jockey text-lg uppercase">{diaAuto ? 'Estado del servicio' : `grilla de ${grilla}`}</p>
-            <p className={`${estado === 'Inactivo' ? 'text-red-700 text-lg ' : 'text-white text-base'} font-jockey text-center uppercase`}>{diaAuto ? estado : ''}</p>
+            <p className={`${estado === 'Inactivo' ? 'text-red-700 text-lg ' : 'text-white text-base'} font-jockey text-center uppercase text-sm`}>{diaAuto ? estado : ''}</p>
           </div>
           <div className="container-recorrido">
           {/* <img src={require('../Iconos/divider.png')} alt="" className="divisor-horario"/> */}

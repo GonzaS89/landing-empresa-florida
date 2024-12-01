@@ -53,7 +53,7 @@ export const Galeria = ({url}) => {
 
     <Element name="galeria">
               <div className='bg-rojofuerte py-12 px-8 sm:px-12'>
-        <div className="max-w-4xl my-0 mx-auto flex flex-col gap-12 overflow-hidden" ref={ref}>
+        <div className="max-w-6xl my-0 mx-auto flex flex-col gap-12 overflow-hidden" ref={ref}>
             <motion.h1 
                 initial={{opacity:0 , y:-50}}
                 animate={inView ? {opacity:1, y:0} : {}}
@@ -63,7 +63,7 @@ export const Galeria = ({url}) => {
               initial={{opacity:0 , scale:0}}
               animate={inView ? {opacity:1, scale:1} : {}}
               transition={{duration: 1}}
-            className='h-[300px] md:h-[400px] lg:h-[450px] xl:h-[450px]'>
+            className='h-[300px] md:h-[400px] lg:h-[450px] xl:h-[550px]'>
                 <Carousel>
                      {arrayUrlsGalery.map( (element,index) => (
                     <Fotogaleria key={index} url={element.url} index={index} enviarUrl={url}/>
