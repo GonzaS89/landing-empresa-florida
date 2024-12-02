@@ -75,17 +75,17 @@ export const Horario = forwardRef(
       transition={{ duration: .5 , ease:"backInOut"}}
       >
         <div
-        className="flex h-auto text-white w-[350px] border-2 rounded-2xl"
+        className="flex h-auto text-white w-[320px] border-2 rounded-2xl"
         ref={ref}
       >
         <div className="flex flex-col items-center justify-center h-auto bg-[#EE4E4E] basis-[30%] rounded-tl-xl rounded-bl-xl">
-          <p className="font-jockey text-6xl text-shadow">
+          <p className="font-jockey text-5xl text-shadow">
             {darFormatoHoraMinuto(horas)}
           </p>
-          <p className="font-jockey text-6xl text-shadow">
+          <p className="font-jockey text-5xl text-shadow">
             {darFormatoHoraMinuto(minutos)}
           </p>
-          <h3 className="font-jockey text-4xl text-shadow">HRS</h3>
+          <h3 className="font-jockey text-3xl text-shadow">HRS</h3>
         </div>
         <div className="bg-[#242e48] basis-[70%] rounded-tr-xl rounded-br-xl">
           <div className="flex flex-col items-center gap-2 border-b-2 border-gray-500 py-4">
