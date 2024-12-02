@@ -36,7 +36,7 @@ export const useEstadoservicio = (minutos) => {
         setEstado( "Iniciará su recorrido en poco menos de dos horas")
       }
       else if (minutos > 120) {
-        setEstado( "inactivo")
+        setEstado( "Inactivo")
       }
     },[minutos]) 
     

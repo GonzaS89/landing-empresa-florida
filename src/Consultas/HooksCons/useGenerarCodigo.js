@@ -249,13 +249,40 @@ export const useGenerarCodigo = (origen, destino, via) => {
             }
         }
 
-        if(origen === 'cruz alta'){
+        if(origen === "cruz alta"){
             const destinos = {
                 'cevil pozo':codigo06,
                 'colonia media agua':codigo06,
                 'banda del río salí':codigo08,
                 'los ralos':codigo10,
                 's. m. de tucumán':codigo15
+            }
+            if(destinos[destino]){
+                setCodigo(destinos[destino])
+            }
+        }
+
+        if(origen === 'las cejas'){
+            const destinos = {
+                'los ralos':codigo24,
+                'esquina llona':codigo27,
+                'colonia media agua':codigo30,
+                'cevil pozo':codigo30,
+                'banda del río salí':codigo30,
+                's. m. de tucumán':codigo34
+            }
+            if(destinos[destino]){
+                setCodigo(destinos[destino])
+            }
+        }
+        if(origen === '7 de abril'){
+            const destinos = {
+                'los ralos':codigo44,
+                'esquina llona':codigo44,
+                'colonia media agua':codigo44,
+                'cevil pozo':codigo44,
+                'banda del río salí':codigo44,
+                's. m. de tucumán':codigo44
             }
             if(destinos[destino]){
                 setCodigo(destinos[destino])

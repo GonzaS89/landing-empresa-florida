@@ -31,7 +31,7 @@ export const Nosotros2 = () => {
               titulo={"cobertura"}
               index={0}
               contenido={
-                "Te contamos que nuestros servicios tienen gran cobertura en localidades del este tucumano. Incluso llegando a Las Cejas y 7 de abril (Santiago del Estero)"
+                "Te contamos que nuestros servicios tienen gran cobertura en localidades del este tucumano. Incluso llegando a Las Cejas y 7 de abril"
               }
               ref={childRef}
             />

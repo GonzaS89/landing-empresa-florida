@@ -132,6 +132,8 @@ export const useReturnDestinos = (localidad) => {
               setArrayDestinos([
                 "las cejas",
                 "los ralos",
+                "colonia media agua",
+                "esquina llona",
                 "cevil pozo",
                 "banda del río salí",
                 "s. m. de tucumán",
@@ -139,7 +141,7 @@ export const useReturnDestinos = (localidad) => {
               break;
       
             case "7 de abril":
-              setArrayDestinos(["banda del río salí", "s. m. de tucumán"]);
+              setArrayDestinos(["banda del río salí", "s. m. de tucumán","cevil pozo","colonia media agua","esquina llona"]);
               break;
       
             case "s. m. de tucumán":

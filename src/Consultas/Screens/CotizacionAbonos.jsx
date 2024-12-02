@@ -34,7 +34,14 @@ export const CotizacionAbonos = ({
       } else {
         setPrecioDescuento(precioNormal * 0.43999)
       }
-    } else {
+    } 
+    if (origen === 'las cejas') {
+      if (tarifa === 'social') {
+        setPrecioDescuento(precioNormal * 0.43001)
+      } else {
+        setPrecioDescuento(precioNormal * 0.43001)
+      }
+    }else {
       tarifa === 'social' ?
         setPrecioDescuento(precioNormal * 0.3)
         : setPrecioDescuento(precioNormal * 0.4);

@@ -90,7 +90,7 @@ export const Horario = forwardRef(
         <div className="bg-[#242e48] basis-[70%] rounded-tr-xl rounded-br-xl">
           <div className="flex flex-col items-center gap-2 border-b-2 border-gray-500 py-4">
             <p className="font-jockey text-lg uppercase">{diaAuto ? 'Estado del servicio' : `grilla de ${grilla}`}</p>
-            <p className={`${estado === 'Inactivo' ? 'text-red-700 text-lg ' : 'text-white text-base'} font-jockey text-center uppercase text-sm`}>{diaAuto ? estado : ''}</p>
+            <p className={`${estado === 'Inactivo' ? 'text-red-700 text-lg ' : 'text-white text-base px-4'} font-jockey text-center uppercase text-sm`}>{diaAuto ? estado : ''}</p>
           </div>
           <div className="container-recorrido">
           {/* <img src={require('../Iconos/divider.png')} alt="" className="divisor-horario"/> */}
@@ -107,7 +107,7 @@ export const Horario = forwardRef(
               ))}
             </div>
           </div>
-          <p className="text-center font-jockey text-xl border-t-2 border-gray-500 py-4">BOLETO $ {codigo}</p>
+          <p className="text-center font-jockey text-xl border-t-2 border-gray-500 py-4 uppercase">boleto $ {codigo}</p>
         </div>
       </div>
       </motion.div>

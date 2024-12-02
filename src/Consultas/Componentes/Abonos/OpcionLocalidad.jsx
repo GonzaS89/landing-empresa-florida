@@ -38,7 +38,7 @@ export const OpcionLocalidad = ({
         <motion.div 
         initial={{opacity: 0, scale:0}}
         animate={{opacity: localidadClickeada ? 1 : 0, scale: localidadClickeada ? 1:0}}
-        transition={{duration: .5, ease:'backOut'}}
+        transition={{duration: .2, ease:'backOut'}}
         className="w-full h-full flex items-center justify-center">
         <FaCheckCircle
           className='text-4xl z-50'
