@@ -18,9 +18,9 @@ isVisible(inView)
 
   return (
     <Element name="contacto">
-      <div className="bg-slate-900 relative contacto-bg py-12 px-12" ref={ref}>
+      <div className="bg-slate-900 relative contacto-bg lg:py-12 lg:px-12" ref={ref}>
        <div className="flex flex-col-reverse lg:flex-row max-w-6xl my-0 mx-auto">
-       <iframe className="lg:basis-1/2 h-[500px] lg:h-auto" src="https://www.google.com/maps/embed?pb=!3m2!1ses!2sar!4v1732920529864!5m2!1ses!2sar!6m8!1m7!1sx9ZAvKR0laoB600teuOnyA!2m2!1d-26.83316322866028!2d-65.17931912005217!3f57.61311710782474!4f-7.054542274287783!5f0.7820865974627469" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       <iframe className="lg:basis-1/2 h-[400px] md:h-[500px] lg:h-auto" src="https://www.google.com/maps/embed?pb=!3m2!1ses!2sar!4v1732920529864!5m2!1ses!2sar!6m8!1m7!1sx9ZAvKR0laoB600teuOnyA!2m2!1d-26.83316322866028!2d-65.17931912005217!3f57.61311710782474!4f-7.054542274287783!5f0.7820865974627469" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
        <div className="p-12 px-12 flex flex-col gap-6 basis-1/2">
        <h1 className="uppercase text-white text-4xl font-bold text-center">Contactános</h1>
        <div className=" flex flex-col gap-8 sm:items-center lg:flex-row lg:items-around">
