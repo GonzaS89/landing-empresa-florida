@@ -46,7 +46,7 @@ export const Nosotros = () => {
                     </button>
                   }
                 >
-                  <Descripcion titulo={"Nuestra historia"} contenido={'Empresa Florida SRL comenzó a funcionar un 10 de noviembre de 1954. Su fundador fue Belarmino Fernandez Barrioso: Y nuestro comprimiso con nuestros usuarios sigue intacto como hace 70 años. .El recorrido inicial y original de la firma fue el tramo que une la ciudad de San Miguel de Tucumán con la localidad de Florida. Al recorrido inicial que era la línea San Miguel de Tucumán- Florida se fueron incorporando otros tramos'}/>
+                  <Descripcion titulo={"Nuestra historia"} contenido={'Empresa Florida SRL comenzó a funcionar un 10 de noviembre de 1954. Su fundador fue Belarmino Fernandez Barrioso: Y nuestro compromiso con nuestros usuarios sigue intacto como hace 70 años. .El recorrido inicial y original de la firma fue el tramo que une la ciudad de San Miguel de Tucumán con la localidad de Florida. Al recorrido inicial que era la línea San Miguel de Tucumán- Florida se fueron incorporando otros tramos'}/>
                   <Descripcion titulo={"Nuestros recorridos"} contenido={'Hoy contamos con 44 unidades, dos vehículos de auxilio, 99 personas entre choferes, administrativos, mecánicos, lavadores, etc. Actualmente nuestro recorrido es por el ESTE de la Provincia de Tucumán incluyendo localidades como Los Ralos, Mayo Lolita, Llona, Delfín Gallo, Florida, Alabama, La Marta, etc. hasta llegar a 7 de abril. Nuestro compromiso sigue intacto como hace casi 67 años. "Servir y brindar un servicio óptimo a nuestros usuarios"'}/>
                   
                 </Carousel>
