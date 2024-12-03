@@ -57,10 +57,16 @@ export const useReturnDestinos = (localidad) => {
       
             case "los ralos":
               setArrayDestinos([
+                
                 "los ralos",
+                "esquina llona",
+                "cruz alta",
+                "colonia media agua",
+                "las cejas",
                 "cevil pozo",
                 "banda del río salí",
                 "s. m. de tucumán",
+                "7 de abril"
               ]);
               break;
       
