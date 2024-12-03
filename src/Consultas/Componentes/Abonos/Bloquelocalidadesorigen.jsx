@@ -8,7 +8,7 @@ export const Bloquelocalidadesorigen = ({ origen, recibirLocalidad }) => {
 
   return (
     <div className={`flex flex-col px-1  ${hLg ? "gap-2" : "gap-1"} w-full`}>
-      <h1 className='text-white text-2xl md:text-4xl font-jockey'>
+      <h1 className='text-white text-2xl xl:text-4xl font-jockey'>
         Origen
       </h1>
       <div className="flex  gap-2 overflow-x-scroll container-paradas">

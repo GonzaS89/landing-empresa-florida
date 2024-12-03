@@ -85,27 +85,27 @@ export const ContainerHoraDia = ({
   
 
   return (
-    <div className={`${hLg ? 'my-2' : ''} px-2 flex flex-col gap-2`}>
+    <div className={`${hLg ? 'my-2' : ''} px-2 flex flex-col gap-0`}>
       <motion.div 
         initial={{x: '120%'}}
         animate = {{x: destino !== null ? 0 : '120%'}}
         transition={{duration: .5 , ease: 'easeInOut'}}
       className="flex flex-col gap-1 overflow-hidden">
-        <h1 className='text-left text-2xl md:text-4xl font-jockey'>Día de la semana</h1>
+        <h1 className='text-left text-2xl xl:text-4xl font-jockey'>Día de la semana</h1>
         <div 
         className='flex justify-between'>
           <div
             className={`${diaManual === null 
-              ?  'bg-gray-200  text-black'  :'bg-gray-200 text-gray-500'} w-36 md:w-52 py-[10px] md:py-[20px] flex justify-center items-center uppercase rounded-md font-jockey md:text-xl`
+              ?  'bg-gray-200  text-black'  :'bg-gray-200 text-gray-500'} w-36 lg:w-40 xl:w-52 py-[10px] xl:py-[20px] flex justify-center items-center uppercase rounded-md font-jockey md:text-xl`
               
             }
             onClick={() => setDiaManual(null)}
           >
             {diaRango}
           </div>
-          <div className='flex items-center justify-center rounded-md relative w-36 md:w-52'>
+          <div className='flex items-center justify-center rounded-md relative w-36 lg:w-40 xl:w-52'>
             <div
-              className={ `${diaManual === null ? 'text-gray-500' : ' text-black'} absolute uppercase text-base md:text-xl pointer-events-none bg-gray-200 z-50 flex items-center  justify-center rounded-md py-[10px] md:py-[20px] w-full font-jockey`}
+              className={ `${diaManual === null ? 'text-gray-500' : ' text-black'} absolute uppercase text-base md:text-xl pointer-events-none bg-gray-200 z-50 flex items-center  justify-center rounded-md py-[10px] xl:py-[20px] w-full font-jockey`}
             >
               {diaManual !== null ? diaManual : "Elegí un día"}
               <IoIosArrowForward className="arrow-select" />
@@ -131,16 +131,16 @@ export const ContainerHoraDia = ({
          animate = {{x: destino !== null ? 0 : '-120%'}}
          transition={{duration: .5 , delay:.5, ease: 'easeInOut'}}
       className="flex flex-col gap-1">
-        <h1 className='text-left text-2xl md:text-4xl font-jockey'>Hora</h1>
+        <h1 className='text-left text-2xl xl:text-4xl font-jockey'>Hora</h1>
         <div className="flex justify-between">
           <div
-            className={`flex items-center justify-center bg-gray-200 w-36 md:w-52 md:py-[20px] rounded-md md:text-2xl ${horaAutoEnMinutos === null ? 'text-gray-400' : 'text-black'} font-jockey`}
+            className={`flex items-center justify-center bg-gray-200 w-36 lg:w-40 xl:w-52 xl:py-[20px] rounded-md md:text-2xl ${horaAutoEnMinutos === null ? 'text-gray-400' : 'text-black'} font-jockey`}
             onClick={resetearHoraManual}
           >
             {hora < 10 ? `0${hora}` : hora}:
             {minutos < 10 ? `0${minutos}` : minutos}
           </div>
-          <div className="relative w-36 md:w-52 flex justify-center">
+          <div className="relative w-36 lg:w-40 xl:w-52 flex justify-center">
             <div
               className={`${horaManualEnMinutos === null ? "" : ""} absolute pointer-events-none w-full flex justify-center items-center bg-gray-100 h-full rounded-md text-gray-500 font-jockey uppercase md:text-xl`}
             >

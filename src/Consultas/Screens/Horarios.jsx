@@ -4,8 +4,6 @@ import { Horario } from "../Componentes/Horarios/Horario";
 import { useGenerarCodigo } from "../HooksCons/useGenerarCodigo";
 import { useIndiceBusqueda } from "../HooksCons/useIndiceBusqueda";
 import { useHoraReferencia } from "../HooksCons/useHoraReferencia";
-import { div } from "framer-motion/client";
-
 
 const Horarios = ({ grillaDefinitiva, origen, destino, horaAuto, horaManual, via, diaAuto, grilla }) => {
 

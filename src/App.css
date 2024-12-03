@@ -6,6 +6,10 @@ p, li{
   font-family: "Open Sans", sans-serif;
 }
 
+*{
+  user-select:none
+}
+
 li{
   list-style-type:"—"
 }
@@ -223,6 +227,14 @@ li{
   display: none; /* Oculta scrollbar en Chrome, Safari y Edge */
 }
 
+.container-paradas::-webkit-scrollbar-thumb{
+  cursor:grab
+}
+
+::-webkit-scrollbar-thumb:active{
+  cursor:grabbing
+}
+
 @media (max-width:768px){
   .container-paradas::-webkit-scrollbar{
     display:none
@@ -235,4 +247,6 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+
 

@@ -29,7 +29,7 @@ export const OpcionLocalidad = ({
    className='flex flex-col'
    >
       <div className='flex relative
-      w-[80px] h-[80px] md:w-[100px] md:h-[100px] overflow-hidden rounded-3xl cursor-pointer'>
+      w-[80px] h-[80px] lg:w-[70px] lg:h-[70px] xl:w-[100px] xl:h-[100px] overflow-hidden rounded-3xl cursor-pointer'>
         <img
           src={`/img-consultas/${nombre}.avif`}
           alt=""
@@ -45,7 +45,7 @@ export const OpcionLocalidad = ({
         />
         </motion.div>
       </div>
-      <p className='text-xs md:text-base uppercase text-center font-jockey'>{nombre}</p>
+      <p className='text-xs lg:text-sm xl:text-base uppercase text-center font-jockey'>{nombre}</p>
     </motion.div>
   )
 }

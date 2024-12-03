@@ -58,7 +58,7 @@ export const Maincons = ({enviarParametrosAbonos}) => {
            initial= {{y: '100%'}}
            animate={{y: botonDisponible ? 0 : '100%'}}
            transition={{duration: .5, ease:'easeInOut'}}
-           className={`${botonDisponible ?  'bg-red-700' : 'bg-gray-600'} uppercase py-4  text-3xl absolute bottom-0 left-0 w-full flex items-center justify-center font-jockey`}
+           className={`${botonDisponible ?  'bg-red-700' : 'bg-gray-600'} uppercase py-4 lg:py-2 xl:py-4 text-3xl absolute bottom-0 left-0 w-full flex items-center justify-center font-jockey`}
            onClick={() => enviarParametrosAbonos(localidadOrigen, localidadDestino, viajesIngresados, tarifaElegida, via)}>calcular</motion.div>
      </Link>
     </div>

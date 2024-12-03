@@ -35,7 +35,7 @@ export const OpcionLocalidadDestino = ({
     transition={{duration:.25,  delay: index * .1, ease:'backOut'}}
     onClick={clickearImg} 
     className="flex flex-col items-center">
-      <div className='flex items-center justify-center relative overflow-hidden rounded-3xl cursor-pointer w-[80px] h-[80px] md:w-[100px] md:h-[100px]'>
+      <div className='flex items-center justify-center relative overflow-hidden rounded-3xl cursor-pointer  w-[80px] h-[80px] lg:w-[70px] lg:h-[70px] xl:w-[100px] xl:h-[100px]'>
       <img
           src={`/img-consultas/${nombre}.avif`}
           alt=""
@@ -67,7 +67,7 @@ export const OpcionLocalidadDestino = ({
           />
         </div>
       </div>
-      <p className='text-xs md:text-base uppercase text-center font-jockey'>{nombre}</p>
+      <p className='text-xs lg:text-sm xl:text-base uppercase text-center font-jockey'>{nombre}</p>
     </motion.div>
   )
 }

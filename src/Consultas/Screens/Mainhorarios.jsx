@@ -9,7 +9,6 @@ import { useDiaDeLaSemana } from "../HooksCons/useDiaDeLaSemana";
 import { useFiltradoHorarios } from "../HooksCons/useFiltradoHorarios";
 import { useHeight } from "../HooksCons/useHeight";
 import { motion } from "framer-motion";
-import { div } from "framer-motion/client";
 
 export const Mainhorarios = ({ enviarParametrosHorarios }) => {
 
@@ -86,7 +85,7 @@ export const Mainhorarios = ({ enviarParametrosHorarios }) => {
     <div className="w-full bg-slate-800 flex justify-center">
       <div className="flex justify-center bg-slate-800 w-full sm:max-w-xl">
       <div className={`overflow-hidden text-white flex flex-col  pt-6  h-screen  w-full lg:max-w-xl relative ${hLg ? 'gap-6' : 'gap-2'}`}>
-        <h1 className="uppercase text-3xl md:text-[40px] text-center font-jockey">
+        <h1 className="uppercase text-3xl xl:text-[40px] text-center font-jockey">
           Consulta de horarios
         </h1>
         <Bloquelocalidadesorigen origen={localidadOrigen} recibirLocalidad={recibirLocalidad}/>
@@ -106,7 +105,7 @@ export const Mainhorarios = ({ enviarParametrosHorarios }) => {
             initial= {{y: '100%'}}
             animate={{y: botonDisponible ? 0 : '100%'}}
             transition={{duration: .5, delay:1 , ease:'easeInOut'}}
-              className={`${botonDisponible ?  'bg-red-700' : 'bg-gray-600'} absolute py-4 text-3xl uppercase bottom-0 w-full font-jockey text-center`}
+              className={`${botonDisponible ?  'bg-red-700' : 'bg-gray-600'} absolute py-4 lg:py-2 xl:py-4 text-3xl uppercase bottom-0 w-full font-jockey text-center`}
               onClick={() =>
                 enviarParametrosHorarios(
                   localidadOrigen,
