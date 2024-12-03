@@ -51,7 +51,7 @@ export const Infoconsultas = () => {
             <Consulta
               titulo={"Abonos"}
               contenido={
-                "Agregamos una nueva función a la sección de consultas. Ahora podés cotizar tu abono de manera online y saber con anticipación cuando vas a necesitar para adquirirlo."
+                "Agregamos una nueva función a la sección de consultas. Ahora podés cotizar tu abono de manera online y saber con anticipación cuanto vas a necesitar para adquirirlo."
               }
               boton={"Cotizá tu abono"}
               index={1}
