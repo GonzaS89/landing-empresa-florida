@@ -4,6 +4,7 @@ import { Horario } from "../Componentes/Horarios/Horario";
 import { useGenerarCodigo } from "../HooksCons/useGenerarCodigo";
 import { useIndiceBusqueda } from "../HooksCons/useIndiceBusqueda";
 import { useHoraReferencia } from "../HooksCons/useHoraReferencia";
+import { div } from "framer-motion/client";
 
 
 const Horarios = ({ grillaDefinitiva, origen, destino, horaAuto, horaManual, via, diaAuto, grilla }) => {
@@ -33,7 +34,8 @@ const Horarios = ({ grillaDefinitiva, origen, destino, horaAuto, horaManual, via
     setClaseNormalizadora('containerservicio serviciovisibleynormal')
   }
   return (
-    <div className="bg-slate-900 w-full lg:max-w-3xl overflow-scroll">
+    <div className="bg-slate-900 flex justify-center ">
+         <div className="bg-slate-900 w-full lg:max-w-3xl overflow-scroll container-horarios">
       <div className="container-main-horarios">
         <div className="logo-fondo"></div>
         <div className='container-resultadoshorarios'>
@@ -60,6 +62,8 @@ const Horarios = ({ grillaDefinitiva, origen, destino, horaAuto, horaManual, via
         </div>
       </div>
     </div>
+    </div>
+   
   );
 };
 

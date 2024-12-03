@@ -40,7 +40,7 @@ const {hLg} = useHeight()
            animate = {{x: destino !== null ? 0 : '120%'}}
            transition={{duration: .5 , ease: 'easeInOut'}}
           className={`flex flex-col items-start ${hLg ? 'gap-4' : 'gap-2'}`}>
-            <h1 className='text-xl font-jockey'>Cantidad de viajes</h1>
+            <h1 className='text-xl md:text-4xl font-jockey'>Cantidad de viajes</h1>
             <div className="flex justify-between">
               <div className="flex gap-4">
                 <NumerosDeViajes
@@ -70,7 +70,7 @@ const {hLg} = useHeight()
               </div>
               <div className="absolute right-0 mr-5">
                 <input
-                  className={`rounded-full w-[50px] h-[50px]  ${!inputOnBlur ? 'bg-black text-white' : 'bg-gray-300 text-black' }  placeholder:font-jockey font-jockey text-center text-2xl`}
+                  className={`rounded-full w-[50px] h-[50px] md:w-[75px] md:h-[75px] ${!inputOnBlur ? 'bg-black text-white' : 'bg-gray-300 text-black' }  placeholder:font-jockey font-jockey text-center text-2xl md:text-3xl`}
                   type="number"
                   placeholder="¿...?"
                   onChange={recibirNumViajeInput}
@@ -86,7 +86,7 @@ const {hLg} = useHeight()
            animate = {{x: viajesIngresados !== null ? 0 : '120%'}}
            transition={{duration: .5 ,  ease: 'easeInOut'}}
           className='flex flex-col items-start w-full gap-2'>
-            <h1 className='text-xl font-jockey'>Tipo de tarifa</h1>
+            <h1 className='text-xl md:text-4xl font-jockey'>Tipo de tarifa</h1>
             <div className="w-full">
               <div className="flex justify-between">
               <Tipodetarifa

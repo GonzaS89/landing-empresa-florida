@@ -22,7 +22,7 @@ export const Horario = forwardRef(
 
     const { ref: inViewRef, inView } = useInView({
       triggerOnce: false,  // Se ejecuta cada vez que el componente entra/sale
-      threshold: 0.8,      // El componente se considera visible cuando el 50% está en vista
+      threshold: .9,      // El componente se considera visible cuando el 50% está en vista
     });
 
     const [minutosDif, setMinutosDif] = useState(null);
@@ -67,15 +67,15 @@ export const Horario = forwardRef(
         if (ref) ref.current = node;
         inViewRef(node);
       }}
-      initial={{ scale: 0.8, filter: "brightness(.1)" }}
+      initial={{ scale: 0.75, filter: "brightness(.5)" }}
       animate={{
-        scale: inView ? 1 : 0.8,  // Si está visible, opacidad es 1, si no es 0
-        filter: inView ? "brightness(1)" : "brightness(.1)"
+        scale: inView ? 1 : 0.75,  // Si está visible, opacidad es 1, si no es 0
+        filter: inView ? "brightness(1)" : "brightness(.25)"
       }}
       transition={{ duration: .5 , ease:"backInOut"}}
       >
         <div
-        className="flex h-auto text-white w-[320px] border-2 rounded-2xl"
+        className="flex min-h-[500px] text-white w-[320px] border-2 rounded-2xl"
         ref={ref}
       >
         <div className="flex flex-col items-center justify-center h-auto bg-[#EE4E4E] basis-[30%] rounded-tl-xl rounded-bl-xl">
@@ -87,7 +87,7 @@ export const Horario = forwardRef(
           </p>
           <h3 className="font-jockey text-3xl text-shadow">HRS</h3>
         </div>
-        <div className="bg-[#242e48] basis-[70%] rounded-tr-xl rounded-br-xl">
+        <div className="bg-[#242e48] basis-[70%] rounded-tr-xl rounded-br-xl flex flex-col justify-between">
           <div className="flex flex-col items-center gap-2 border-b-2 border-gray-500 py-4">
             <p className="font-jockey text-lg uppercase">{diaAuto ? 'Estado del servicio' : `grilla de ${grilla}`}</p>
             <p className={`${estado === 'Inactivo' ? 'text-red-700 text-lg ' : 'text-white text-base px-4'} font-jockey text-center uppercase text-sm`}>{diaAuto ? estado : ''}</p>

@@ -46,10 +46,10 @@ export const Maincons = ({enviarParametrosAbonos}) => {
     const {hLg} = useHeight()
 
   return (
-    <div className='flex justify-center bg-black w-full'>
-      <div className="bg-slate-800 w-full lg:max-w-3xl">
+    <div className='flex justify-center bg-slate-800 w-full'>
+      <div className="bg-slate-800 w-full sm:max-w-xl">
     <div className={`overflow-hidden text-white flex flex-col  items-center h-screen-dvh pt-6  h-screen  w-full relative ${hLg ? 'gap-6' : 'gap-2'}`}>
-      <h1 className='uppercase  font-jockey text-2xl'>Calculá el precio de tu abono</h1>
+      <h1 className='uppercase  font-jockey text-2xl md:text-4xl'>Calculá el precio de tu abono</h1>
       <Bloquelocalidadesorigen origen={localidadOrigen} recibirLocalidad={recibirLocalidad}/>
       <Bloquelocalidadesdestino origen={localidadOrigen} destino={localidadDestino} recibirVia={recibirVia} recibirLocalidadDestino={recibirLocalidadDestino} />
       <Containerviajestarifas enviarTarifaElegida={recibirTarifaElegida} enviarViajesIngresados={recibirViajesIngresados} destino={localidadDestino} />

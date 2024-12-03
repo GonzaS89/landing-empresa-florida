@@ -197,4 +197,35 @@ li{
   text-shadow: 4px 2px 5px  black;
 }
 
+::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra */
+  height: 10px; /* Altura de la barra para scroll horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color del thumb */
+  border-radius: 10px;
+}
+
+
+
+.container-horarios{
+  overflow: scroll; /* Permite el desplazamiento vertical */
+  scrollbar-width: none; 
+}
+
+.container-horarios::-webkit-scrollbar {
+  display: none; /* Oculta scrollbar en Chrome, Safari y Edge */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
