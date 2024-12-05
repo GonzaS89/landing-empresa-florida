@@ -56,7 +56,7 @@ export const Nosotros2 = () => {
               refe={""}
               index={3}
               contenido={
-                "Tenemos presencia constante en las redes. Allí podés hacernos las consultas o las denuncias que que necesites o creas conveniente para tu comodidad"
+                "Tenemos presencia constante en las redes. Allí podés hacernos las consultas o las denuncias que necesites o creas conveniente para tu comodidad"
               }
               ref={childRef}
             />

@@ -28,16 +28,16 @@ export const CotizacionAbonos = ({
   },[codigo, viajes])
 
   useEffect(() => {
-    if (origen === 'los ralos') {
+    if (origen === 'los ralos' || destino === 'los ralos') {
       if (tarifa === 'social') {
         setPrecioDescuento(precioNormal * 0.33996)
       } else {
         setPrecioDescuento(precioNormal * 0.43999)
       }
     } 
-    else if (origen === 'las cejas') {
+    else if (origen === 'las cejas' || destino === 'las cejas') {
         setPrecioDescuento(precioNormal * 0.2884)
-    }else if(origen !== 'los ralos' || origen !== 'las cejas'){
+    }else if(origen !== 'los ralos' || origen !== 'las cejas' || destino !== 'los ralos' || destino !== 'las cejas'){
       tarifa === 'social' ?
         setPrecioDescuento(precioNormal * 0.3)
         : setPrecioDescuento(precioNormal * 0.4);
