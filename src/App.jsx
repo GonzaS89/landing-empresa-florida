@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter ,Routes, Route} from "react-router-dom";
 import { MainScreen } from "./Landing/MainScreen";
 import { Maincons } from "./Consultas/Screens/Maincons";
 import { CotizacionAbonos } from "./Consultas/Screens/CotizacionAbonos";
@@ -48,16 +48,16 @@ function App() {
 
   return (
     <div className="App relative">
-      <Router>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainScreen />}></Route>
-          <Route path="/menuabonos" element={<Maincons enviarParametrosAbonos={recibirParametrosAbonos}/>}></Route>
+          <Route path="/cotizadordeabonos" element={<Maincons enviarParametrosAbonos={recibirParametrosAbonos}/>}></Route>
           <Route path="/cotizacion" element={<CotizacionAbonos origen={localidadOrigen} destino={localidadDestino} viajes={viajesIngresados} tarifa={tarifaElegida} via={via}/>}></Route>
-          <Route path="/menuhorarios" element={<Mainhorarios enviarParametrosHorarios={recibirParametrosHorarios}/>}></Route>
+          <Route path="/consultadehorarios" element={<Mainhorarios enviarParametrosHorarios={recibirParametrosHorarios}/>}></Route>
           <Route path='/horarios' element={<Horarios grillaDefinitiva={listaHorarios} origen={localidadOrigen} destino={localidadDestino} horaAuto={horaAutoEnMins} horaManual={horaManualEnMins} codigo={codigoDeterminado} diaAuto={hayDiaAuto} grilla={diaGrilla} via={via}/>}>
           </Route>
         </Routes>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
