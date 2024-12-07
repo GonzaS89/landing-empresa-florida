@@ -19,12 +19,12 @@ export const ContainerHoraDia = ({
   const [horaAutoEnMinutos, setHoraAutoEnMinutos] = useState();
 
   useEffect(() => {
-    if (dia === "0") {
+    if (dia === 0) {
       setDiaRango("Domingos");
-    } else if (dia >= "1" || dia <= "5") {
+    } else if (dia >= 1 && dia <= 5) {
       setDiaRango("Lunes a viernes");
       enviarDiaRango("lunesAViernes");
-    } else if (dia === "6") {
+    } else if (dia === 6) {
       setDiaRango("Sábados");
       enviarDiaRango("sabados");
     }
