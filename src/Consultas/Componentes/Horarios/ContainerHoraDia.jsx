@@ -21,6 +21,7 @@ export const ContainerHoraDia = ({
   useEffect(() => {
     if (dia === 0) {
       setDiaRango("Domingos");
+      enviarDiaRango("domingos");
     } else if (dia >= 1 && dia <= 5) {
       setDiaRango("Lunes a viernes");
       enviarDiaRango("lunesAViernes");
