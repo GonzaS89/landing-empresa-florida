@@ -37,7 +37,7 @@ export const OpcionLocalidadDestino = ({
     className="flex flex-col items-center">
       <div className='flex items-center justify-center relative overflow-hidden rounded-3xl cursor-pointer  w-[80px] h-[80px] lg:w-[70px] lg:h-[70px] xl:w-[100px] xl:h-[100px]'>
       <img
-          src={`/img-consultas/${nombre}.avif`}
+          src={`/img-consultas/${nombre}.webp`}
           alt=""
           className={`${localidadClickeada ? "filter brightness-50 blur-[1px]" : '' } absolute h-full object-cover`}/>
          <motion.div 

@@ -31,7 +31,7 @@ export const OpcionLocalidad = ({
       <div className='flex relative
       w-[80px] h-[80px] lg:w-[70px] lg:h-[70px] xl:w-[100px] xl:h-[100px] overflow-hidden rounded-3xl cursor-pointer'>
         <img
-          src={`/img-consultas/${nombre}.avif`}
+          src={`/img-consultas/${nombre}.webp`}
           alt=""
           className={`${localidadClickeada ? "filter brightness-50 blur-[1px]" : '' } absolute h-full object-cover`}
         />
