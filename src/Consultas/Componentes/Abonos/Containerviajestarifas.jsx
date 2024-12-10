@@ -18,9 +18,10 @@ export const Containerviajestarifas = ({enviarViajesIngresados , enviarTarifaEle
       };
 
       const recibirNumViajeInput = e => {
-        e.target.value >= 16 ? 
-        setViajesIngresados(parseInt(e.target.value)) :
-        setViajesIngresados(nul)
+        const viajesIng = e.target.value;
+        viajesIng >= 16 && viajesIng <= 70 ?
+        setViajesIngresados(parseInt(viajesIng)) :
+        setViajesIngresados(null)
       };
 
       const recibirTarifa = (tarifa) => {

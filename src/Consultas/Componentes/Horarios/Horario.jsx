@@ -92,9 +92,10 @@ export const Horario = forwardRef(
             <p className="font-jockey text-lg uppercase">{diaAuto ? 'Estado del servicio' : `grilla de ${grilla}`}</p>
             <p className={`${estado === 'Inactivo' ? 'text-red-700 text-lg ' : 'text-white text-base px-4'} font-jockey text-center uppercase text-sm`}>{diaAuto ? estado : ''}</p>
           </div>
-          <div className="container-recorrido">
+          <div className="relative w-full flex justify-center">
           {/* <img src={require('../Iconos/divider.png')} alt="" className="divisor-horario"/> */}
-            <div className="flex flex-col items-center gap-2 my-4">
+          <span className="w-1 bg-white h-40 absolute"></span>
+            <div className="flex flex-col items-center gap-2">
               {recorrido.map((parada, index) => (
                 <Paradas
                   key={index}
