@@ -18,7 +18,9 @@ export const Containerviajestarifas = ({enviarViajesIngresados , enviarTarifaEle
       };
 
       const recibirNumViajeInput = e => {
-        setViajesIngresados(parseInt(e.target.value));
+        e.target.value >= 16 ? 
+        setViajesIngresados(parseInt(e.target.value)) :
+        setViajesIngresados(nul)
       };
 
       const recibirTarifa = (tarifa) => {
@@ -70,9 +72,11 @@ const {hLg} = useHeight()
               </div>
               <div className="absolute right-0 mr-5">
                 <input
-                  className={`rounded-full w-[50px] h-[50px] xl:w-[75px] xl:h-[75px] ${!inputOnBlur ? 'bg-black text-white' : 'bg-gray-300 text-black' }  placeholder:font-jockey font-jockey text-center text-2xl xl:text-3xl`}
+                  className={`rounded-full w-[50px] h-[50px] xl:w-[75px] xl:h-[75px] ${!inputOnBlur ? 'bg-black text-white' : 'bg-gray-300 text-black' }  placeholder:font-jockey placeholder:text-lg font-jockey text-center text-2xl xl:text-3xl`}
                   type="number"
                   placeholder="¿...?"
+                  min={16}
+                  max={70}
                   onChange={recibirNumViajeInput}
                   onFocus={() => setInputFocus(true)}
                   onBlur={()=> setInputOnBlur(true)}

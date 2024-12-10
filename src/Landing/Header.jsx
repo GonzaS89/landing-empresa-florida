@@ -70,8 +70,8 @@ export const Header = () => {
             </div>
             <nav className='h-24 hidden md:flex md:w-1/2 lg:w-auto'>
               {arraySection.map((section, index) => (
-                <div className='relative flex w-32 justify-center items-center h-full cursor-pointer group'>
-                  <Link key={index} to={section.section} smooth={true} duration={500} offset={-96} className='z-40 lg:text-xl xl:text-2xl uppercase  group-hover:text-white transition-all duration-400 ease-in'>{section.name}</Link>
+                <div className='relative flex w-32 justify-center items-center h-full cursor-pointer group' key={index}>
+                  <Link  to={section.section} smooth={true} duration={500} offset={-96} className='z-40 lg:text-xl xl:text-2xl uppercase  group-hover:text-white transition-all duration-400 ease-in'>{section.name}</Link>
                   <span className='absolute flex bg-rojofuerte w-full h-0 group-hover:h-full transition-all duration-350  ease-out'></span>
                 </div>
               ))}

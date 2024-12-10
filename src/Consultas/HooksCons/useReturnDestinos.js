@@ -202,6 +202,20 @@ export const useReturnDestinos = (localidad) => {
                 "s. m. de tucumán"
               ]);
               break;
+
+              case "finca mayo":
+              setArrayDestinos([
+                "los ralos",
+                "cevil pozo",
+                "la florida",
+                "el talar",
+                "alderetes",
+                "colonia media agua",
+                "esquina llona",
+                "banda del río salí",
+                "s. m. de tucumán"
+              ]);
+              break;
       
               case "colonia media agua":
               setArrayDestinos([

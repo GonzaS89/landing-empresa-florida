@@ -203,7 +203,7 @@ li{
 
 ::-webkit-scrollbar {
   width: 12px; /* Ancho de la barra */
-  height: 10px; /* Altura de la barra para scroll horizontal */
+  height: 8px; /* Altura de la barra para scroll horizontal */
 }
 
 ::-webkit-scrollbar-track {
