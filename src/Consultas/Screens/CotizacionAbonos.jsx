@@ -36,7 +36,7 @@ export const CotizacionAbonos = ({
       }
     } 
     else if (origen === 'las cejas' || destino === 'las cejas') {
-        setPrecioDescuento(precioNormal * 0.2884)
+        setPrecioDescuento(precioNormal * 0.43003)
     }
     else if(origen === 'finca mayo' || destino === 'finca mayo'){
       setPrecioDescuento(precioNormal * 0.429847)
