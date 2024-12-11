@@ -30,21 +30,6 @@
             ]
         },
         {
-            "nombre": "06:05",
-            "salida": 6.05,
-            "referencia": "idas alderetes/alternativa",
-            "recorrido": [
-                "fortín",
-                "esquina lastra",
-                "fonda",
-                "b° la cancha",
-                "la florida",
-                "el talar",
-                "alternativa",
-                "s. m. de tucumán"
-            ]
-        },
-        {
             "nombre": "06:10",
             "salida": 6.10,
             "referencia": "idas alderetes/alternativa",
