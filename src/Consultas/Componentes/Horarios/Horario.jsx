@@ -3,9 +3,6 @@ import { Paradas } from "./Paradas";
 import { useEstadoservicio } from "../../HooksCons/useEstadoservicio";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Extremorecorrido } from "./Extremorecorrido";
-
-
 
 export const Horario = forwardRef(
   (
@@ -95,11 +92,24 @@ export const Horario = forwardRef(
             <p className="font-jockey text-lg uppercase">{diaAuto ? 'Estado del servicio' : `grilla de ${grilla}`}</p>
             <p className={`${estado === 'Inactivo' ? 'text-red-700 text-lg ' : 'text-white text-base px-4'} font-jockey text-center uppercase text-sm`}>{diaAuto ? estado : ''}</p>
           </div>
-          <div className="relative w-full flex justify-center items-center py-4">
+          <div className="relative w-full flex flex-col justify-center  items-center">
           {/* <img src={require('../Iconos/divider.png')} alt="" className="divisor-horario"/> */}
-          <span className="w-[2px] bg-gray-300 h-[75%] absolute"></span>
-            <div className="flex flex-col items-center gap-1">
-              <Extremorecorrido nombre={'inicio de recorrido'}/>
+
+            <div className="flex flex-col items-center gap-1 py-6">
+              <motion.div 
+              initial={{opacity:0, y:'100%'}}
+              animate={{opacity:1, y:0}}
+              transition={{duration:1, ease:'easeOut', delay:1.5}}
+              className="relative flex justify-center mb-1">
+              <span className="bg-[#EE4E4E] uppercase font-jockey text-xs px-2 rounded-full z-50">inicio de recorrido</span>
+              <span className="bg-[#EE4E4E] w-4 h-4 flex absolute bottom-[-4px] rotate-45"></span>
+              </motion.div>
+              <div className="relative flex flex-col items-center gap-1">
+              <motion.span 
+              initial={{height:0}}
+              animate={{height: '100%'}}
+              transition={{duration: 1, ease:'easeOut' ,delay:2}}
+              className="w-[3px] bg-gray-300 h-0 absolute top-0"></motion.span>
               {recorrido.map((parada, index) => (
                 <Paradas
                   key={index}
@@ -110,7 +120,8 @@ export const Horario = forwardRef(
                   destino={destino}
                 />
               ))}
-              <Extremorecorrido nombre={'fin de recorrido'}/>
+              </div>
+       
             </div>
           </div>
           <p className="text-center font-jockey text-xl border-t-2 border-gray-500 py-4 uppercase">boleto $ {codigo}</p>
