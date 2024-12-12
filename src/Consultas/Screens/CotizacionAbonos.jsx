@@ -60,15 +60,15 @@ export const CotizacionAbonos = ({
               <p className="font-jockey md:text-xl basis-2/3 uppercase">
                 {viajes} viajes desde <span>{origen} </span>hasta <span>{destino}</span> {via !== null ? `por ${via}` : ''} (tarifa normal)
               </p>
-              <p className="font-jockey text-lg md:text-2xl">$ <CountUp start={0} end={precioNormal} duration={1} /></p>
+              <p className="font-jockey text-lg md:text-2xl">$ <CountUp start={0} end={precioNormal} duration={1} separator="."/></p>
             </div>
             <div className="flex justify-between items-center px-2">
               <p className="font-jockey md:text-xl basis-2/3 uppercase">Descuento por tarifa {tarifa}</p>
-              <p className="text-lg md:text-2xl font-jockey text-red-600">- $ <CountUp start={0} end={Math.round(precioDescuento)} duration={1} delay={1}/></p>
+              <p className="text-lg md:text-2xl font-jockey text-red-600">- $ <CountUp start={0} end={Math.round(precioDescuento)} duration={1} delay={1} separator="."/></p>
             </div>
             <div className="bg-red-700  w-full flex justify-between items-center text-white uppercase h-14 px-2">
             <p className="text-lg md:text-2xl font-jockey">Precio final</p>
-            <p className="text-lg md:text-2xl font-jockey">$ <CountUp start={0} end={Math.round(precioNormal - precioDescuento)} duration={1} delay={2}/></p>
+            <p className="text-lg md:text-2xl font-jockey">$ <CountUp start={0} end={Math.round(precioNormal - precioDescuento)} duration={1} delay={2} separator="."/></p>
           </div>
           </div>
           
