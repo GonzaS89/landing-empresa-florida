@@ -3,6 +3,9 @@ import { Paradas } from "./Paradas";
 import { useEstadoservicio } from "../../HooksCons/useEstadoservicio";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Extremorecorrido } from "./Extremorecorrido";
+
+
 
 export const Horario = forwardRef(
   (
@@ -92,10 +95,11 @@ export const Horario = forwardRef(
             <p className="font-jockey text-lg uppercase">{diaAuto ? 'Estado del servicio' : `grilla de ${grilla}`}</p>
             <p className={`${estado === 'Inactivo' ? 'text-red-700 text-lg ' : 'text-white text-base px-4'} font-jockey text-center uppercase text-sm`}>{diaAuto ? estado : ''}</p>
           </div>
-          <div className="relative w-full flex justify-center items-center">
+          <div className="relative w-full flex justify-center items-center py-4">
           {/* <img src={require('../Iconos/divider.png')} alt="" className="divisor-horario"/> */}
           <span className="w-[2px] bg-gray-300 h-[75%] absolute"></span>
-            <div className="flex flex-col items-center gap-2 py-10">
+            <div className="flex flex-col items-center gap-1">
+              <Extremorecorrido nombre={'inicio de recorrido'}/>
               {recorrido.map((parada, index) => (
                 <Paradas
                   key={index}
@@ -106,6 +110,7 @@ export const Horario = forwardRef(
                   destino={destino}
                 />
               ))}
+              <Extremorecorrido nombre={'fin de recorrido'}/>
             </div>
           </div>
           <p className="text-center font-jockey text-xl border-t-2 border-gray-500 py-4 uppercase">boleto $ {codigo}</p>

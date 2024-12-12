@@ -228,7 +228,11 @@ li{
 }
 
 .container-paradas::-webkit-scrollbar-thumb{
-  cursor:grab
+  cursor:grab;
+}
+
+.container-paradas::-webkit-scrollbar-track{
+  background:transparent
 }
 
 ::-webkit-scrollbar-thumb:active{

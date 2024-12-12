@@ -22,8 +22,8 @@ export const OpcionLocalidad = ({
 
   return (
     <motion.div 
-    initial={{y: '20%', opacity:0}}
-    animate={{y: 0, opacity: 1}}
+    initial={{x: '20%', opacity:0}}
+    animate={{x: 0, opacity: 1}}
     transition={{duration:.25,  delay: index * .1, ease:'backOut'}}
    onClick={clickearImg}
    className='flex flex-col'
