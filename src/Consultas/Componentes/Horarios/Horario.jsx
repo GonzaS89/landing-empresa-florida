@@ -121,7 +121,6 @@ export const Horario = forwardRef(
                 />
               ))}
               </div>
-       
             </div>
           </div>
           <p className="text-center font-jockey text-xl border-t-2 border-gray-500 py-4 uppercase">boleto $ {codigo}</p>
