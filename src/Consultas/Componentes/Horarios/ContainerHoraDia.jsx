@@ -118,7 +118,7 @@ export const ContainerHoraDia = ({
               className={ `${diaManual === null ? 'text-gray-500' : ' text-black'} absolute uppercase text-base md:text-xl pointer-events-none bg-gray-200 z-50 flex items-center  justify-center rounded-md py-[10px] xl:py-[20px] w-full font-jockey`}
             >
               {diaManual !== null ? diaManual : "Elegí un día"}
-              <IoIosArrowForward className="arrow-select" />
+              <IoIosArrowForward className="arrow-select absolute right-0" />
             </div>
             <select
               className="w-2/3 text-gray-500"
@@ -144,7 +144,7 @@ export const ContainerHoraDia = ({
         <h1 className='text-left text-2xl xl:text-4xl font-jockey'>Hora</h1>
         <div className="flex justify-between">
           <div
-            className={`flex items-center justify-center bg-gray-200 w-36 lg:w-40 xl:w-52 xl:py-[20px] rounded-md md:text-2xl ${horaAutoEnMinutos === null ? 'text-gray-400' : 'text-black'} font-jockey`}
+            className={`flex items-center justify-center bg-gray-200 w-36 lg:w-40 xl:w-52 xl:py-[20px] rounded-md text-xl md:text-2xl ${horaAutoEnMinutos === null ? 'text-gray-400' : 'text-black'} font-jockey`}
             onClick={resetearHoraManual}
           >
             {hora < 10 ? `0${hora}` : hora}:

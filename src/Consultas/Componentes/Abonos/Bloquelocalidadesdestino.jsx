@@ -3,6 +3,7 @@ import { OpcionLocalidadDestino } from './OpcionLocalidadDestino';
 import { useReturnDestinos } from '../../HooksCons/useReturnDestinos';
 import { useHeight } from '../../HooksCons/useHeight';
 import { motion } from 'framer-motion';
+import { PiHandPointingDuotone } from "react-icons/pi";
 
 export const Bloquelocalidadesdestino = ({ origen, destino, recibirVia, recibirLocalidadDestino }) => {
 
@@ -18,6 +19,7 @@ export const Bloquelocalidadesdestino = ({ origen, destino, recibirVia, recibirL
     transition={{duration: .5}}
     className='text-left text-2xl xl:text-4xl font-jockey'>Destino</motion.h1>
     <div className="flex items-start gap-2 uppercase text-sm overflow-x-scroll container-paradas container-paradas">
+      <PiHandPointingDuotone />
       {arrayDestinos?.length > 0 && 
         arrayDestinos.map((localidad, index) => (
           <OpcionLocalidadDestino

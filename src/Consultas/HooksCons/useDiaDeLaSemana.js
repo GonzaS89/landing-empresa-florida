@@ -1,19 +1,18 @@
 import { useEffect, useState } from "react";
-import grillab from "../Data/grillasb.json";
-
+import grillanormal from '../Data/grillanormal.json'
 export const useDiaDeLaSemana = (val) => {
   const [diaDeLaSemana, setDiaDeLaSemana] = useState(null);
 
   useEffect(() => {
     switch (val) {
       case "lunesAViernes":
-        setDiaDeLaSemana(grillab.lunesAViernes);
+        setDiaDeLaSemana(grillanormal.lunesAViernes);
         break;
       case "sabados":
-        setDiaDeLaSemana(grillab.sabados);
+        setDiaDeLaSemana(grillanormal.sabados);
         break;
       case "domingos":
-        setDiaDeLaSemana(grillab.domingos);
+        setDiaDeLaSemana(grillanormal.domingos);
         break;
 
       default:

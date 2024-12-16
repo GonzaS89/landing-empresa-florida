@@ -2,6 +2,7 @@ import React from "react";
 import { OpcionLocalidad } from "./OpcionLocalidad";
 import { useHeight } from "../../HooksCons/useHeight";
 import localidades from "../../Data/localidades.json";
+import { PiHandPointingDuotone } from "react-icons/pi";
 
 export const Bloquelocalidadesorigen = ({ origen, recibirLocalidad }) => {
   const { hLg } = useHeight();
@@ -11,7 +12,8 @@ export const Bloquelocalidadesorigen = ({ origen, recibirLocalidad }) => {
       <h1 className='text-white text-2xl xl:text-4xl font-jockey'>
         Origen
       </h1>
-      <div className="flex  gap-2 overflow-x-scroll container-paradas">
+      <div className="flex  gap-2 overflow-x-scroll container-paradas relative">
+    <PiHandPointingDuotone  className="absolute text-white text-3xl"/>
         {localidades.map((localidad, index) => (
           <OpcionLocalidad
             key={index}

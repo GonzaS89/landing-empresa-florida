@@ -3,7 +3,7 @@ import { useHora } from "./useHora";
 
 export const useFiltradoHorarios = (origen,destino,listado,via) => {
 
-  const {fecha, mes, dia} = useHora()
+  const {fecha, mes,} = useHora()
   const [listaHorarios, setListaHorarios] = useState([]);
 
   useEffect(() => {
