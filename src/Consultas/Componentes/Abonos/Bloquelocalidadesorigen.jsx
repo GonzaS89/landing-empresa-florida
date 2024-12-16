@@ -12,8 +12,11 @@ export const Bloquelocalidadesorigen = ({ origen, recibirLocalidad }) => {
       <h1 className='text-white text-2xl xl:text-4xl font-jockey'>
         Origen
       </h1>
-      <div className="flex  gap-2 overflow-x-scroll container-paradas relative">
-    <PiHandPointingDuotone  className="absolute text-white text-3xl"/>
+      <div className="flex gap-2 overflow-x-scroll container-paradas relative">
+        <div className="w-full flex items-center justify-center">
+        <PiHandPointingDuotone  className="absolute text-white text-3xl z-50"/>
+        </div>
+    
         {localidades.map((localidad, index) => (
           <OpcionLocalidad
             key={index}
