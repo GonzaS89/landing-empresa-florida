@@ -31,7 +31,7 @@ export const Mainhorarios = ({ enviarParametrosHorarios }) => {
 
   const {hLg} = useHeight;
   
-  const {minutos, hora, dia} = useHora()
+  const {minutos, hora, dia,fecha,mes} = useHora()
 
   const [localidadOrigen, setLocalidadOrigen] = useState(null);
   const [localidadDestino, setLocalidadDestino] = useState(null);
@@ -94,6 +94,8 @@ export const Mainhorarios = ({ enviarParametrosHorarios }) => {
             hora={hora}
             minutos={minutos}
             dia={dia}
+            fecha={fecha}
+            mes={mes}
             enviarDiaRango={recibirDiaRango}
             enviarDiaManual={recibirDiaManual}
             enviarHoraAutoMin={recibirHoraAutoMin}

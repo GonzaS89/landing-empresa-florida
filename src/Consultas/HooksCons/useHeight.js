@@ -4,8 +4,6 @@ export const useHeight = () => {
 
         const height = window.innerHeight;
 
-        console.log(height)
-
         const [hMd, setHMd] = useState(false)
         const [hLg, setHLg] = useState(false)
 

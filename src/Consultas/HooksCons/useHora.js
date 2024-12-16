@@ -8,6 +8,10 @@ export const useHora = () => {
 
     const [dia, setDia] = useState(new Date().getDay());
 
+    const fecha = new Date().getDate();
+
+    const mes = new Date().getMonth();
+
     useEffect(() => {
         const updateHoraMinutosDias = () => {
           setMinutos(new Date().getMinutes());
@@ -25,5 +29,5 @@ export const useHora = () => {
         return () => clearInterval(timerIdMinutes);
       }, []);
 
-  return {minutos,hora,dia}
+  return {minutos,hora,dia,fecha,mes}
 }

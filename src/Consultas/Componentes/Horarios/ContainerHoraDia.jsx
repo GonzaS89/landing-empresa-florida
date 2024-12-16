@@ -2,11 +2,14 @@ import React, { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { motion } from "framer-motion";
 import { useHeight } from "../../HooksCons/useHeight";
+import { useDefineFeriado } from "../../HooksCons/useDefineFeriado";
 
 export const ContainerHoraDia = ({
   hora,
   minutos,
   dia,
+  fecha,
+  mes,
   enviarDiaRango,
   enviarDiaManual,
   enviarHoraAutoMin,
@@ -18,14 +21,20 @@ export const ContainerHoraDia = ({
   const [horaManualEnMinutos, setHoraManualEnMinutos] = useState(null);
   const [horaAutoEnMinutos, setHoraAutoEnMinutos] = useState();
 
+  const {feriado} = useDefineFeriado(fecha,mes)
+
   useEffect(() => {
-    if (dia === 0) {
+    if(feriado){
+      setDiaRango("Feriado")
+      enviarDiaRango("domingos")
+    }
+    else if (dia === 0) {
       setDiaRango("Domingos");
       enviarDiaRango("domingos");
-    } else if (dia >= 1 && dia <= 5) {
+    } else if (dia >= 1 && dia <= 5 && !feriado) {
       setDiaRango("Lunes a viernes");
       enviarDiaRango("lunesAViernes");
-    } else if (dia === 6) {
+    } else if (dia === 6 && !feriado) {
       setDiaRango("Sábados");
       enviarDiaRango("sabados");
     }
