@@ -20,11 +20,11 @@ export const Paradas = ({ nombre, index, length, origen, destino }) => {
         {nombre === origen || destino === nombre}
         <BsCheckCircleFill className={nombreOrigenDestino ? ' absolute left-1' : 'hidden'}/>
 
-        <motion.img 
+        {/* <motion.img 
         initial={{x: nombreOrigen ? 0 : '700%', rotateY: nombreDestino ? 180 : 0}}
         animate={{x:nombreOrigen ? '700%' : 0}}
         transition={{duration: 2, delay: nombreOrigen ? 2 : 2.5, repeat: Infinity}}
-        src={`img-consultas/bus.png`} alt=""  className={`${nombreOrigenDestino ? 'flex' : 'hidden'} absolute w-6`}/>
+        src={`img-consultas/bus.png`} alt=""  className={`${nombreOrigenDestino ? 'flex' : 'hidden'} absolute w-6`}/> */}
       </div>
     </>
   );
