@@ -199,12 +199,12 @@
             "salida": 9.5,
             "referencia": "idas alderetes/alternativa",
             "recorrido": [
-                "colonia 4 (luisiana)",
-                "b° la cancha",
+                "fortín",
+                "esquina lastra",
                 "la florida",
                 "el talar",
                 "alderetes",
-                "autopista",
+                "banda del río salí ",
                 "s. m. de tucumán"
             ]
         },
@@ -293,19 +293,6 @@
                 "el talar",
                 "alderetes",
                 "banda del río salí ",
-                "s. m. de tucumán"
-            ]
-        },
-         {
-            "nombre": "13:15",
-            "salida": 13.15,
-            "referencia": "idas alderetes/alternativa",
-            "recorrido": [
-                "colonia 4 (luisiana)",
-                "b° la cancha",
-                "la florida",
-                "el talar",
-                "alternativa",
                 "s. m. de tucumán"
             ]
         },
@@ -538,8 +525,8 @@
             ]
         },
         {
-            "nombre": "08:35",
-            "salida": 8.35,
+            "nombre": "09:00",
+            "salida": 9,
             "referencia": "vueltas alderetes/alternativa",
             "recorrido": [
                 "s. m. de tucumán",
@@ -549,19 +536,6 @@
                 "la florida",
                 "esquina lastra",
                 "fortín"
-            ]
-        },
-        {
-            "nombre": "09:00",
-            "salida": 9,
-            "referencia": "vueltas alderetes/alternativa",
-            "recorrido": [
-                "s. m. de tucumán",
-                "catalinas park",
-                "autopista",
-                "el talar",
-                "la florida",
-                "colonia 4 (luisiana)"
             ]
         },
         {
@@ -1175,17 +1149,6 @@
         {
             "nombre": "17:10",
             "salida": 17.1,
-            "referencia": "idas posse",
-            "recorrido": [
-                "dispensario",
-                "w. posse","fila del medio",
-                "colonia media agua","cevil pozo","banda del río salí",
-                "s. m. de tucumán"
-            ]
-        },
-         {
-            "nombre": "17:45",
-            "salida": 17.45,
             "referencia": "idas posse",
             "recorrido": [
                 "dispensario",
@@ -2052,21 +2015,6 @@
                 "el paraíso",
                 "la florida",
                 "b° la cancha"
-            ]
-        },
-        {
-            "nombre": "13:30",
-            "salida": 13.3,
-            "referencia": "vueltas florida/POSSE",
-            "recorrido": [
-                "s. m. de tucumán",
-                "banda del río salí",
-                "cevil pozo","colonia media agua",
-                "esquina llona",
-                "w. posse",
-                "el paraíso",
-                "la florida",
-                "esquina lastra"
             ]
         },
         {
