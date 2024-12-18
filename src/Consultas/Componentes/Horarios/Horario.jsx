@@ -3,6 +3,7 @@ import { Paradas } from "./Paradas";
 import { useEstadoservicio } from "../../HooksCons/useEstadoservicio";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { WarapButton } from "./WarapButton";
 
 export const Horario = forwardRef(
   (
@@ -73,11 +74,13 @@ export const Horario = forwardRef(
         filter: inView ? "brightness(1)" : "brightness(.25)"
       }}
       transition={{ duration: .5 , ease:"backInOut"}}
-      >
+      onClick={()=> console.log(recorrido)} className="relative">
+        <WarapButton  className="absolute right-0"/>
         <div
         className="flex min-h-[500px] text-white w-[320px] border-2 rounded-2xl"
         ref={ref}
       >
+                
         <div className="flex flex-col items-center justify-center h-auto bg-[#EE4E4E] basis-[30%] rounded-tl-xl rounded-bl-xl">
           <p className="font-jockey text-5xl text-shadow">
             {darFormatoHoraMinuto(horas)}
@@ -127,7 +130,6 @@ export const Horario = forwardRef(
         </div>
       </div>
       </motion.div>
-      
     );
   }
 );
