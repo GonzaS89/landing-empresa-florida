@@ -3,7 +3,7 @@ import { Paradas } from "./Paradas";
 import { useEstadoservicio } from "../../HooksCons/useEstadoservicio";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { WarapButton } from "./WarapButton";
+// import { WarapButton } from "./WarapButton";
 
 export const Horario = forwardRef(
   (
@@ -75,7 +75,7 @@ export const Horario = forwardRef(
       }}
       transition={{ duration: .5 , ease:"backInOut"}}
       onClick={()=> console.log(recorrido)} className="relative">
-        <WarapButton  className="absolute right-0"/>
+        {/* <WarapButton  className="absolute right-0"/> */}
         <div
         className="flex min-h-[500px] text-white w-[320px] border-2 rounded-2xl"
         ref={ref}
