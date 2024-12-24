@@ -24,17 +24,16 @@ export const useFiltradoHorarios = (origen, destino, listado, via) => {
         if (via === null) {
           if (origen === destino) {
             if (incluyeOrigen && recorrido.indexOf("s. m. de tucumán") !== 0) {
-              if (feriado24Dic) {
+              if (feriado24Dic){
                 if (salida <= 21.1) {
                   horariosFiltrados.push(horario)
                 }
               }
-              if (feriado25Dic) {
+              else if (feriado25Dic) {
                 if (salida >= 13.55) {
                   horariosFiltrados.push(horario)
                 }
               }
-
               else { horariosFiltrados.push(horario) }
             }
           } else if (
@@ -43,9 +42,9 @@ export const useFiltradoHorarios = (origen, destino, listado, via) => {
             indexOrigen < indexDestino
           ) {
             if (feriado24Dic) {
-              if (salida <= 21.1) { horariosFiltrados.push(horario) }
+              if(salida <= 21.1) {horariosFiltrados.push(horario)}
             }
-            if (feriado25Dic) {
+            else if (feriado25Dic) {
               if (salida >= 13.55) {
                 horariosFiltrados.push(horario)
               }
@@ -64,7 +63,7 @@ export const useFiltradoHorarios = (origen, destino, listado, via) => {
             if (feriado24Dic) {
               if (salida <= 21.1) { horariosFiltrados.push(horario) }
             } 
-            if (feriado25Dic) {
+            else if (feriado25Dic) {
               if (salida >= 13.55) {
                 horariosFiltrados.push(horario)
               }
@@ -81,9 +80,9 @@ export const useFiltradoHorarios = (origen, destino, listado, via) => {
             indexOrigen < indexDestino
           ) {
             if (feriado24Dic) {
-              if (salida <= 21.1) { horariosFiltrados.push(horario) }
+              if (salida <= 21.1){horariosFiltrados.push(horario) }
             }
-            if (feriado25Dic) {
+           else if (feriado25Dic) {
               if (salida >= 13.55) {
                 horariosFiltrados.push(horario)
               }
@@ -92,10 +91,11 @@ export const useFiltradoHorarios = (origen, destino, listado, via) => {
           }
         }
       });
-
       // Actualiza el estado solo una vez con los horarios filtrados
       setListaHorarios(horariosFiltrados.sort((a, b) => a.salida - b.salida));
     }
+    
   }, [origen, destino, via, listado]);
+  console.log(listaHorarios)
   return { listaHorarios }
 }

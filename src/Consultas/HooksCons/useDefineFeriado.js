@@ -4,7 +4,7 @@ export const useDefineFeriado = (fecha,mes) => {
     
     useEffect(() => {
           if(mes === 11) {
-            if(fecha === 23 || fecha === 25){
+            if(fecha === 24 || fecha === 25){
               setFeriado(true)
             }
           }
