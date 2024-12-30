@@ -96,6 +96,5 @@ export const useFiltradoHorarios = (origen, destino, listado, via) => {
     }
     
   }, [origen, destino, via, listado]);
-  console.log(listaHorarios)
   return { listaHorarios }
 }
