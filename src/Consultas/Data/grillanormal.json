@@ -8002,7 +8002,7 @@
         },
         {
             "nombre": "20:00",
-            "valor": 20,
+            "salida": 20,
             "referencia": "VUELTAS cruz alta/RALOS",
             "recorrido": [
                 "s. m. de tucumán",
@@ -8084,6 +8084,2361 @@
                 "esquina llona",
                 "los ralos",
                 "las cejas"
+            ]
+        },
+        {
+            "nombre": "14:00",
+            "salida": 14,
+            "referencia": "VUELTAS las cejas",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "las cejas"
+            ]
+        },
+        {
+            "nombre": "18:30",
+            "salida": 18.3,
+            "referencia": "VUELTAS las cejas",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "las cejas"
+            ]
+        },
+        {
+            "nombre": "20:30",
+            "salida": 20.3,
+            "referencia": "VUELTAS las cejas",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "las cejas"
+            ]
+        }
+    ],
+    "findeaño": [
+        {
+            "nombre": "06:20",
+            "salida": 6.2,
+            "referencia": "IDAS alderetes/alternativa",
+            "recorrido": [
+                "colonia 5 (florida)",
+                "fortín",
+                "esquina lastra",
+                "la florida",
+                "el talar",
+                "alternativa",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "07:40",
+            "salida": 7.4,
+            "referencia": "IDAS alderetes/alternativa",
+            "recorrido": [
+                "finca mayo",
+                "fortín",
+                "esquina lastra",
+                "la florida",
+                "el talar",
+                "alderetes",
+                "banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "07:50",
+            "salida": 7.5,
+            "referencia": "IDAS alderetes/alternativa",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el talar",
+                "alternativa",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "08:45",
+            "salida": 8.45,
+            "referencia": "IDAS alderetes/alternativa",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el talar",
+                "alderetes",
+                "banda del río salí ",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "09:50",
+            "salida": 9.5,
+            "referencia": "IDAS alderetes/alternativa",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el talar",
+                "alderetes",
+                "banda del río salí ",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "10:30",
+            "salida": 10.30,
+            "referencia": "IDAS alderetes/alternativa",
+            "recorrido": [
+                "Colonia 2 (florida)",
+                "fortín",
+                "esquina lastra",
+                "la florida",
+                "el talar",
+                "alderetes",
+                "banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "12:40",
+            "salida": 12.4,
+            "referencia": "IDAS alderetes/alternativa",
+            "recorrido": [
+                "finca mayo",
+                "fortín",
+                "esquina lastra",
+                "la florida",
+                "el talar",
+                "alderetes",
+                "banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "14:45",
+            "salida": 14.45,
+            "referencia": "IDAS alderetes/alternativa",
+            "recorrido": [
+                "colonia 4 (luisiana)",
+                "b° la cancha",
+                "la florida",
+                "el talar",
+                "alderetes",
+                "banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "15:50",
+            "salida": 15.5,
+            "referencia": "IDAS alderetes/alternativa",
+            "recorrido": [
+                "colonia 4 (luisiana)",
+                "b° la cancha",
+                "la florida",
+                "el talar",
+                "alderetes",
+                "banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "16:50",
+            "salida": 16.5,
+            "referencia": "IDAS alderetes/alternativa",
+            "recorrido": [
+                "colonia 4 (florida)",
+                "fortín",
+                "esquina lastra",
+                "la florida",
+                "el talar",
+                "alderetes",
+                "banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "17:50",
+            "salida": 17.5,
+            "referencia": "IDAS alderetes/alternativa",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el talar",
+                "alderetes",
+                "banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "19:00",
+            "salida": 19,
+            "referencia": "IDAS alderetes/alternativa",
+            "recorrido": [
+                "finca mayo",
+                "colonia 3 (luisiana)",
+                "b° la cancha",
+                "la florida",
+                "el talar",
+                "alderetes",
+                "banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "20:55",
+            "salida": 20.55,
+            "referencia": "IDAS alderetes/alternativa",
+            "recorrido": [
+                "finca mayo",
+                "colonia 10 (luisiana)",
+                "colonia 4 (luisiana)",
+                "b° la cancha",
+                "la florida",
+                "el talar",
+                "alderetes",
+                "banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "06:40",
+            "salida": 6.40,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "el talar",
+                "la florida",
+                "finca mayo"
+            ]
+        },
+        {
+            "nombre": "07:20",
+            "salida": 7.2,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "el talar",
+                "la florida",
+                "colonia 4 (luisiana)"
+            ]
+        },
+        {
+            "nombre": "08:00",
+            "salida": 8,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "autopista",
+                "el talar",
+                "la florida",
+                "fonda",
+                "colonia 4 (luisiana)"
+            ]
+        },
+        {
+            "nombre": "09:00",
+            "salida": 9,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "el talar",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "09:45",
+            "salida": 9.45,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "el talar",
+                "la florida",
+                "esquina lastra",
+                "fortín",
+                "Colonia 2 (florida)"
+            ]
+        },
+        {
+            "nombre": "11:40",
+            "salida": 11.40,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "cochuchal",
+                "finca mayo"
+            ]
+        },
+        {
+            "nombre": "14:00",
+            "salida": 14,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "el talar",
+                "la florida",
+                "colonia 4 (luisiana)"
+            ]
+        },
+        {
+            "nombre": "14:50",
+            "salida": 14.5,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "el talar",
+                "la florida",
+                "colonia 4 (luisiana)"
+            ]
+        },
+        {
+            "nombre": "16:00",
+            "salida": 16,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "el talar",
+                "la florida",
+                "esquina lastra",
+                "fortín",
+                "colonia 4 (florida)"
+            ]
+        },
+        {
+            "nombre": "16:50",
+            "salida": 16.5,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "el talar",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "17:45",
+            "salida": 17.45,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "el talar",
+                "la florida",
+                "colonia 3 (luisiana)",
+                "finca mayo"
+            ]
+        },
+        {
+            "nombre": "19:45",
+            "salida": 19.45,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "el talar",
+                "la florida",
+                "finca mayo"
+            ]
+        },
+        {
+            "nombre": "21:00",
+            "salida": 21,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "el talar",
+                "la florida",
+                "fortin",
+                "b° la cancha",
+                "colonia 4 (luisiana)"
+            ]
+        },
+        {
+            "nombre": "04:50",
+            "salida": 4.5,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "05:55",
+            "salida": 5.55,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "06:25",
+            "salida": 6.25,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha" ,
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "06:55",
+            "salida": 6.55,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "fortín",
+                "esquina lastra",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "07:55",
+            "salida": 7.55,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "fortín",
+                "esquina lastra",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "08:55",
+            "salida": 8.55,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "fortín",
+                "esquina lastra",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "09:55",
+            "salida": 9.55,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "10:55",
+            "salida": 10.55,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "11:55",
+            "salida": 11.55,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "13:00",
+            "salida": 13,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "esquina lastra",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "13:55",
+            "salida": 13.55,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "15:00",
+            "salida": 15,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "esquina lastra",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "15:55",
+            "salida": 15.55,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "fortín",
+                "esquina lastra",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "16:55",
+            "salida": 16.55,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "17:55",
+            "salida": 17.55,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "18:55",
+            "salida": 18.55,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "20:00",
+            "salida": 20,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "21:00",
+            "salida": 21,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "06:00",
+            "salida": 6,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "esquina lastra",
+                "fortín"
+            ]
+        },
+        {
+            "nombre": "07:00",
+            "salida": 7,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "esquina lastra",
+                "fortín"
+            ]
+        },
+        {
+            "nombre": "08:00",
+            "salida": 8,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "esquina lastra",
+                "fortín"
+            ]
+        },
+        {
+            "nombre": "09:00",
+            "salida": 9,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "10:00",
+            "salida": 10,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "11:00",
+            "salida": 11,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "12:00",
+            "salida": 12,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "esquina lastra"
+            ]
+        },
+        {
+            "nombre": "13:00",
+            "salida": 13,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "14:15",
+            "salida": 14.15,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "esquina lastra"
+            ]
+        },
+        {
+            "nombre": "15:00",
+            "salida": 15,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "esquina lastra",
+                "fortín"
+            ]
+        },
+        {
+            "nombre": "16:00",
+            "salida": 16,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "17:00",
+            "salida": 17,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "18:00",
+            "salida": 18,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "19:00",
+            "salida": 19,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "20:00",
+            "salida": 20,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "b° la cancha"
+            ]
+        },      
+        {
+            "nombre": "21:00",
+            "salida": 21,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "06:05",
+            "salida": 6.05,
+            "referencia": "IDAS POSSE LOCAL",
+            "recorrido": [
+                "dispensario",
+                "w. posse","fila del medio",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "07:10",
+            "salida": 7.1,
+            "referencia": "IDAS POSSE LOCAL",
+            "recorrido": [
+                "dispensario",
+                "w. posse","fila del medio",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "08:10",
+            "salida": 8.1,
+            "referencia": "IDAS POSSE LOCAL",
+            "recorrido": [
+                "dispensario",
+                "w. posse","fila del medio",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "09:10",
+            "salida": 9.1,
+            "referencia": "IDAS POSSE LOCAL",
+            "recorrido": [
+                "dispensario",
+                "w. posse","fila de la orilla",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "10:10",
+            "salida": 10.1,
+            "referencia": "IDAS POSSE LOCAL",
+            "recorrido": [
+                "dispensario",
+                "w. posse","fila de la orilla",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+     
+        {
+            "nombre": "05:00",
+            "salida": 5,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "05:30",
+            "salida": 5.3,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "villa tercera",
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "07:00",
+            "salida": 7,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "08:10",
+            "salida": 8.1,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "alabama",
+                "finca mayo",
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "09:25",
+            "salida": 9.25,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "10:30",
+            "salida": 10.3,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "11:10",
+            "salida": 11.1,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "alabama",
+                "finca mayo",
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "12:15",
+            "salida": 12.15,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "Cruce",
+                "finca mayo",
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "13:10",
+            "salida": 13.1,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "alabama",
+                "finca mayo",
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "14:10",
+            "salida": 14.1,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "los ralos",
+                "villa tercera",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                " s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "15:25",
+            "salida": 15.25,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "los ralos",
+                "villa tercera",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                " s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "16:25",
+            "salida": 16.25,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "los ralos",
+                "villa tercera",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                " s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "18:10",
+            "salida": 18.1,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "los ralos",
+                "villa tercera",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                " s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "19:00",
+            "salida": 19,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "alabama",
+                "finca mayo",
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "20:00",
+            "salida": 20,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "lolita sur",
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "21:10",
+            "salida": 21.1,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "06.00",
+            "salida": 6,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos"
+            ]
+        },
+        {
+            "nombre": "07:00",
+            "salida": 7,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "finca mayo",
+                "alabama"
+            ]
+        },
+        {
+            "nombre": "08:30",
+            "salida": 8.3,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos"
+            ]
+        },
+        {
+            "nombre": "09:30",
+            "salida": 9.3,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos"
+            ]
+        },
+        {
+            "nombre": "10:00",
+            "salida": 10,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "finca mayo",
+                "alabama"
+            ]
+        },
+        {
+            "nombre": "11:00",
+            "salida": 11,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "finca mayo",
+                "Cruce"
+            ]
+        },
+        {
+            "nombre": "12:10",
+            "salida": 12.1,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "finca mayo",
+                "alabama"
+            ]
+        },
+        {
+            "nombre": "13:00",
+            "salida": 13,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "villa tercera"
+            ]
+        },
+        {
+            "nombre": "14:30",
+            "salida": 14.3,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "villa tercera"
+            ]
+        },
+        {
+            "nombre": "15:30",
+            "salida": 15.3,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos"
+            ]
+        },
+        {
+            "nombre": "16:15",
+            "salida": 16.15,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "finca mayo",
+                "alabama"
+            ]
+        },
+        {
+            "nombre": "17:10",
+            "salida": 17.1,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "villa tercera"
+            ]
+        },
+        {
+            "nombre": "18:00",
+            "salida": 18,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "finca mayo",
+                "alabama"
+            ]
+        },
+        {
+            "nombre": "19:00",
+            "salida": 19,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "lolita sur"
+            ]
+        },
+        {
+            "nombre": "21:00",
+            "salida": 21,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "finca mayo"
+            ]
+        },
+        {
+            "nombre": "07:20",
+            "salida": 7.2,
+            "referencia": "IDAS cruz alta/los ralos",
+            "recorrido": [
+                "los ralos ",
+                "cruz alta",
+                "esquina llona",
+                "colonia media agua",
+                "cevil pozo",
+                "banda del río salí ",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "08:30",
+            "salida": 8.3,
+            "referencia": "IDAS cruz alta/los ralos",
+            "recorrido": [
+                "los ralos ",
+                "cruz alta",
+                "esquina llona",
+                "colonia media agua",
+                "cevil pozo",
+                "banda del río salí ",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "13:15",
+            "salida": 13.15,
+            "referencia": "VUELTAS cruz alta/RALOS",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "los ralos",
+                "cruz alta"
+            ]
+        },
+        {
+            "nombre": "20:00",
+            "salida": 20,
+            "referencia": "VUELTAS cruz alta/RALOS",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "los ralos",
+                "cruz alta"
+            ]
+        },
+        {
+            "nombre": "07:55",
+            "salida": 7.55,
+            "referencia": "IDAS las cejas",
+            "recorrido": [
+                "las cejas",
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "12:00",
+            "salida": 12,
+            "referencia": "IDAS las cejas",
+            "recorrido": [
+                "las cejas",
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "15:50",
+            "salida": 15.5,
+            "referencia": "IDAS las cejas",
+            "recorrido": [
+                "las cejas",
+                "los ralos",
+                "villa tercera",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "19:50",
+            "salida": 19.5,
+            "referencia": "IDAS las cejas",
+            "recorrido": [
+                "las cejas",
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "06:30",
+            "salida": 6.3,
+            "referencia": "VUELTAS las cejas",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "las cejas"
+            ]
+        },
+        {
+            "nombre": "10:30",
+            "salida": 10.3,
+            "referencia": "VUELTAS las cejas",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "las cejas"
+            ]
+        },
+        {
+            "nombre": "14:00",
+            "salida": 14,
+            "referencia": "VUELTAS las cejas",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "las cejas"
+            ]
+        },
+        {
+            "nombre": "18:30",
+            "salida": 18.3,
+            "referencia": "VUELTAS las cejas",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "las cejas"
+            ]
+        },
+        {
+            "nombre": "15:45",
+            "salida": 15.45,
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "7 de abril"
+            ]
+        }
+    ],
+    "añonuevo": [
+        {
+            "nombre": "14:45",
+            "salida": 14.45,
+            "referencia": "IDAS alderetes/alternativa",
+            "recorrido": [
+                "colonia 4 (luisiana)",
+                "b° la cancha",
+                "la florida",
+                "el talar",
+                "alderetes",
+                "banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "15:50",
+            "salida": 15.5,
+            "referencia": "IDAS alderetes/alternativa",
+            "recorrido": [
+                "colonia 4 (luisiana)",
+                "b° la cancha",
+                "la florida",
+                "el talar",
+                "alderetes",
+                "banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "16:50",
+            "salida": 16.5,
+            "referencia": "IDAS alderetes/alternativa",
+            "recorrido": [
+                "colonia 4 (florida)",
+                "fortín",
+                "esquina lastra",
+                "la florida",
+                "el talar",
+                "alderetes",
+                "banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "17:50",
+            "salida": 17.5,
+            "referencia": "IDAS alderetes/alternativa",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el talar",
+                "alderetes",
+                "banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "19:00",
+            "salida": 19,
+            "referencia": "IDAS alderetes/alternativa",
+            "recorrido": [
+                "finca mayo",
+                "colonia 3 (luisiana)",
+                "b° la cancha",
+                "la florida",
+                "el talar",
+                "alderetes",
+                "banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "20:55",
+            "salida": 20.55,
+            "referencia": "IDAS alderetes/alternativa",
+            "recorrido": [
+                "finca mayo",
+                "colonia 10 (luisiana)",
+                "colonia 4 (luisiana)",
+                "b° la cancha",
+                "la florida",
+                "el talar",
+                "alderetes",
+                "banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "14:00",
+            "salida": 14,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "el talar",
+                "la florida",
+                "colonia 4 (luisiana)"
+            ]
+        },
+        {
+            "nombre": "14:50",
+            "salida": 14.5,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "el talar",
+                "la florida",
+                "colonia 4 (luisiana)"
+            ]
+        },
+        {
+            "nombre": "16:00",
+            "salida": 16,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "el talar",
+                "la florida",
+                "esquina lastra",
+                "fortín",
+                "colonia 4 (florida)"
+            ]
+        },
+        {
+            "nombre": "16:50",
+            "salida": 16.5,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "el talar",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "17:45",
+            "salida": 17.45,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "el talar",
+                "la florida",
+                "colonia 3 (luisiana)",
+                "finca mayo"
+            ]
+        },
+        {
+            "nombre": "19:45",
+            "salida": 19.45,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "el talar",
+                "la florida",
+                "finca mayo"
+            ]
+        },
+        {
+            "nombre": "21:00",
+            "salida": 21,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "alderetes",
+                "el talar",
+                "la florida",
+                "fortin",
+                "b° la cancha",
+                "colonia 4 (luisiana)"
+            ]
+        },
+        {
+            "nombre": "22:30",
+            "salida": 22.3,
+            "referencia": "VUELTAS alderetes/alternativa",
+            "recorrido": [
+                "s. m. de tucumán",
+                "comisaria 11",
+                "autopista",
+                "alderetes",
+                "el talar",
+                "la florida",
+                "esquina lastra",
+                "fortín",
+                "b° la cancha",
+                "colonia 4 (luisiana)"
+            ]
+        },
+        {
+            "nombre": "13:55",
+            "salida": 13.55,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        
+        {
+            "nombre": "15:00",
+            "salida": 15,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "esquina lastra",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "15:55",
+            "salida": 15.55,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "fortín",
+                "esquina lastra",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "16:55",
+            "salida": 16.55,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "17:55",
+            "salida": 17.55,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "18:55",
+            "salida": 18.55,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "19:25",
+            "salida": 19.25,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "fortín",
+                "esquina lastra",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "20:25",
+            "salida": 20.25,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "21:00",
+            "salida": 21,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "21:25",
+            "salida": 21.25,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "22:25",
+            "salida": 22.25,
+            "referencia": "IDAS florida/POSSE",
+            "recorrido": [
+                "b° la cancha",
+                "la florida",
+                "el paraíso",
+                "w. posse",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "14:15",
+            "salida": 14.15,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "esquina lastra"
+            ]
+        },
+        {
+            "nombre": "15:00",
+            "salida": 15,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "esquina lastra",
+                "fortín"
+            ]
+        },
+        {
+            "nombre": "16:00",
+            "salida": 16,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "17:00",
+            "salida": 17,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "18:00",
+            "salida": 18,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "18:30",
+            "salida": 18.3,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "esquina lastra",
+                "fortín"
+            ]
+        },
+        {
+            "nombre": "19:30",
+            "salida": 19.3,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "20:00",
+            "salida": 20,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "20:30",
+            "salida": 20.30,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "21:30",
+            "salida": 21.3,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        
+        {
+            "nombre": "22:30",
+            "salida": 22.3,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "23:30",
+            "salida": 23.3,
+            "referencia": "VUELTAS florida/POSSE",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "w. posse",
+                "el paraíso",
+                "la florida",
+                "b° la cancha"
+            ]
+        },
+        {
+            "nombre": "21:15",
+            "salida": 21.15,
+            "referencia": "VUELTAS POSSE LOCAL",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "fila de la orilla","w. posse",
+                "dispensario"
+            ]
+        },
+        {
+            "nombre": "14:10",
+            "salida": 14.1,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "los ralos",
+                "villa tercera",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                " s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "15:25",
+            "salida": 15.25,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "los ralos",
+                "villa tercera",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                " s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "17:15",
+            "salida": 17.15,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "alabama",
+                "finca mayo",
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "17:15",
+            "salida": 17.15,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "18:10",
+            "salida": 18.1,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "los ralos",
+                "villa tercera",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                " s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "19:00",
+            "salida": 19,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "alabama",
+                "finca mayo",
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "20:00",
+            "salida": 20,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "lolita sur",
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "21:10",
+            "salida": 21.1,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "21:30",
+            "salida": 21.3,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "alabama",
+                "finca mayo",
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "22:20",
+            "salida": 22.2,
+            "referencia": "IDAS los ralos",
+            "recorrido": [
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "14:30",
+            "salida": 14.3,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "villa tercera"
+            ]
+        },
+        {
+            "nombre": "15:30",
+            "salida": 15.3,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos"
+            ]
+        },
+        {
+            "nombre": "16:15",
+            "salida": 16.15,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "finca mayo",
+                "alabama"
+            ]
+        },
+        {
+            "nombre": "17:10",
+            "salida": 17.1,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "villa tercera"
+            ]
+        },
+        {
+            "nombre": "18:00",
+            "salida": 18,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "finca mayo",
+                "alabama"
+            ]
+        },
+        {
+            "nombre": "19:00",
+            "salida": 19,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "lolita sur"
+            ]
+        },
+        {
+            "nombre": "20:30",
+            "salida": 20.3,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "finca mayo"
+            ]
+        },
+        {
+            "nombre": "21:30",
+            "salida": 21.3,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "villa tercera"
+            ]
+        },
+        {
+            "nombre": "22:30",
+            "salida": 22.3,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "villa tercera"
+            ]
+        },
+        {
+            "nombre": "23:30",
+            "salida": 23.3,
+            "referencia": "VUELTAS los ralos",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "esquina llona",
+                "los ralos",
+                "villa tercera"
+            ]
+        },
+        {
+            "nombre": "20:00",
+            "salida": 20,
+            "referencia": "VUELTAS cruz alta/RALOS",
+            "recorrido": [
+                "s. m. de tucumán",
+                "banda del río salí",
+                "cevil pozo","colonia media agua",
+                "los ralos",
+                "cruz alta"
+            ]
+        },
+        {
+            "nombre": "15:50",
+            "salida": 15.5,
+            "referencia": "IDAS las cejas",
+            "recorrido": [
+                "las cejas",
+                "los ralos",
+                "villa tercera",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
+            "nombre": "19:50",
+            "salida": 19.5,
+            "referencia": "IDAS las cejas",
+            "recorrido": [
+                "las cejas",
+                "los ralos",
+                "esquina llona",
+                "colonia media agua","cevil pozo","banda del río salí",
+                "s. m. de tucumán"
             ]
         },
         {

@@ -57,7 +57,7 @@ export const Mainhorarios = ({ enviarParametrosHorarios }) => {
   const [rangoDias, setRangoDias] = useState(null);
 
   const recibirDiaRango = (diarango) => {setDiaAuto(diarango);};
-  const recibirDiaManual = (dia) => {setDiaManual(dia);};
+  const recibirDiaManual = (dia) => {setDiaManual(dia)};
 
   useEffect(() => {
     if (diaManual !== null) {

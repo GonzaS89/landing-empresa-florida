@@ -1,11 +1,12 @@
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter ,Routes, Route} from "react-router-dom";
 import { MainScreen } from "./Landing/MainScreen";
 import { Maincons } from "./Consultas/Screens/Maincons";
 import { CotizacionAbonos } from "./Consultas/Screens/CotizacionAbonos";
 import { Mainhorarios } from "./Consultas/Screens/Mainhorarios";
 import Horarios from "./Consultas/Screens/Horarios";
+import { useHora } from "./Consultas/HooksCons/useHora";
 
 
 
@@ -44,7 +45,15 @@ function App() {
     if (diaManual === 'lunesAViernes') { setDiaGrilla('lunes a viernes') }
     else if (diaManual === 'sabados') { setDiaGrilla('sábados') }
     else if (diaManual === 'domingos') { setDiaGrilla('domingos') }
+    else if (diaManual === 'findeaño') { setDiaGrilla('fin de año') }
+    else if (diaManual === 'añonuevo') { setDiaGrilla('año nuevo') }
   }
+
+  const {fecha,mes} = useHora()
+
+  useEffect(() => {
+    if(fecha === 31 && mes === 11){setDiaGrilla('fin de año')}
+  },[fecha,mes])
 
   return (
     <div className="App relative">

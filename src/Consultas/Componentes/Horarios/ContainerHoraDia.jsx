@@ -24,7 +24,15 @@ export const ContainerHoraDia = ({
   const {feriado} = useDefineFeriado(fecha,mes)
 
   useEffect(() => {
-    if(feriado){
+    if(fecha === 31 && mes === 11){
+      setDiaRango("Fin de año") 
+      enviarDiaRango("findeaño")
+    }
+    else if(fecha === 1 && mes === 0){
+      setDiaRango("año nuevo") 
+      enviarDiaRango("añonuevo")
+    }
+    else if(feriado){
       setDiaRango("Feriado")
       enviarDiaRango("domingos")
     }
@@ -67,6 +75,12 @@ export const ContainerHoraDia = ({
     } else if (valor === "Domingos") {
       enviarDiaManual("domingos");
     }
+    else if (valor === "Fin de año") {
+      enviarDiaManual("findeaño");
+    }
+    else if (valor === "Año nuevo") {
+      enviarDiaManual("añonuevo");
+    }
   };
 
   const enviarHoraManual = (e) => {
@@ -101,7 +115,7 @@ export const ContainerHoraDia = ({
         animate = {{x: destino !== null ? 0 : '120%'}}
         transition={{duration: .5 , ease: 'easeInOut'}}
       className="flex flex-col gap-1 overflow-hidden">
-        <h1 className='text-left text-2xl xl:text-4xl font-jockey'>Día de la semana</h1>
+        <h1 className='text-left text-2xl xl:text-4xl font-jockey'>Frecuencia de:</h1>
         <div 
         className='flex justify-between'>
           <div
@@ -132,6 +146,8 @@ export const ContainerHoraDia = ({
               <option value="Lunes a viernes">Lunes a viernes</option>
               <option value="Sábados">Sábados</option>
               <option value="Domingos">Domingos</option>
+              <option value="Fin de año">Fin de año</option>
+              <option value="Año nuevo">Año nuevo</option>
             </select>
           </div>
         </div>
