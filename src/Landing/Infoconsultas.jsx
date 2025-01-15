@@ -3,6 +3,7 @@ import { Consulta } from "../Minicomponentes/Consulta";
 import { Element } from "react-scroll";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import ImgConsulta from '/img-consultas/consulta.jpg'
 
 export const Infoconsultas = () => {
 
@@ -43,7 +44,7 @@ export const Infoconsultas = () => {
             transition={{ duration: 0.5 , delay: .5}}
             className="max-h-[450px] bg-slate-800 sm:max-h-[450px]">
               <img
-                src="https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730675880/xx4pirkw2wfqavwawvxn.jpg"
+                src={ImgConsulta}
                 alt=""
                 className="w-full h-full"
               />

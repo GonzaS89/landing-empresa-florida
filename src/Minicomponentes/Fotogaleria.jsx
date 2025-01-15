@@ -1,10 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-export const Fotogaleria = ({url , enviarUrl}) => {
-
+export const Fotogaleria = ({url}) => {
 
   return (
-    <div className="h-full cursor-pointer" onClick={()=> enviarUrl(url)}>
+    <div className="h-full cursor-pointer">
         <img src={url} alt="" className='w-full h-full'/>
     </div>
 )

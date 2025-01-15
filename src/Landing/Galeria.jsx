@@ -4,9 +4,18 @@ import { Carousel } from 'flowbite-react';
 import { Element } from 'react-scroll';
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import ImgRec1 from '/img-consultas/recuerdos1.jpeg'
+import ImgRec2 from '/img-consultas/recuerdos2.jpeg'
+import ImgRec3 from '/img-consultas/recuerdos3.jpeg'
+import ImgRec4 from '/img-consultas/recuerdos4.jpeg'
+import ImgRec5 from '/img-consultas/recuerdos5.jpeg'
+import ImgRec6 from '/img-consultas/recuerdos6.jpeg'
+import ImgRec7 from '/img-consultas/recuerdos7.jpeg'
+import ImgRec8 from '/img-consultas/recuerdos8.jpeg'
+import ImgRec9 from '/img-consultas/recuerdos9.jpg'
 
 
-export const Galeria = ({url}) => {
+export const Galeria = () => {
 
     const { ref, inView } = useInView({
         triggerOnce:true,
@@ -15,38 +24,33 @@ export const Galeria = ({url}) => {
 
     const arrayUrlsGalery = [
         {
-            url : 'https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730676509/bspoqmczpockqwmm8zte.jpg'
+            "url" : ImgRec1
         },
         {
-            url : 'https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730676508/vippj82nqkrd4fajpigk.jpg'
+            "url" : ImgRec2
         },
         {
-            url : 'https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730676507/bax1q7fysxflqfuhmpbd.jpg'
+            "url" : ImgRec3
         },
         {
-            url : 'https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730676506/zkub7pakp3hdeh2inksb.jpg'
+            "url" : ImgRec4
         },
         {
-            url : 'https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730676506/arhnwlwgvpknraojexk5.jpg'
+            "url" : ImgRec5
         },
         {
-            url : 'https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730676831/nkqifdmhqcajrhmr297n.jpg'
+            "url" : ImgRec6
         },
         {
-            url : 'https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730676825/nmfmi0pionvl68hckavr.jpg'
+            "url" : ImgRec7
         },
         {
-            url : 'https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730676826/agexsvv4ptqi5vmiphm5.jpg'
+            "url" : ImgRec8
         },
         {
-            url : 'https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730778503/qy9evwxxaruba8yploa6.jpg'
-        },
-        {
-            url : 'https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730778500/dsuznagy42tpjgg8sfrv.jpg'
-        },
-        {
-            url : 'https://res.cloudinary.com/dwmw7ez8q/image/upload/v1730778501/ihykthbsvsod66c3cqlw.jpg'
+            "url" : ImgRec9
         }
+
     ]
 
   return (
@@ -66,7 +70,7 @@ export const Galeria = ({url}) => {
             className='h-[300px] md:h-[400px] lg:h-[450px] xl:h-[550px]'>
                 <Carousel>
                      {arrayUrlsGalery.map( (element,index) => (
-                    <Fotogaleria key={index} url={element.url} index={index} enviarUrl={url}/>
+                    <Fotogaleria key={index} url={element.url} index={index}/>
                 ))}
                 </Carousel>
                

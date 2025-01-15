@@ -146,8 +146,6 @@ export const ContainerHoraDia = ({
               <option value="Lunes a viernes">Lunes a viernes</option>
               <option value="Sábados">Sábados</option>
               <option value="Domingos">Domingos</option>
-              <option value="Fin de año">Fin de año</option>
-              <option value="Año nuevo">Año nuevo</option>
             </select>
           </div>
         </div>
