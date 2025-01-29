@@ -351,6 +351,7 @@
             "salida": 17.5,
             "referencia": "idas alderetes/alternativa",
             "recorrido": [
+                "colonia 4 (luisiana)",
                 "fortín",
                 "esquina lastra",
                 "la florida",
@@ -673,7 +674,7 @@
                 "alderetes",
                 "cochuchal",
                 "la florida",
-                "esquina lastra",
+                "colonia 4 (luisiana)",
                 "fortín"
             ]
         },
@@ -3112,6 +3113,7 @@
             "salida": 12.1,
             "referencia": "idas cruz alta/ralos",
             "recorrido": [
+                "correo",
                 "los ralos",
                 "cruz alta",
                 "esquina llona",
