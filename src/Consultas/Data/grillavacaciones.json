@@ -1918,21 +1918,6 @@
             ]
         },
         {
-            "nombre": "19:10",
-            "salida": 19.1,
-            "referencia": "vueltas florida/POSSE",
-            "recorrido": [
-                "s. m. de tucumán",
-                "banda del río salí",
-                "cevil pozo","colonia media agua",
-                "esquina llona",
-                "w. posse",
-                "el paraíso",
-                "la florida",
-                "b° la cancha"
-            ]
-        },
-        {
             "nombre": "19:30",
             "salida": 19.3,
             "referencia": "vueltas florida/POSSE",
@@ -4837,21 +4822,6 @@
                 "la florida",
                 "esquina lastra",
                 "fortín"
-            ]
-        },
-        {
-            "nombre": "19:15",
-            "salida": 19.15,
-            "referencia": "VUELTAS florida/POSSE",
-            "recorrido": [
-                "s. m. de tucumán",
-                "banda del río salí",
-                "cevil pozo","colonia media agua",
-                "esquina llona",
-                "w. posse",
-                "el paraíso",
-                "la florida",
-                "colonia 4 (luisiana)"
             ]
         },
         {
