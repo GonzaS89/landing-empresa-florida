@@ -564,20 +564,6 @@
                 "colonia 3 (florida)"
             ]
         },
-          {
-            "nombre": "12:45",
-            "salida": 12.45,
-            "referencia": "vueltas alderetes/alternativa",
-            "recorrido": [
-                "s. m. de tucumán",
-                "catalinas park",
-                "alternativa",
-                "el talar",
-                "la florida",
-                "b° la cancha",
-                "colonia 4 (luisiana)"
-            ]
-        },
         {
             "nombre": "13:15",
             "salida": 13.15,
