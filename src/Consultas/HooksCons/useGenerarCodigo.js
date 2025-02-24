@@ -32,7 +32,7 @@ export const useGenerarCodigo = (origen, destino, via) => {
 
         if (origen === 's. m. de tucumán') {
             const destinos = {
-                'banda del rio salí': codigo06,
+                'banda del río salí': codigo06,
                 'cevil pozo': codigo08,
                 'alderetes':codigo08,
                 'colonia media agua':codigo10,
@@ -53,7 +53,7 @@ export const useGenerarCodigo = (origen, destino, via) => {
             }else if (via === 'w. posse'){setCodigo(codigo21)}
             else{setCodigo(codigo16)}
         }
-        // BANDA DEL RIO SALI
+        // BANDA DEL río SALI
 
         if (origen === 'banda del río salí') {
             const destinos = {
@@ -104,7 +104,7 @@ export const useGenerarCodigo = (origen, destino, via) => {
 
         if (['colonia media agua', 'esquina llona','fila de la orilla', 'fila del medio'].includes(origen)){
             const destinos = {
-                'banda del rio salí': codigo06,
+                'banda del río salí': codigo06,
                 'cevil pozo':codigo06,
                 'w. posse':codigo06,
                 'cruz alta':codigo06,
