@@ -1,19 +1,17 @@
-import  { useEffect, useState } from 'react'
+import { useState, useEffect } from "react";
 
-export const useDefineFeriado = (fecha,mes) => {
-    
-    useEffect(() => {
-          if(mes === 11) {
-            if(fecha === 24 || fecha === 25){
-              setFeriado(true)
-            }
-          }
-          else if (mes === 0 && fecha === 1){
-            setFeriado(true)
-          }else{setFeriado(false)}
-    },[fecha,mes])
+export const useDefineFeriado = (fecha, mes) => {
+  const [feriado, setFeriado] = useState(false);
 
-    const [feriado,setFeriado] = useState(false);
+  useEffect(() => {
+    const feriados = {
+      0: [1], // Enero 1
+      4: [3], // Mayo 3
+      11: [24, 25], // Diciembre 24 y 25
+    };
 
-  return {feriado}
-}
+    setFeriado(feriados[mes]?.includes(fecha) || false);
+  }, [fecha, mes]);
+
+  return { feriado };
+};
