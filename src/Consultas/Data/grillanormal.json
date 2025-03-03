@@ -10,7 +10,7 @@
                 "la florida",
                 "el talar",
                 "alderetes",
-                "banda del río salí ",
+                "banda del río salí",
                 "s. m. de tucumán"
             ]
         },
@@ -30,8 +30,8 @@
             ]
         },
         {
-            "nombre": "06:10",
-            "salida": 6.10,
+            "nombre": "06:05",
+            "salida": 6.05,
             "referencia": "idas alderetes/alternativa",
             "recorrido": [
                 "fortín",
@@ -58,27 +58,14 @@
             ]
         },
         {
-            "nombre": "06:50",
-            "salida": 6.5,
+            "nombre": "06:20",
+            "salida": 6.2,
             "referencia": "idas alderetes/alternativa",
             "recorrido": [
-                "colonia 4 (luisiana)",
-                "fonda",
-                "la florida",
-                "el talar",
-                "alderetes",
-                "autopista",
-                "s. m. de tucumán"
-            ]
-        },
-        {
-            "nombre": "06:50",
-            "salida": 6.5,
-            "referencia": "idas alderetes/alternativa",
-            "recorrido": [
-                "colonia 4 (luisiana)",
+                "colonia 5 (florida)",
+                "fortín",
+                "esquina lastra",
                 "b° la cancha",
-                "la florida",
                 "el talar",
                 "alternativa",
                 "s. m. de tucumán"
@@ -103,6 +90,7 @@
             "salida": 7.2,
             "referencia": "idas alderetes/alternativa",
             "recorrido": [
+                "colonia 4 (luisiana)",
                 "b° la cancha",
                 "la florida",
                 "el talar",
@@ -176,7 +164,6 @@
                 "la florida",
                 "el talar",
                 "alternativa",
-                
                 "s. m. de tucumán"
             ]
         },
@@ -199,12 +186,12 @@
             "salida": 9.5,
             "referencia": "idas alderetes/alternativa",
             "recorrido": [
-                "fortín",
-                "esquina lastra",
+                "colonia 4 (luisiana)",
+                "b° la cancha",
                 "la florida",
                 "el talar",
                 "alderetes",
-                "banda del río salí ",
+                "autopista",
                 "s. m. de tucumán"
             ]
         },
@@ -266,6 +253,7 @@
                 "s. m. de tucumán"
             ]
         },
+        
         {
             "nombre": "12:45",
             "salida": 12.45,
@@ -292,7 +280,7 @@
                 "la florida",
                 "el talar",
                 "alderetes",
-                "banda del río salí ",
+                "banda del río salí",
                 "s. m. de tucumán"
             ]
         },
@@ -606,6 +594,17 @@
                 "el talar",
                 "la florida",
                 "b° la cancha",
+                "colonia 4 (luisiana)"
+            ]
+        },
+        {
+            "nombre": "12:40",
+            "salida": 12.4,
+            "referencia": "vueltas alderetes/alternativa",
+            "recorrido": [
+                "cruz papal",
+                "alderetes",
+                "el talar",
                 "colonia 4 (luisiana)"
             ]
         },
@@ -949,8 +948,8 @@
             ]
         },
         {
-            "nombre": "06:08",
-            "salida": 6.08,
+            "nombre": "06:00",
+            "salida": 6,
             "referencia": "idas posse",
             "recorrido": [
                 "dispensario",
@@ -1158,6 +1157,17 @@
             ]
         },
         {
+            "nombre": "17:45",
+            "salida": 17.45,
+            "referencia": "idas posse",
+            "recorrido": [
+                "dispensario",
+                "w. posse","fila de la orilla",
+                "cevil pozo","banda del río salí",
+                "s. m. de tucumán"
+            ]
+        },
+        {
             "nombre": "05:25",
             "salida": 5.25,
             "referencia": "vueltas POSSE LOCAL",
@@ -1176,7 +1186,7 @@
             "referencia": "vueltas POSSE LOCAL",
             "recorrido": [
                 "s. m. de tucumán",
-                "banda del río salí ",
+                "banda del río salí",
                 "cevil pozo","colonia media agua",
                 "fila del medio","w. posse",
                 "bosque"
@@ -1202,7 +1212,7 @@
             "referencia": "vueltas POSSE LOCAL",
             "recorrido": [
                 "s. m. de tucumán",
-                "banda del río salí ",
+                "banda del río salí",
                 "cevil pozo","colonia media agua",
                 "fila del medio","w. posse",
                 "bosque"
@@ -1215,7 +1225,7 @@
             "referencia": "vueltas POSSE LOCAL",
             "recorrido": [
                 "s. m. de tucumán",
-                "banda del río salí ",
+                "banda del río salí",
                 "cevil pozo","colonia media agua",
                 "fila del medio","w. posse",
                 "bosque",
@@ -1228,7 +1238,7 @@
             "referencia": "vueltas POSSE LOCAL",
             "recorrido": [
                 "s. m. de tucumán",
-                "banda del río salí ",
+                "banda del río salí",
                 "cevil pozo","colonia media agua",
                 "esquina llona",
                 "fila de la orilla",
@@ -1243,7 +1253,7 @@
             "referencia": "vueltas POSSE LOCAL",
             "recorrido": [
                 "s. m. de tucumán",
-                "banda del río salí ",
+                "banda del río salí",
                 "cevil pozo","colonia media agua",
                 "fila del medio","w. posse",
                 "bosque",
@@ -1256,7 +1266,7 @@
             "referencia": "vueltas POSSE LOCAL",
             "recorrido": [
                 "s. m. de tucumán",
-                "banda del río salí ",
+                "banda del río salí",
                 "cevil pozo","colonia media agua",
                 "fila del medio","w. posse",
                 "bosque",
@@ -1269,7 +1279,7 @@
             "referencia": "vueltas POSSE LOCAL",
             "recorrido": [
                 "s. m. de tucumán",
-                "banda del río salí ",
+                "banda del río salí",
                 "cevil pozo","colonia media agua",
                 "fila del medio","w. posse",
                 "bosque"
@@ -1282,7 +1292,7 @@
             "referencia": "vueltas POSSE LOCAL",
             "recorrido": [
                 "s. m. de tucumán",
-                "banda del río salí ",
+                "banda del río salí",
                 "cevil pozo","colonia media agua",
                 "esquina llona",
                 "fila de la orilla",
@@ -1296,7 +1306,7 @@
             "referencia": "vueltas POSSE LOCAL",
             "recorrido": [
                 "s. m. de tucumán",
-                "banda del río salí ",
+                "banda del río salí",
                 "cevil pozo","colonia media agua",
                 "fila del medio","w. posse",
                 "bosque"
@@ -1308,7 +1318,7 @@
             "referencia": "vueltas POSSE LOCAL",
             "recorrido": [
                 "s. m. de tucumán",
-                "banda del río salí ",
+                "banda del río salí",
                 "cevil pozo","colonia media agua",
                 "fila del medio","w. posse",
                 "bosque"
@@ -2300,7 +2310,7 @@
             "referencia": "vueltas florida/POSSE",
             "recorrido": [
                 "s. m. de tucumán",
-                "banda del río salí ",
+                "banda del río salí",
                 "cevil pozo","colonia media agua",
                 "esquina llona",
                 "w. posse",
@@ -2400,8 +2410,8 @@
             ]
         },
         {
-            "nombre": "06:10",
-            "salida": 6.1,
+            "nombre": "06:05",
+            "salida": 6.05,
             "referencia": "idas ralos",
             "recorrido": [
                 "los ralos",
@@ -2923,7 +2933,7 @@
             "referencia": "vueltas los ralos",
             "recorrido": [
                 "s. m. de tucumán",
-                "banda del río salí ",
+                "banda del río salí",
                 "cevil pozo","colonia media agua",
                 "esquina llona",
                 "los ralos",
@@ -3079,7 +3089,7 @@
             "referencia": "vueltas los ralos",
             "recorrido": [
                 "s. m. de tucumán",
-                "banda del río salí ",
+                "banda del río salí",
                 "cevil pozo","colonia media agua",
                 "esquina llona",
                 "los ralos",
@@ -3348,7 +3358,7 @@
             "referencia": "vueltas los ralos",
             "recorrido": [
                 "s. m. de tucumán",
-                "banda del río salí ",
+                "banda del río salí",
                 "cevil pozo","colonia media agua",
                 "esquina llona",
                 "los ralos",
@@ -4196,7 +4206,7 @@
             "referencia": "VUELTAS alderetes/alternativa",
             "recorrido": [
                 "s. m. de tucumán",
-                "banda del río salí ",
+                "banda del río salí",
                 "alderetes",
                 "el talar",
                 "la florida",
@@ -5352,7 +5362,7 @@
             "referencia": "VUELTAS florida/POSSE",
             "recorrido": [
                 "s. m. de tucumán",
-                "banda del río salí ",
+                "banda del río salí",
                 "cevil pozo","colonia media agua",
                 "esquina llona",
                 "w. posse",
@@ -8177,7 +8187,7 @@
                 "la florida",
                 "el talar",
                 "alderetes",
-                "banda del río salí ",
+                "banda del río salí",
                 "s. m. de tucumán"
             ]
         },
@@ -8190,7 +8200,7 @@
                 "la florida",
                 "el talar",
                 "alderetes",
-                "banda del río salí ",
+                "banda del río salí",
                 "s. m. de tucumán"
             ]
         },
@@ -9445,7 +9455,7 @@
                 "esquina llona",
                 "colonia media agua",
                 "cevil pozo",
-                "banda del río salí ",
+                "banda del río salí",
                 "s. m. de tucumán"
             ]
         },
@@ -9459,7 +9469,7 @@
                 "esquina llona",
                 "colonia media agua",
                 "cevil pozo",
-                "banda del río salí ",
+                "banda del río salí",
                 "s. m. de tucumán"
             ]
         },
