@@ -6,8 +6,8 @@ export const useDiaDeLaSemana = (val) => {
 
   useEffect(() => {
     // Usamos val como clave directamente para acceder al objeto grillavacaciones
-    if (grillanormal[val]) {
-      setDiaDeLaSemana(grillanormal[val]);
+    if (grillavacaciones[val]) {
+      setDiaDeLaSemana(grillavacaciones[val]);
     }
   }, [val]);
 
