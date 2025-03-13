@@ -43,7 +43,7 @@ const Horarios = ({ grillaDefinitiva, origen, destino, horaAuto, horaManual, via
               <Horario
                 key={index}
                 nombre={servicio.nombre}
-                horaSalida={servicio.salida}
+                horaSalida={servicio.valor_salida}
                 recorrido={servicio.recorrido}
                 indiceDeBusqueda={indiceDeBusqueda}
                 origen={origen}

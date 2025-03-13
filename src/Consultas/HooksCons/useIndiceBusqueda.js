@@ -8,7 +8,7 @@ export const useIndiceBusqueda = (grilla, hora) => {
 
     useEffect(() => {
         const salidas = grilla.map(objeto =>
-          (truncarNumero((truncarNumero(objeto.salida) * 60) + ((objeto.salida - truncarNumero(objeto.salida)) * 100)) - hora));
+          (truncarNumero((truncarNumero(objeto.valor_salida) * 60) + ((objeto.valor_salida - truncarNumero(objeto.valor_salida)) * 100)) - hora));
         if (salidas.length > 0) {
           const masCercano = salidas.reduce((a, b) => {
             return Math.abs(a) < Math.abs(b) ? a : b;
