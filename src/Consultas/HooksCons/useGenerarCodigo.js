@@ -39,6 +39,7 @@ export const useGenerarCodigo = (origen, destino, via) => {
         'cruz alta': codigo15,
         'el paraíso': codigo18,
         'los ralos': codigo21,
+        'finca mayo':codigo24,
         'la marta': codigo27,
         'las cejas': codigo34,
         '7 de abril': codigo44
@@ -181,6 +182,54 @@ export const useGenerarCodigo = (origen, destino, via) => {
         'cevil pozo': codigo44,
         'banda del río salí': codigo44,
         's. m. de tucumán': codigo44
+      },
+      'w. posse':{
+        'la florida':codigo06,
+        'esquina llona':codigo06,
+        'colonia 4 (luisiana)':codigo06,
+        'fortín':codigo06,
+        'fila de la orilla':codigo06,
+        'colonia media agua':codigo06,
+        'cevil pozo':codigo06,
+        'banda del río del salí':codigo08,
+        's. m. de tucumán':codigo15
+      },
+      'esquina llona':{
+        'la florida':codigo08,
+        'colonia 4 (luisiana)':codigo08,
+        'fortín':codigo08,
+        'fila de la orilla':codigo06,
+        'colonia media agua':codigo06,
+        'cevil pozo':codigo06,
+        'w. posse':codigo06,
+        'banda del río salí':codigo06,
+        's. m. de tucumán':codigo12,
+        'finca mayo':codigo20,
+        'la marta':codigo21
+      },
+      'colonia 4 (luisiana)': {
+        'la florida': codigo06,
+        'fortín': codigo06,
+        'el paraíso': codigo06,
+        'w. posse': codigo06,
+        'fila de la orilla': codigo08,
+        'esquina llona': codigo08,
+        'alderetes': codigo08,
+        'el talar': codigo08,
+        'colonia media agua': codigo11,
+        'cevil pozo': codigo13,
+      },
+      'fortín': {
+        'la florida': codigo06,
+        'colonia 4 (luisiana)':codigo06,
+        'el paraíso': codigo06,
+        'w. posse': codigo06,
+        'fila de la orilla': codigo08,
+        'esquina llona': codigo08,
+        'alderetes': codigo08,
+        'el talar': codigo08,
+        'colonia media agua': codigo11,
+        'cevil pozo': codigo13,
       }
     };
 
