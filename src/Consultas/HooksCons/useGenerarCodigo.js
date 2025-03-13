@@ -184,39 +184,25 @@ export const useGenerarCodigo = (origen, destino, via) => {
       }
     };
 
+    const generarRutas = (codigoWPosse, codigoDefault) => ({
+      'banda del río salí': { 'w. posse': codigoWPosse, 'default': codigoDefault },
+      's. m. de tucumán': { 'w. posse': codigo21, 'default': codigo16 }
+    });
+    
+    const generarRutasInvertidas = (codigoWPosse, codigoDefault) => ({
+      'la florida': { 'w. posse': codigoWPosse, 'default': codigoDefault },
+      'colonia 4 (luisiana)': { 'w. posse': codigoWPosse, 'default': codigoDefault },
+      'fortín': { 'w. posse': codigoWPosse, 'default': codigoDefault }
+    });
+    
     const rutas = {
-      'la florida': {
-        'banda del río salí': {
-          'w. posse': codigo14,
-          'default': codigo11
-        },
-        's. m. de tucumán': {
-          'w. posse': codigo21,
-          'default': codigo06
-        }
-      },
-      'colonia 4 (luisiana)': {
-        'banda del río salí': {
-          'w. posse': codigo14,
-          'default': codigo11
-        },
-        's. m. de tucumán': {
-          'w. posse': codigo21,
-          'default': codigo06
-        }
-      },
-      'fortín': {
-        'banda del río salí': {
-          'w. posse': codigo14,
-          'default': codigo11
-        },
-        's. m. de tucumán': {
-          'w. posse': codigo21,
-          'default': codigo06
-        }
-      }
+      'la florida': generarRutas(codigo14, codigo11),
+      'colonia 4 (luisiana)': generarRutas(codigo14, codigo11),
+      'fortín': generarRutas(codigo14, codigo11),
+      's. m. de tucumán': generarRutasInvertidas(codigo21, codigo16),
+      'banda del río salí': generarRutasInvertidas(codigo14, codigo11)
     };
-
+    
     // Verifica si el origen y destino están en el objeto "destinos"
     if (destinos[origen] && destinos[origen][destino]) {
       setCodigo(destinos[origen][destino]);
