@@ -1,15 +1,20 @@
-import { useEffect, useState } from "react";
-import grillanormal from '../Data/grillanormal.json'
-import grillavacaciones from '../Data/grillavacaciones.json'
+import { useEffect, useState } from "react";;
+import { useFetchHorarios } from "./useFetchHorarios";
+
+
 export const useDiaDeLaSemana = (val) => {
   const [diaDeLaSemana, setDiaDeLaSemana] = useState(null);
+  const { horarios, loading } = useFetchHorarios();  // Obtenemos horarios y estado de carga
 
   useEffect(() => {
-    // Usamos val como clave directamente para acceder al objeto grillavacaciones
-    if (grillavacaciones[val]) {
-      setDiaDeLaSemana(grillavacaciones[val]);
+    if (!loading && horarios) {  // Aseguramos que los datos estén cargados antes de continuar
+      if (horarios[val]) {
+        setDiaDeLaSemana(horarios[val]);
+      } else {
+        console.log("No se encontraron datos para el valor:", val);
+      }
     }
-  }, [val]);
+  }, [val, horarios, loading]);  // Dependemos de val, horarios y loading
 
-  return { diaDeLaSemana };
+  return { diaDeLaSemana, loading };  // Devolvemos también el estado de carga
 };

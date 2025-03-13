@@ -9,6 +9,7 @@ import { useDiaDeLaSemana } from "../HooksCons/useDiaDeLaSemana";
 import { useFiltradoHorarios } from "../HooksCons/useFiltradoHorarios";
 import { useHeight } from "../HooksCons/useHeight";
 import { motion } from "framer-motion";
+import { use } from "react";
 
 export const Mainhorarios = ({ enviarParametrosHorarios }) => {
 
@@ -69,6 +70,10 @@ export const Mainhorarios = ({ enviarParametrosHorarios }) => {
 
   const {diaDeLaSemana} = useDiaDeLaSemana(rangoDias);
   const {listaHorarios} = useFiltradoHorarios(localidadOrigen,localidadDestino,diaDeLaSemana,via);
+
+  useEffect(() => {
+    console.log(listaHorarios)
+  },[listaHorarios])
 
   useEffect(() => {
     setVia(null);
