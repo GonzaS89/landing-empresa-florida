@@ -3442,10 +3442,11 @@
             ]
         },
         {
-            "nombre": "12:10",
-            "salida": 12.1,
+            "nombre": "12:20",
+            "salida": 12.2,
             "referencia": "idas cruz alta/ralos",
             "recorrido": [
+                "colonia 9",
                 "los ralos",
                 "cruz alta",
                 "esquina llona",
@@ -3493,8 +3494,8 @@
             ]
         },
         {
-            "nombre": "10:45",
-            "salida": 10.45,
+            "nombre": "10:50",
+            "salida": 10.5,
             "referencia": "vueltas cruz alta/los ralos",
             "recorrido": [
                 "s. m. de tucumán",
@@ -3502,7 +3503,8 @@
                 "esquina llona",
                 "colonia media agua","cevil pozo","colonia media agua",
                 "cruz alta",
-                "los ralos"
+                "los ralos",
+                "colonia 9"
             ]
         },
         {
