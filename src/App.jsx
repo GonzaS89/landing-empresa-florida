@@ -54,20 +54,7 @@ function App() {
     if(fecha === 31 && mes === 11){setDiaGrilla('fin de año')}
   },[fecha,mes])
 
-  const precargarLogo = (url) => {
-    const logo = new Image();
-    logo.src = url;
-  };
-
-  const precargarFondo = (url) => {
-    const fondo = new Image();
-    fondo.src = url;
-  };
-
-  useEffect(() => {
-    precargarFondo('/img-consultas/fondoabonos.webp');
-    precargarLogo('/img-consultas/logo.webp');
-  },[])
+ 
 
   return (
     <div className="App relative">

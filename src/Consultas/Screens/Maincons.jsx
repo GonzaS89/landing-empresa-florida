@@ -43,6 +43,21 @@ export const Maincons = ({enviarParametrosAbonos}) => {
   const recibirTarifaElegida = tarifa => { setTarifaElegida(tarifa) }
   const recibirViajesIngresados = viajes => { setViajesIngresados(viajes) }
 
+  const precargarLogo = (url) => {
+    const logo = new Image();
+    logo.src = url;
+  };
+
+  const precargarFondo = (url) => {
+    const fondo = new Image();
+    fondo.src = url;
+  };
+
+  useEffect(() => {
+    precargarFondo('/img-consultas/fondoabonos.webp');
+    precargarLogo('/img-consultas/logo.webp');
+  },[])
+
     const {hLg} = useHeight()
 
   return (
