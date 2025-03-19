@@ -7,9 +7,6 @@ import { CotizacionAbonos } from "./Consultas/Screens/CotizacionAbonos";
 import { Mainhorarios } from "./Consultas/Screens/Mainhorarios";
 import Horarios from "./Consultas/Screens/Horarios";
 import { useHora } from "./Consultas/HooksCons/useHora";
-import {logo} from './img-consultas/logo.webp';
-import {fondo} from './img-consultas/fondoabonos.webp';
-
 
 
 function App() {
@@ -78,7 +75,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainScreen />}></Route>
           <Route path="/cotizadordeabonos" element={<Maincons enviarParametrosAbonos={recibirParametrosAbonos}/>}></Route>
-          <Route path="/cotizacion" element={<CotizacionAbonos origen={localidadOrigen} destino={localidadDestino} viajes={viajesIngresados} tarifa={tarifaElegida} via={via} logo={logo} fondo={fondo}/>}></Route>
+          <Route path="/cotizacion" element={<CotizacionAbonos origen={localidadOrigen} destino={localidadDestino} viajes={viajesIngresados} tarifa={tarifaElegida} via={via}/>}></Route>
           <Route path="/consultadehorarios" element={<Mainhorarios enviarParametrosHorarios={recibirParametrosHorarios}/>}></Route>
           <Route path='/horarios' element={<Horarios grillaDefinitiva={listaHorarios} origen={localidadOrigen} destino={localidadDestino} horaAuto={horaAutoEnMins} horaManual={horaManualEnMins} codigo={codigoDeterminado} diaAuto={hayDiaAuto} grilla={diaGrilla} via={via}/>}>
           </Route>
