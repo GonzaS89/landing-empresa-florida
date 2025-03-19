@@ -12,7 +12,8 @@ export default {
         principal : 'Lato',
         secundaria : "Antonio",
         terciaria : 'Open Sans',
-        jockey: '"Jockey One", sans-serif;'
+        jockey: '"Jockey One", sans-serif;',
+        londrina: '"Londrina Solid", sans-serif;',
       },
       dropShadow: {
         'custom': '2px 2px 10px grey',
