@@ -65,7 +65,7 @@ function App() {
   };
 
   useEffect(() => {
-    precargarFondo('/img-consutas/fondoabonos.webp');
+    precargarFondo('/img-consultas/fondoabonos.webp');
     precargarLogo('/img-consultas/logo.webp');
   },[])
 
