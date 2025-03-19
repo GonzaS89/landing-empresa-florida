@@ -15,6 +15,8 @@ export const CotizacionAbonos = ({
   viajes,
   tarifa,
   via,
+  logo,
+  fondo
 }) => {
 
 
