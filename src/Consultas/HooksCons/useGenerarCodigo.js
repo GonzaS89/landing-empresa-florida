@@ -262,6 +262,6 @@ export const useGenerarCodigo = (origen, destino, via) => {
     }
 
   }, [origen, destino, via]);
-
+  console.log(codigo)
   return { codigo };
 };
