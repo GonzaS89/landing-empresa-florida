@@ -37,7 +37,7 @@ export const CotizacionAbonos = ({
   }, [codigo, viajes])
 
   useEffect(() => {
-    console.log(precioNormal)
+    console.log(precioDescuento)
   },[precioNormal])
 
 
