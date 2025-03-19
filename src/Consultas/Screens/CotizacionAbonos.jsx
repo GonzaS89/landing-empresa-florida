@@ -38,10 +38,10 @@ export const CotizacionAbonos = ({
 
   return (
     <div className="bg-slate-800 flex justify-center relative text-white text-center">
-      <img src={`/img-consultas/fondoabonos.avif`} alt="" className="z-10 flex absolute h-full object-center"/>
-      <div className="bg-[#0F082C] flex flex-col justify-between h-screen gap-4 z-30 opacity-80 w-full">
+      <img src={`/img-consultas/fondoabonos.avif`} alt="" className="z-10 flex absolute h-full object-center blur-md"/>
+      <div className="bg-[#0F082C] flex flex-col justify-between h-screen gap-4 z-30 opacity-85 w-full">
         <div className="flex flex-col justify-between md:gap-8 items-center h-full py-8">
-        <img src={`src/assets/logo.png`} alt="" className="z-50 w-36"/>
+        <img src={`img-consultas/logo.png`} alt="" className="z-50 w-36"/>
           <h1 className="text-3xl md:text-5xl text-white text-center font-jockey px-4 uppercase">El precio de tu abono es:</h1>
           <div className="text-white text-center flex flex-col gap-4">
             <CountUp
