@@ -191,7 +191,7 @@ export const useGenerarCodigo = (origen, destino, via) => {
         'fila de la orilla':codigo06,
         'colonia media agua':codigo06,
         'cevil pozo':codigo06,
-        'banda del río del salí':codigo08,
+        'banda del río salí':codigo08,
         's. m. de tucumán':codigo15
       },
       'esquina llona':{

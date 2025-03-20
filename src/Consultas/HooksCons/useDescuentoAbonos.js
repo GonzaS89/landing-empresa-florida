@@ -9,28 +9,29 @@ export const useDescuentoAbonos = (tarifa, precio, origen) => {
 
         if (origen === 'los ralos' || origen === 'las cejas') {
             if (tarifa === 'social') {
-            descuento = precio * 0.33996
+            descuento = precio * 0.66004
             } else {
-            descuento = precio * 0.43999
+            descuento = precio * 0.56001
             }
         } 
         else if (origen === 'las cejas') {
-            descuento = precio * 0.43003
+            descuento = precio * 0.56997
         }
         else if(origen === 'finca mayo'){
-            descuento = precio * 0.429847
+            descuento = precio * 0.570153
         }    
         else if(origen !== 'los ralos' || origen !== 'las cejas' || origen !== 'finca mayo')
         {
             tarifa === 'social' ?
-            descuento = precio * 0.3 : descuento = precio * 0.4
+            descuento = precio * 0.7 : descuento = precio * 0.6
         }
+        console.log(descuento)
         return descuento;
     }
     
     useEffect(() => {
         setPrecioDescuento(obtenerDescuento())
-    },[tarifa,precio,origen])
+    },[precio])
 
     return{precioDescuento}
 }
