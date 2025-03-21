@@ -25,13 +25,15 @@ export const useDescuentoAbonos = (tarifa, precio, origen) => {
             tarifa === 'social' ?
             descuento = precio * 0.7 : descuento = precio * 0.6
         }
-        console.log(descuento)
+        
         return descuento;
     }
     
     useEffect(() => {
         setPrecioDescuento(obtenerDescuento())
     },[precio])
+
+    
 
     return{precioDescuento}
 }
