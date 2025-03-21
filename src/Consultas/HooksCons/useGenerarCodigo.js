@@ -261,9 +261,8 @@ export const useGenerarCodigo = (origen, destino, via) => {
       setCodigo(codigoDestino[via] || codigoDestino['default']);
     }
 
-    useEffect
 
   }, [origen, destino, via]);
-  console.log(codigo)
+  
   return { codigo };
 };

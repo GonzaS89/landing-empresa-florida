@@ -51,16 +51,16 @@ export const CotizacionAbonos = ({ origen, destino, viajes, tarifa, via }) => {
                 />
               )}
             </CountUp>
-            <p className="font-londrina uppercase">
-              {viajes} viajes desde {origen} hasta {destino} <br />
-              (tarifa {tarifa})
+            <p className="font-londrina uppercase px-4">
+              {viajes} viajes desde {origen} hasta {destino} <br /> {via ? `por ${via} con tarifa ${tarifa} ` : `con tarifa ${tarifa}`} 
+                 
             </p>
           </div>
           <p className="uppercase font-londrina text-xl">
             Vigencia de compra: 02/03 al 14/03
           </p>
-          <div className="flex flex-col text-left px-6 gap-4">
-            <div>
+          <div className="flex w-full text-left gap-4 px-4">
+            <div className="basis-1/2">
               <h3 className="uppercase font-londrina text-xl">
                 Formas de pago
               </h3>
@@ -74,10 +74,10 @@ export const CotizacionAbonos = ({ origen, destino, viajes, tarifa, via }) => {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="basis-1/2">
               <h3 className="uppercase font-londrina text-xl">Requisítos</h3>
               <ul className="flex flex-col list-none">
-                <li className="font-londrina pr-12 list-none">
+                <li className="font-londrina list-none">
                   <span className="uppercase">Estudiantíl: </span>Constancia de
                   inscripción y copia del DNI
                 </li>
