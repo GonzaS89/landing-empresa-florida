@@ -1,15 +1,12 @@
 import React from 'react';
 import { OpcionLocalidadDestino } from './OpcionLocalidadDestino';
 import { useReturnDestinos } from '../../HooksCons/useReturnDestinos';
-import { useHeight } from '../../HooksCons/useHeight';
 import { motion } from 'framer-motion';
 
 
 export const Bloquelocalidadesdestino = ({ origen, destino, recibirVia, recibirLocalidadDestino }) => {
 
     const { arrayDestinos } = useReturnDestinos(origen) 
-
-    const {hLg} = useHeight();
 
   return (
     <div className='flex flex-col px-1 w-full'>

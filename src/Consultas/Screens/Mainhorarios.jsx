@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import { ContainerHoraDia } from "../Componentes/Horarios/ContainerHoraDia";
 import { Bloquelocalidadesorigen } from "../Componentes/Abonos/Bloquelocalidadesorigen";
 import { Bloquelocalidadesdestino } from "../Componentes/Abonos/Bloquelocalidadesdestino";
+import { Via } from "../Componentes/Horarios/Via";
 import { useHabilitarBoton } from "../HooksCons/useHabilitarBoton";
 import { useHora } from "../HooksCons/useHora";
 import { useDiaDeLaSemana } from "../HooksCons/useDiaDeLaSemana";
 import { useFiltradoHorarios } from "../HooksCons/useFiltradoHorarios";
 import { useHeight } from "../HooksCons/useHeight";
 import { motion } from "framer-motion";
-import { use } from "react";
+
 
 export const Mainhorarios = ({ enviarParametrosHorarios }) => {
 
@@ -51,7 +52,7 @@ export const Mainhorarios = ({ enviarParametrosHorarios }) => {
   };
 
   const recibirLocalidadDestino = (localidad) => {setLocalidadDestino(localidad);};
-  const recibirVia = (via) => {setVia(via);};
+  const recibirVia = (via) => {setVia(via)};
 
   const [diaAuto, setDiaAuto] = useState(null);
   const [diaManual, setDiaManual] = useState(null);
@@ -72,10 +73,6 @@ export const Mainhorarios = ({ enviarParametrosHorarios }) => {
   const {listaHorarios} = useFiltradoHorarios(localidadOrigen,localidadDestino,diaDeLaSemana,via);
 
   useEffect(() => {
-    console.log(listaHorarios)
-  },[listaHorarios])
-
-  useEffect(() => {
     setVia(null);
   }, [localidadDestino]);
 
@@ -94,7 +91,8 @@ export const Mainhorarios = ({ enviarParametrosHorarios }) => {
           Consulta de horarios
         </h1>
         <Bloquelocalidadesorigen origen={localidadOrigen} recibirLocalidad={recibirLocalidad}/>
-        <Bloquelocalidadesdestino origen={localidadOrigen} destino={localidadDestino} recibirVia={recibirVia} recibirLocalidadDestino={recibirLocalidadDestino}/>
+        <Bloquelocalidadesdestino origen={localidadOrigen} destino={localidadDestino} recibirLocalidadDestino={recibirLocalidadDestino}/>
+        <Via viaElegida={recibirVia}/>
           <ContainerHoraDia
             hora={hora}
             minutos={minutos}

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useHora } from "./useHora";
 
 export const useFiltradoHorarios = (origen, destino, listado, via) => {
 
@@ -16,19 +15,23 @@ export const useFiltradoHorarios = (origen, destino, listado, via) => {
         const indexDestino = recorrido.indexOf(destino);
 
         // Caso cuando 'via' es null
-        if (via === null) {
+      
           if (origen === destino) {
-            if (incluyeOrigen && recorrido.indexOf("s. m. de tucumán") !== 0) {
-              horariosFiltrados.push(horario)
+            if (incluyeOrigen &&
+              incluyeDestino) {
+              horariosFiltrados.push(horario);
+              
             }
-          } else if (
-            incluyeOrigen &&
-            incluyeDestino &&
-            indexOrigen < indexDestino
-          ) {
-          
-            horariosFiltrados.push(horario);
+            console.log(horariosFiltrados)
           }
+
+         else if (
+          incluyeOrigen &&
+          incluyeDestino &&
+          indexOrigen < indexDestino
+        ) {
+          horariosFiltrados.push(horario);
+          console.log(horariosFiltrados)
         }
         // Caso cuando 'via' es 'w. posse'
         else if (via === "w. posse") {
@@ -38,8 +41,6 @@ export const useFiltradoHorarios = (origen, destino, listado, via) => {
             recorrido.includes(via) &&
             indexOrigen < indexDestino
           ) {
-            
-            
             horariosFiltrados.push(horario);
           }
         }
@@ -51,16 +52,17 @@ export const useFiltradoHorarios = (origen, destino, listado, via) => {
             !recorrido.includes("w. posse") &&
             indexOrigen < indexDestino
           ) {
-            
-           
+
+
             horariosFiltrados.push(horario);
           }
+
         }
       });
       // Actualiza el estado solo una vez con los horarios filtrados
-      setListaHorarios(horariosFiltrados.sort((a, b) => a.salida - b.salida));
+      setListaHorarios(horariosFiltrados.sort((a, b) => a.valor_salida - b.valor_salida));
     }
-    
+
   }, [origen, destino, via, listado]);
   return { listaHorarios }
 }

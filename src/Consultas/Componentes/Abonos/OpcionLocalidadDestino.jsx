@@ -53,7 +53,7 @@ export const OpcionLocalidadDestino = ({
           className={opcionesViasVisibles ? "flex flex-col gap-2" : "hidden"
           }
         >
-          <Opcionvia
+          {/* <Opcionvia
             nombre={nombreOpcionVia}
             enviarVia={recibirVia}
             viaElegida={viaElegida}
@@ -64,7 +64,7 @@ export const OpcionLocalidadDestino = ({
             enviarVia={recibirVia}
             viaElegida={viaElegida}
             localidadDestino={localidadDestino}
-          />
+          /> */}
         </div>
       </div>
       <p className='text-xs lg:text-sm xl:text-base uppercase text-center font-jockey'>{nombre}</p>

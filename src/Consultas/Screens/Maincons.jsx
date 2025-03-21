@@ -3,6 +3,7 @@ import { useHeight } from '../HooksCons/useHeight';
 import { Bloquelocalidadesorigen } from '../Componentes/Abonos/Bloquelocalidadesorigen';
 import { Bloquelocalidadesdestino } from '../Componentes/Abonos/Bloquelocalidadesdestino';
 import { Containerviajestarifas } from '../Componentes/Abonos/Containerviajestarifas';
+import { Via } from '../Componentes/Horarios/Via';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -23,7 +24,7 @@ export const Maincons = ({enviarParametrosAbonos}) => {
         };
     }, []);
 
-    const [localidadOrigen, setLocalidadOrigen] = useState(null);
+  const [localidadOrigen, setLocalidadOrigen] = useState(null);
   const [localidadDestino, setLocalidadDestino] = useState(null);
   const [viajesIngresados, setViajesIngresados] = useState(null);
   const [tarifaElegida, setTarifaElegida] = useState(null);
@@ -37,8 +38,11 @@ export const Maincons = ({enviarParametrosAbonos}) => {
   const recibirVia = via => { setVia(via) }
 
   useEffect(() => {
-    setVia(null)
+    setVia(null),
+    console.log(via)
   }, [localidadDestino])
+
+
 
   const recibirTarifaElegida = tarifa => { setTarifaElegida(tarifa) }
   const recibirViajesIngresados = viajes => { setViajesIngresados(viajes) }
@@ -66,7 +70,8 @@ export const Maincons = ({enviarParametrosAbonos}) => {
     <div className={`overflow-hidden text-white flex flex-col  items-center h-screen-dvh pt-6  h-screen  w-full relative ${hLg ? 'gap-6' : 'gap-2'}`}>
       <h1 className='uppercase  font-jockey text-2xl md:text-4xl'>Calculá el precio de tu abono</h1>
       <Bloquelocalidadesorigen origen={localidadOrigen} recibirLocalidad={recibirLocalidad}/>
-      <Bloquelocalidadesdestino origen={localidadOrigen} destino={localidadDestino} recibirVia={recibirVia} recibirLocalidadDestino={recibirLocalidadDestino} />
+      <Bloquelocalidadesdestino origen={localidadOrigen} destino={localidadDestino} recibirLocalidadDestino={recibirLocalidadDestino} />
+      <Via viaElegida={recibirVia}/>
       <Containerviajestarifas enviarTarifaElegida={recibirTarifaElegida} enviarViajesIngresados={recibirViajesIngresados} destino={localidadDestino} />
      <Link to='/cotizacion'>
      <motion.div 
