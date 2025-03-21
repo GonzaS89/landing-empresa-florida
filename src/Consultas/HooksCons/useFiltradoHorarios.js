@@ -22,7 +22,6 @@ export const useFiltradoHorarios = (origen, destino, listado, via) => {
               horariosFiltrados.push(horario);
               
             }
-            console.log(horariosFiltrados)
           }
 
          else if (
@@ -31,7 +30,7 @@ export const useFiltradoHorarios = (origen, destino, listado, via) => {
           indexOrigen < indexDestino
         ) {
           horariosFiltrados.push(horario);
-          console.log(horariosFiltrados)
+          
         }
         // Caso cuando 'via' es 'w. posse'
         else if (via === "w. posse") {
@@ -51,12 +50,8 @@ export const useFiltradoHorarios = (origen, destino, listado, via) => {
             incluyeDestino &&
             !recorrido.includes("w. posse") &&
             indexOrigen < indexDestino
-          ) {
-
-
-            horariosFiltrados.push(horario);
+          ) {horariosFiltrados.push(horario);
           }
-
         }
       });
       // Actualiza el estado solo una vez con los horarios filtrados
