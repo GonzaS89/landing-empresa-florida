@@ -92,7 +92,7 @@ export const Mainhorarios = ({ enviarParametrosHorarios }) => {
         </h1>
         <Bloquelocalidadesorigen origen={localidadOrigen} recibirLocalidad={recibirLocalidad}/>
         <Bloquelocalidadesdestino origen={localidadOrigen} destino={localidadDestino} recibirLocalidadDestino={recibirLocalidadDestino}/>
-        <Via viaElegida={recibirVia}/>
+        <Via viaElegida={recibirVia} destino={localidadDestino}/>
           <ContainerHoraDia
             hora={hora}
             minutos={minutos}

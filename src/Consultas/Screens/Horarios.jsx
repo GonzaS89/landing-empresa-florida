@@ -41,8 +41,6 @@ const Horarios = ({ grillaDefinitiva, origen, destino, horaAuto, horaManual, via
           <div className='container-resultadoshorarios h-screen'>
             <div className="flex flex-col gap-2 items-center justify-center w-full py-4" onTouchMove={normalizarResultados}>
               {grillaDefinitiva?.length > 0 &&
-                setTimeout(() => {
-                  console.log(grillaDefinitiva)
                     grillaDefinitiva.map((servicio, index) => (
                       <Horario
                         key={index}
@@ -60,7 +58,6 @@ const Horarios = ({ grillaDefinitiva, origen, destino, horaAuto, horaManual, via
                         diaAuto={diaAuto}
                         grilla={grilla} />
                     ))
-                },1500)
               }
             </div>
           </div>
