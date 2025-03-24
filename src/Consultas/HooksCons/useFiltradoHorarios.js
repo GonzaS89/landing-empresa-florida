@@ -58,7 +58,7 @@ export const useFiltradoHorarios = (origen, destino, listado, via) => {
         }
       });
       // Actualiza el estado solo una vez con los horarios filtrados
-      setListaHorarios(horariosFiltrados.sort((a, b) => a.salida - b.salida));
+      setListaHorarios(horariosFiltrados.sort((a, b) => a.valor_salida - b.valor_salida));
     }
     
   }, [origen, destino, via, listado]);
