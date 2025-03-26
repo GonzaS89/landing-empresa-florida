@@ -11,8 +11,8 @@ export const Bloquelocalidadesorigen = ({ origen, recibirLocalidad }) => {
       <h1 className='text-white text-2xl xl:text-4xl font-jockey'>
         Origen
       </h1>
-      <div className="flex  gap-2 overflow-x-scroll container-paradas relative">
-
+      <div className="flex gap-2 overflow-y-scroll container-paradas relative">
+    
         {localidades.map((localidad, index) => (
           <OpcionLocalidad
             key={index}

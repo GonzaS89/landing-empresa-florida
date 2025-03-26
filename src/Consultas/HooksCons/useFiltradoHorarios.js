@@ -15,7 +15,8 @@ export const useFiltradoHorarios = (origen, destino, listado, via) => {
         const indexDestino = recorrido.indexOf(destino);
 
         // Caso cuando 'via' es null
-      
+
+        if(via === null) {
           if (origen === destino) {
             if (incluyeOrigen &&
               incluyeDestino) {
@@ -23,7 +24,6 @@ export const useFiltradoHorarios = (origen, destino, listado, via) => {
               
             }
           }
-
          else if (
           incluyeOrigen &&
           incluyeDestino &&
@@ -32,6 +32,9 @@ export const useFiltradoHorarios = (origen, destino, listado, via) => {
           horariosFiltrados.push(horario);
           
         }
+        }
+      
+          
         // Caso cuando 'via' es 'w. posse'
         else if (via === "w. posse") {
           if (
