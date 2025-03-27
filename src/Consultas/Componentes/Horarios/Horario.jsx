@@ -107,7 +107,7 @@ export const Horario = forwardRef(
               <span className="bg-[#EE4E4E] uppercase font-jockey text-xs px-2 rounded-full z-50">inicio de recorrido</span>
               <span className="bg-[#EE4E4E] w-4 h-4 flex absolute bottom-[-4px] rotate-45"></span>
               </motion.div>
-              <div className="relative flex flex-col justify-center items-center gap-4">
+              <div className="relative flex flex-col justify-center items-center gap-1">
               <motion.span 
               initial={{height:0}}
               animate={{height: '100%'}}

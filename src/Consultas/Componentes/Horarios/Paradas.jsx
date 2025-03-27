@@ -10,8 +10,8 @@ export const Paradas = ({ nombre, index, length, origen, destino }) => {
     const nombreOrigen = nombre === origen;
     const nombreDestino = nombre === destino;
 
-    const estiloParadaTexto = 'text-sm';
-    const estiloParadaContainer = 'text-sm py-0 w-32 rounded-lg absolute r-0'
+    const estiloParadaTexto = 'text-xs'
+    const estiloParadaContainer = 'text-white bg-slate-800 rounded-xs border-1'
 
     const esLocalidad = ciudad => localidades.some(localidad => localidad.nombre === ciudad);
 
@@ -20,14 +20,11 @@ export const Paradas = ({ nombre, index, length, origen, destino }) => {
 
     <>
       <div
-        className='text-white flex flex-col relative w-40 h-[35px] z-50'
+        className={` ${nombreOrigenDestino ? 'bg-green-600 text-white' : esLocalidad(nombre) ? 'bg-white text-black' : estiloParadaContainer} w-40 flex justify-center items-center relative border-groove border-2 overflow-hidden py-1 rounded-lg`}
       >
-        <p className={`${esLocalidad(nombre) ? '' : estiloParadaTexto} text-xs text-white bg-slate-900 rounded-lg px-1 font-thin uppercase font-jockey z-50 absolute left-[-15px] top-[-10px]`}>{nombre}</p>
+        <p className={`${esLocalidad(nombre) ? '' : estiloParadaTexto} uppercase font-jockey z-50`}>{esLocalidad(nombre) ? nombre : index === 0 ? `desde ${nombre}` : index === (length - 1) ? `hasta ${nombre}` : `por ${nombre}`}</p>
         {nombre === origen || destino === nombre}
-        {/* <BsCheckCircleFill className={nombreOrigenDestino ? ' absolute left-1' : 'hidden'}/> */}
-        <div className="w-40 bg-white h-full border-2 absolute">
-          <img src={`/img-consultas/${nombre}.webp`} alt=""  className="h-full w-full object-fill"/>
-        </div>
+        <BsCheckCircleFill className={nombreOrigenDestino ? ' absolute left-1' : 'hidden'}/>
       </div>
     </>
   );
