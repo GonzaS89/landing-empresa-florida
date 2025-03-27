@@ -20,9 +20,9 @@ export const Paradas = ({ nombre, index, length, origen, destino }) => {
 
     <>
       <div
-        className={` ${nombreOrigenDestino ? 'bg-green-600 text-white' : esLocalidad(nombre) ? 'bg-white text-black' : estiloParadaContainer} w-40 flex justify-center items-center relative border-groove border-2 overflow-hidden py-1 rounded-lg`}
+        className={` ${nombreOrigenDestino ? 'bg-white text-black' : esLocalidad(nombre) ? 'bg-white text-black' : estiloParadaContainer} w-40 flex justify-center items-center relative border-groove border-2 overflow-hidden py-1 rounded-lg`}
       >
-        <p className={`${esLocalidad(nombre) ? '' : estiloParadaTexto} uppercase font-jockey z-50`}>{esLocalidad(nombre) ? nombre : index === 0 ? `desde ${nombre}` : index === (length - 1) ? `hasta ${nombre}` : `por ${nombre}`}</p>
+        <p className={`${esLocalidad(nombre) ? '' : estiloParadaTexto} text-sm uppercase font-jockey z-50`}>{esLocalidad(nombre) ? nombre : index === 0 ? `desde ${nombre}` : index === (length - 1) ? `hasta ${nombre}` : `por ${nombre}`}</p>
         {nombre === origen || destino === nombre}
         <BsCheckCircleFill className={nombreOrigenDestino ? ' absolute left-1' : 'hidden'}/>
       </div>
