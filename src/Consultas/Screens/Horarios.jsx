@@ -51,6 +51,7 @@ const Horarios = ({ grillaDefinitiva, origen, destino, horaAuto, horaManual, via
                         origen={origen}
                         destino={destino}
                         index={index}
+                        length={grillaDefinitiva.length}
                         codigo={codigo}
                         horaDeReferencia={horaDeReferencia}
                         claseNormalizadora={claseNormalizadora}
