@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export const useDefineFeriado = (fecha, mes) => {
-  const [feriado, setFeriado] = useState(false);
+  const [feriado, setFeriado] = useState(false)
 
   useEffect(() => {
     const feriados = {
