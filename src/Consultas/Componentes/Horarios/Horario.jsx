@@ -107,12 +107,12 @@ export const Horario = forwardRef(
               <span className="bg-[#EE4E4E] uppercase font-jockey text-xs px-2 rounded-full z-50">inicio de recorrido</span>
               <span className="bg-[#EE4E4E] w-4 h-4 flex absolute bottom-[-4px] rotate-45"></span>
               </motion.div>
-              <div className="relative flex flex-col items-center gap-1">
+              <div className="relative flex flex-col justify-center items-center gap-4">
               <motion.span 
               initial={{height:0}}
               animate={{height: '100%'}}
               transition={{duration: 1, ease:'easeOut' ,delay:2}}
-              className="w-[3px] bg-gray-300 h-0 absolute top-0"></motion.span>
+              className="w-[3px] bg-gray-300 h-0 absolute"></motion.span>
               {recorrido.map((parada, index) => (
                 <Paradas
                   key={index}
