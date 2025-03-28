@@ -62,7 +62,7 @@ export const Header = () => {
           <div className='flex items-center justify-around w-full h-full'>
             <Link to='front' smooth={true} duration={500} offset={-96}>
               <div className='flex h-[70px] lg:h-[80px] cursor-pointer' onClick={() => setIsOpen(false)}>
-                <img src={Logo} alt="" />
+                <img src={`/img-consultas/logo.png`} alt="" />
               </div>
             </Link>
             <div onClick={() => setIsOpen(!isOpen)}>
