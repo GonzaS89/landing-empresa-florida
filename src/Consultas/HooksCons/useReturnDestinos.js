@@ -72,7 +72,8 @@ export const useReturnDestinos = (localidad) => {
       "los ralos", "cevil pozo", "finca mayo", "banda del río salí", "s. m. de tucumán", 
       "la florida", "fortín", "colonia 4 (luisiana)", "fila de la orilla", "w. posse", 
       "el paraíso", "las cejas", "7 de abril"
-    ]
+    ],
+    "la marta": [ "alderetes", "s. m. de tucumán", "finca mayo" , "banda del río salí" , "cevil pozo" , "los ralos", "colonia media agua", "esquina llona", "la florida", "colonia 4 (luisiana)","alderetes", "el talar" ],
   };
 
   const [arrayDestinos, setArrayDestinos] = useState([]);

@@ -32,6 +32,10 @@ const Horarios = ({ grillaDefinitiva, origen, destino, horaAuto, horaManual, via
     setClaseNormalizadora('containerservicio serviciovisibleynormal')
   }
 
+  const recibirUnicoServicio = (valor) => {
+    
+  }
+
 
   return (
     <div className="bg-slate-900 flex justify-center ">
@@ -57,7 +61,8 @@ const Horarios = ({ grillaDefinitiva, origen, destino, horaAuto, horaManual, via
                         claseNormalizadora={claseNormalizadora}
                         ref={el => refs.current[index] = el}
                         diaAuto={diaAuto}
-                        grilla={grilla} />
+                        grilla={grilla}
+                        unicoServicio = {recibirUnicoServicio} />
                     ))
               }
             </div>

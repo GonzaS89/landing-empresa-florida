@@ -3,6 +3,7 @@ import { Paradas } from "./Paradas";
 import { useEstadoservicio } from "../../HooksCons/useEstadoservicio";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { use } from "react";
 // import { WarapButton } from "./WarapButton";
 
 export const Horario = forwardRef(
@@ -18,7 +19,7 @@ export const Horario = forwardRef(
       diaAuto,
       grilla,
       index,
-      length
+      length,
     },
     ref
   ) => {
@@ -32,7 +33,7 @@ export const Horario = forwardRef(
     const [horaSalidaEnMinutos, setHoraSalidaEnMInutos] = useState(null);
     const [lengthRecorrido, setLengthRecorrido] = useState(null);
     const [horas, setHoras] = useState(null);
-    const [minutos, setMinutos] = useState(null)
+    const [minutos, setMinutos] = useState(null);
 
     useEffect(() => {
       setHoraSalidaEnMInutos(
@@ -55,6 +56,12 @@ export const Horario = forwardRef(
 
       setHoras(horas); setMinutos(minutos)
     }, [nombre]);
+    
+    useEffect(() => {
+      if (length === 1) {
+        setUnicoServicio(true)
+      }
+    }, [length])
 
     const darFormatoHoraMinuto = elemento => {
       return elemento < 10 ? `0${elemento}` : elemento
@@ -94,7 +101,7 @@ export const Horario = forwardRef(
               <h3 className="font-jockey text-3xl text-shadow">HRS</h3>
             </div>
             <span className={`${index === 0 || index === length-1 ? 'flex' : 'hidden'} absolute bottom-0 mb-4 px-2`}>
-              <p className="text-center uppercase font-jockey text-sm border-[3px] py-2">{index === 0 ? 'primer servicio del día' : index === length - 1 ? 'último servicio del día' : ''}</p>
+              <p className="text-center uppercase font-jockey text-sm border-[3px] py-2">{length === 1 ? 'único servicio del día' : index === 1 ? 'primer servicio del día' : index === length - 1 ? 'último servicio del día' : ''}</p>
             </span>
           </div>
           <div className="bg-[#1B3C73] basis-[70%] rounded-tr-xl rounded-br-xl flex flex-col justify-between">

@@ -230,6 +230,21 @@ export const useGenerarCodigo = (origen, destino, via) => {
         'el talar': codigo08,
         'colonia media agua': codigo11,
         'cevil pozo': codigo13,
+        'la florida': codigo11,
+        'colonia 4 (luisiana)': codigo11,
+        
+      },
+      'la marta':{
+        's. m. de tucumán':codigo27,
+        'banda del río salí':codigo22,
+        'cevil pozo':codigo22,
+        'colonia media agua':codigo21,
+        'alderetes':codigo21,
+        'esquina llona':codigo21,
+        'el talar':codigo14,
+        'los ralos':codigo12,
+        'finca mayo':codigo06
+
       }
     };
 

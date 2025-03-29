@@ -1,6 +1,6 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import { BrowserRouter ,Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MainScreen } from "./Landing/MainScreen";
 import { Maincons } from "./Consultas/Screens/Maincons";
 import { CotizacionAbonos } from "./Consultas/Screens/CotizacionAbonos";
@@ -20,7 +20,6 @@ function App() {
   const [listaHorarios, setListaHorarios] = useState(null);
   const [horaAutoEnMins, setHoraAutoEnMins] = useState(null);
   const [horaManualEnMins, setHoraManualEnMins] = useState(null);
-  const [codigoDeterminado, setCodigoDeterminado] = useState(null);
   const [hayDiaAuto, setHayDiaAuto] = useState(null);
   const [diaGrilla, setDiaGrilla] = useState(null);
 
@@ -48,23 +47,23 @@ function App() {
     else if (diaManual === 'añonuevo') { setDiaGrilla('año nuevo') }
   }
 
-  const {fecha,mes} = useHora()
+  const { fecha, mes } = useHora()
 
   useEffect(() => {
-    if(fecha === 31 && mes === 11){setDiaGrilla('fin de año')}
-  },[fecha,mes])
+    if (fecha === 31 && mes === 11) { setDiaGrilla('fin de año') }
+  }, [fecha, mes])
 
- 
+
 
   return (
     <div className="App relative">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainScreen />}></Route>
-          <Route path="/cotizadordeabonos" element={<Maincons enviarParametrosAbonos={recibirParametrosAbonos}/>}></Route>
-          <Route path="/cotizacion" element={<CotizacionAbonos origen={localidadOrigen} destino={localidadDestino} viajes={viajesIngresados} tarifa={tarifaElegida} via={via}/>}></Route>
-          <Route path="/consultadehorarios" element={<Mainhorarios enviarParametrosHorarios={recibirParametrosHorarios}/>}></Route>
-          <Route path='/horarios' element={<Horarios grillaDefinitiva={listaHorarios} origen={localidadOrigen} destino={localidadDestino} horaAuto={horaAutoEnMins} horaManual={horaManualEnMins} diaAuto={hayDiaAuto} grilla={diaGrilla} via={via}/>}>
+          <Route path="/cotizadordeabonos" element={<Maincons enviarParametrosAbonos={recibirParametrosAbonos} />}></Route>
+          <Route path="/cotizacion" element={<CotizacionAbonos origen={localidadOrigen} destino={localidadDestino} viajes={viajesIngresados} tarifa={tarifaElegida} via={via} />}></Route>
+          <Route path="/consultadehorarios" element={<Mainhorarios enviarParametrosHorarios={recibirParametrosHorarios} />}></Route>
+          <Route path='/horarios' element={<Horarios grillaDefinitiva={listaHorarios} origen={localidadOrigen} destino={localidadDestino} horaAuto={horaAutoEnMins} horaManual={horaManualEnMins} diaAuto={hayDiaAuto} grilla={diaGrilla} via={via} />}>
           </Route>
         </Routes>
       </BrowserRouter>

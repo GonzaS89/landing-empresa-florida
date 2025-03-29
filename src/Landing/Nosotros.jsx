@@ -6,7 +6,7 @@ import { FaHandPointRight } from "react-icons/fa";
 import { Element } from "react-scroll";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import fotoNosotros  from '/img-consultas/foto-nosotros.webp';
+import fotoNosotros from '/img-consultas/foto-nosotros.webp';
 
 export const Nosotros = () => {
 
@@ -37,19 +37,18 @@ export const Nosotros = () => {
                 <Carousel
                   slide={false}
                   leftControl={
-                    <button className="absolute top-1/2 left-0 -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 filter opacity-25">
+                    <div className="absolute top-1/2 left-0 -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 filter opacity-25">
                       <FaHandPointLeft className="h-4 w-4 lg:w-6 lg:h-6" />
-                    </button>
+                    </div>
                   }
                   rightControl={
-                    <button className="absolute top-1/2 right-0 -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 filter opacity-25">
+                    <div className="absolute top-1/2 right-0 -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 filter opacity-25">
                       <FaHandPointRight className="h-4 w- lg:w-6 lg:h-6" />
-                    </button>
+                    </div>
                   }
                 >
                   <Descripcion titulo={"Nuestra historia"} contenido={'Empresa Florida SRL comenzó a funcionar un 10 de noviembre de 1954. Su fundador fue Belarmino Fernandez Barrioso: Y nuestro compromiso con nuestros usuarios sigue intacto como hace 70 años. .El recorrido inicial y original de la firma fue el tramo que une la ciudad de San Miguel de Tucumán con la localidad de Florida. Al recorrido inicial que era la línea San Miguel de Tucumán- Florida se fueron incorporando otros tramos'} />
                   <Descripcion titulo={"Nuestros recorridos"} contenido={'Hoy contamos con 44 unidades, dos vehículos de auxilio, 99 personas entre choferes, administrativos, mecánicos, lavadores, etc. Actualmente nuestro recorrido es por el ESTE de la Provincia de Tucumán incluyendo localidades como Los Ralos, Mayo Lolita, Llona, Delfín Gallo, Florida, Alabama, La Marta, etc. hasta llegar a 7 de abril. Nuestro compromiso sigue intacto como hace casi 67 años. "Servir y brindar un servicio óptimo a nuestros usuarios"'} />
-
                 </Carousel>
               </div>
               <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-azulclaro rounded-2xl"></div>

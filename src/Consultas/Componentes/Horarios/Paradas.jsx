@@ -11,7 +11,7 @@ export const Paradas = ({ nombre, index, length, origen, destino }) => {
     const nombreDestino = nombre === destino;
 
     const estiloParadaTexto = 'text-xs'
-    const estiloParadaContainer = 'text-white bg-slate-800 rounded-xs border-1'
+    const estiloParadaContainer = 'text-white rounded-xs border-1 w-32 bg-slate-950'
 
     const esLocalidad = ciudad => localidades.some(localidad => localidad.nombre === ciudad);
 
@@ -20,7 +20,7 @@ export const Paradas = ({ nombre, index, length, origen, destino }) => {
 
     <>
       <div
-        className={` ${nombreOrigenDestino ? 'bg-white text-black' : esLocalidad(nombre) ? 'bg-white text-black' : estiloParadaContainer} w-40 flex justify-center items-center relative border-groove border-2 overflow-hidden py-1 rounded-lg`}
+        className={` ${esLocalidad(nombre) ? ' text-black w-40' : estiloParadaContainer} bg-white flex justify-center items-center relative border-groove border-2 overflow-hidden py-1 rounded-lg`}
       >
         <p className={`${esLocalidad(nombre) ? '' : estiloParadaTexto} text-sm uppercase font-jockey z-50`}>{esLocalidad(nombre) ? nombre : index === 0 ? `desde ${nombre}` : index === (length - 1) ? `hasta ${nombre}` : `por ${nombre}`}</p>
         {nombre === origen || destino === nombre}
