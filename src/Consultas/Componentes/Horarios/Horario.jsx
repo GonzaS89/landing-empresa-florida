@@ -20,6 +20,7 @@ export const Horario = forwardRef(
       grilla,
       index,
       length,
+      
     },
     ref
   ) => {
@@ -57,11 +58,6 @@ export const Horario = forwardRef(
       setHoras(horas); setMinutos(minutos)
     }, [nombre]);
     
-    useEffect(() => {
-      if (length === 1) {
-        setUnicoServicio(true)
-      }
-    }, [length])
 
     const darFormatoHoraMinuto = elemento => {
       return elemento < 10 ? `0${elemento}` : elemento
