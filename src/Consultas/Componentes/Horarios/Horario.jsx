@@ -97,7 +97,7 @@ export const Horario = forwardRef(
               <h3 className="font-jockey text-3xl text-shadow">HRS</h3>
             </div>
             <span className={`${index === 0 || index === length-1 ? 'flex' : 'hidden'} absolute bottom-0 mb-4 px-2`}>
-              <p className="text-center uppercase font-jockey text-sm border-[3px] py-2">{length === 1 ? 'único servicio del día' : index === 1 ? 'primer servicio del día' : index === length - 1 ? 'último servicio del día' : ''}</p>
+              <p className="text-center uppercase font-jockey text-sm border-[3px] py-2">{length === 1 ? 'único servicio del día' : index === 0 ? 'primer servicio del día' : index === length - 1 ? 'último servicio del día' : ''}</p>
             </span>
           </div>
           <div className="bg-[#1B3C73] basis-[70%] rounded-tr-xl rounded-br-xl flex flex-col justify-between">
@@ -106,7 +106,6 @@ export const Horario = forwardRef(
               <p className={`${estado === 'Inactivo' ? 'text-red-700 text-lg ' : 'text-white text-base px-4'} font-jockey text-center uppercase text-sm`}>{diaAuto ? estado : ''}</p>
             </div>
             <div className="relative w-full flex flex-col justify-center  items-center">
-              {/* <img src={require('../Iconos/divider.png')} alt="" className="divisor-horario"/> */}
 
               <div className="flex flex-col items-center gap-1 py-6">
                 <motion.div
