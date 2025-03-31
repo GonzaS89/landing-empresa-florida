@@ -20,9 +20,9 @@ export const Paradas = ({ nombre, index, length, origen, destino }) => {
 
     <>
       <div
-        className={`${esLocalidad(nombre) ? 'text-black w-40 bg-white' : 'text-white rounded-xs border-1 w-32 bg-zinc-600'} ${nombreOrigen || nombreDestino ? 'bg-stone-950 text-white' : ''} flex justify-center items-center relative border-groove border-2 overflow-hidden py-[2px] rounded-lg`}
+        className={`${esLocalidad(nombre) ? 'text-black w-40 bg-white' : 'text-white rounded-xs border-1 w-32 bg-zinc-600'} ${nombreOrigen || nombreDestino ? 'bg-zinc-800 text-white' : ''} flex justify-center items-center relative border-groove border-2 overflow-hidden py-[2px] rounded-lg`}
       >
-        <p className={`${esLocalidad(nombre) ? 'bg-white' : estiloParadaTexto} ${nombreOrigen || nombreDestino ? 'bg-stone-950 text-white' : ''} text-sm uppercase font-jockey z-50`}>{esLocalidad(nombre) ? nombre : index === 0 ? `desde ${nombre}` : index === (length - 1) ? `hasta ${nombre}` : `por ${nombre}`}</p>
+        <p className={`${esLocalidad(nombre) ? '' : estiloParadaTexto} ${nombreOrigen || nombreDestino ? 'bg-zinc-800' : ''} text-sm uppercase font-jockey z-50`}>{esLocalidad(nombre) ? nombre : index === 0 ? `desde ${nombre}` : index === (length - 1) ? `hasta ${nombre}` : `por ${nombre}`}</p>
         {nombre === origen || destino === nombre}
         <BsCheckCircleFill className={nombreOrigenDestino ? ' absolute left-1' : 'hidden'}/>
         <motion.img 
