@@ -65,13 +65,15 @@ export const Maincons = ({enviarParametrosAbonos}) => {
     const {hLg} = useHeight()
 
   return (
-    <div className='flex justify-center bg-slate-800 w-full'>
-      <div className="bg-slate-800 w-full sm:max-w-xl">
+    <div className='flex justify-center w-full relative'>
+      <img src={`/img-consultas/fondoabonos.webp`} alt="" className='w-full h-full absolute object-cover'/>
+      <span className='bg-slate-900 w-full h-full bg-opacity-90 absolute'></span>
+      <div className="w-full sm:max-w-xl">
     <div className={`overflow-hidden text-white flex flex-col  items-center h-screen-dvh pt-6  h-screen  w-full relative ${hLg ? 'gap-6' : 'gap-2'}`}>
       <h1 className='uppercase  font-jockey text-2xl md:text-4xl'>Calculá el precio de tu abono</h1>
       <Bloquelocalidadesorigen origen={localidadOrigen} recibirLocalidad={recibirLocalidad}/>
       <Bloquelocalidadesdestino origen={localidadOrigen} destino={localidadDestino} recibirLocalidadDestino={recibirLocalidadDestino} />
-      <Via viaElegida={recibirVia}/>
+      <Via viaElegida={recibirVia} destino={localidadDestino} origen={localidadOrigen} />
       <Containerviajestarifas enviarTarifaElegida={recibirTarifaElegida} enviarViajesIngresados={recibirViajesIngresados} destino={localidadDestino} />
      <Link to='/cotizacion'>
      <motion.div 
