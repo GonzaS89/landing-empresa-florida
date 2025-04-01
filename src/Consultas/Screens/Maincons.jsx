@@ -35,7 +35,8 @@ export const Maincons = ({enviarParametrosAbonos}) => {
 
   const {esValido} = useHabilitarBoton(localidadOrigen, localidadDestino, via);
 
-  useEffect(() => { tarifaElegida && esValido ? setBotonDisponible(true) : setBotonDisponible(false); }, [tarifaElegida]);
+  useEffect(() => { 
+    tarifaElegida ? setBotonDisponible(true) : setBotonDisponible(false); }, [tarifaElegida]);
 
   const recibirLocalidad = (localidad) => { setLocalidadOrigen(localidad); };
   const recibirLocalidadDestino = (localidad) => { setLocalidadDestino(localidad); };
@@ -80,7 +81,7 @@ export const Maincons = ({enviarParametrosAbonos}) => {
       <Bloquelocalidadesorigen origen={localidadOrigen} recibirLocalidad={recibirLocalidad}/>
       <Bloquelocalidadesdestino origen={localidadOrigen} destino={localidadDestino} recibirLocalidadDestino={recibirLocalidadDestino} />
       <Via viaElegida={recibirVia} destino={localidadDestino} origen={localidadOrigen} />
-      <Containerviajestarifas enviarTarifaElegida={recibirTarifaElegida} enviarViajesIngresados={recibirViajesIngresados} destino={localidadDestino} />
+      <Containerviajestarifas enviarTarifaElegida={recibirTarifaElegida} enviarViajesIngresados={recibirViajesIngresados} valido={esValido}/>
      <Link to='/cotizacion'>
      <motion.div 
            initial= {{y: '100%'}}

@@ -22,6 +22,8 @@ export const useHabilitarBoton = (origen, destino, via) => {
       setEsValido(origen !== null && destino !== null);
     }
 
+    console.log(esValido)
+
   }, [origen, destino, via]);
 
   return { esValido };

@@ -4,7 +4,7 @@ import {Tipodetarifa} from './Tipodetarifa';
 import { motion } from 'framer-motion';
 import { useHeight } from '../../HooksCons/useHeight';
 
-export const Containerviajestarifas = ({enviarViajesIngresados , enviarTarifaElegida, destino }) => {
+export const Containerviajestarifas = ({enviarViajesIngresados , enviarTarifaElegida, valido }) => {
 
     const [viajesIngresados, setViajesIngresados] = useState(null);
     const [tarifaElegida, setTarifaElegida] = useState(null);
@@ -35,12 +35,11 @@ export const Containerviajestarifas = ({enviarViajesIngresados , enviarTarifaEle
 
 const {hLg} = useHeight()
 
-
   return (
     <div className='px-2 flex flex-col gap-4 lg:gap-0 xl:gap-4 w-full'>
           <motion.div
            initial={{x: '120%'}}
-           animate = {{x: destino !== null ? 0 : '120%'}}
+           animate = {{x: valido ? 0 : '120%'}}
            transition={{duration: .5 , ease: 'easeInOut'}}
           className={`flex flex-col items-start ${hLg ? 'gap-4' : 'gap-2'}`}>
             <h1 className='text-xl lg:text-2xl xl:text-4xl font-jockey'>Cantidad de viajes</h1>
