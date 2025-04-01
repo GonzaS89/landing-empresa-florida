@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { useHeight } from '../HooksCons/useHeight';
+import { useHabilitarBoton } from '../HooksCons/useHabilitarBoton';
 import { Bloquelocalidadesorigen } from '../Componentes/Abonos/Bloquelocalidadesorigen';
 import { Bloquelocalidadesdestino } from '../Componentes/Abonos/Bloquelocalidadesdestino';
 import { Containerviajestarifas } from '../Componentes/Abonos/Containerviajestarifas';
@@ -31,11 +32,16 @@ export const Maincons = ({enviarParametrosAbonos}) => {
   const [botonDisponible, setBotonDisponible] = useState(false);
   const [via, setVia] = useState(null);
 
-  useEffect(() => { tarifaElegida ? setBotonDisponible(true) : setBotonDisponible(false); }, [tarifaElegida]);
+
+  const {esValido} = useHabilitarBoton(localidadOrigen, localidadDestino, via);
+
+  useEffect(() => { tarifaElegida && esValido ? setBotonDisponible(true) : setBotonDisponible(false); }, [tarifaElegida]);
 
   const recibirLocalidad = (localidad) => { setLocalidadOrigen(localidad); };
   const recibirLocalidadDestino = (localidad) => { setLocalidadDestino(localidad); };
   const recibirVia = via => { setVia(via) }
+
+
 
   useEffect(() => {
     setVia(null),
@@ -68,7 +74,7 @@ export const Maincons = ({enviarParametrosAbonos}) => {
     <div className='flex justify-center w-full relative'>
       <img src={`/img-consultas/fondoabonos.webp`} alt="" className='w-full h-full absolute object-cover'/>
       <span className='bg-slate-900 w-full h-full bg-opacity-90 absolute'></span>
-      <div className="w-full sm:max-w-xl">
+      <div className="flex justify-center w-full sm:max-w-xl z-50">
     <div className={`overflow-hidden text-white flex flex-col  items-center h-screen-dvh pt-6  h-screen  w-full relative ${hLg ? 'gap-6' : 'gap-2'}`}>
       <h1 className='uppercase  font-jockey text-2xl md:text-4xl'>Calculá el precio de tu abono</h1>
       <Bloquelocalidadesorigen origen={localidadOrigen} recibirLocalidad={recibirLocalidad}/>

@@ -20,14 +20,14 @@ export const Via = ({ viaElegida, origen ,destino }) => {
     }, [destino, origen, localidades, localidades2]);
 
     return (
-        <div className={`${visible ? 'flex' : 'hidden'} justify-around`}>
+        <div className={`${visible ? 'flex' : 'hidden'} justify-around w-full`}>
             <div className='flex items-center gap-4'>
                 <input type="radio" name="vias" id="" value="w. posse" className='scale-150' onChange={mostrarValue} color='red' />
                 <label className='uppercase font-jockey'>w. posse</label>
             </div>
             <div className='flex items-center gap-4'>
                 <input type="radio" name="vias" id="" value="ald./alter" className='scale-150' onChange={mostrarValue} />
-                <label className='uppercase font-jockey'>ald.alter</label>
+                <label className='uppercase font-jockey'>ald./alter</label>
             </div>
         </div>
     )

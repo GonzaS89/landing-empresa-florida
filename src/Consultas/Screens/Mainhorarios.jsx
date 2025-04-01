@@ -102,7 +102,7 @@ export const Mainhorarios = ({ enviarParametrosHorarios }) => {
           />
           <motion.div
             initial={{ y: "100%" }}
-            animate={{ y: botonDisponible ? 0 : "100%" }}
+            animate={{ y: botonDisponible && esValido ? 0 : "100%" }}
             transition={{ duration: 0.5, delay: 1, ease: "easeInOut" }}
             className={`${botonDisponible ? "bg-red-700" : "bg-gray-600"} absolute py-4 lg:py-2 xl:py-4 text-3xl uppercase bottom-0 w-full font-jockey text-center cursor-pointer`}
             onClick={!cargando ? handleClick : null}

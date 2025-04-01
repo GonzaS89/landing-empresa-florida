@@ -10,14 +10,14 @@ export const useHabilitarBoton = (origen, destino, via) => {
     const esFloridaFortinCol4Destino = floridaFortinCol4.includes(destino);
     const esFloridaFortinCol4Origen = floridaFortinCol4.includes(origen);
 
-    const esFormularioCompleto = origen !== null && destino !== null;
-
     // Si las condiciones para la validación se cumplen
     if (
       (esOrigenValido && esFloridaFortinCol4Destino) ||
       (esDestinoValido && esFloridaFortinCol4Origen)
     ) {
-      setEsValido(esFormularioCompleto);
+      if(via !== null){ 
+        setEsValido(true);}
+      
     } else {
       setEsValido(origen !== null && destino !== null);
     }
