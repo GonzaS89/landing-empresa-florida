@@ -159,6 +159,9 @@ li{
 .animation-text3-portada{
   animation: text1-in 1s 1s forwards ease-out;
 }
+.animation-text4-portada{
+  animation: text1-in 1s 1.5s forwards ease-out;
+}
 
 .bg-foto{
   background-image:linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9))

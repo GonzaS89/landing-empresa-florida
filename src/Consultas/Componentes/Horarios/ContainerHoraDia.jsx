@@ -21,7 +21,9 @@ export const ContainerHoraDia = ({
   const [horaManualEnMinutos, setHoraManualEnMinutos] = useState(null);
   const [horaAutoEnMinutos, setHoraAutoEnMinutos] = useState();
 
-  const {feriado} = useDefineFeriado(fecha,mes)
+  const {feriado} = useDefineFeriado(fecha,mes);
+
+  console.log(feriado)
 
   useEffect(() => {
     if(fecha === 31 && mes === 11){
@@ -46,7 +48,7 @@ export const ContainerHoraDia = ({
       setDiaRango("Sábados");
       enviarDiaRango("sabados");
     }
-  }, [dia, enviarDiaRango]);
+  }, [dia, enviarDiaRango, feriado]);
 
   const actualizarHora = () => {
     let horas = parseInt(hora);
@@ -74,12 +76,6 @@ export const ContainerHoraDia = ({
       enviarDiaManual("sabados");
     } else if (valor === "Domingos") {
       enviarDiaManual("domingos");
-    }
-    else if (valor === "Fin de año") {
-      enviarDiaManual("findeaño");
-    }
-    else if (valor === "Año nuevo") {
-      enviarDiaManual("añonuevo");
     }
   };
 

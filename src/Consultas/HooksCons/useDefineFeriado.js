@@ -6,7 +6,8 @@ export const useDefineFeriado = (fecha, mes) => {
   useEffect(() => {
     const feriados = {
       0: [1], // Enero 1
-      2: [3,4], // Mayo 3
+      2: [3,4,24], // Marzo 3,4
+      3: [2], // Abril 2
       11: [24, 25], // Diciembre 24 y 25
     };
 

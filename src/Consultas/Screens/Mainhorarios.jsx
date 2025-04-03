@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { ContainerHoraDia } from "../Componentes/Horarios/ContainerHoraDia";
 import { Bloquelocalidadesorigen } from "../Componentes/Abonos/Bloquelocalidadesorigen";
 import { Bloquelocalidadesdestino } from "../Componentes/Abonos/Bloquelocalidadesdestino";
@@ -82,8 +82,8 @@ export const Mainhorarios = ({ enviarParametrosHorarios }) => {
     <div className="w-full bg-slate-800 flex justify-center relative">
       <img src={`/img-consultas/horarios.webp`} alt="" className="absolute h-full object-cover"/>
       <span className="bg-slate-900 bg-opacity-90 absolute w-full h-full"></span>
-      <div className="flex justify-center w-full sm:max-w-xl z-50">
-        <div className={`overflow-hidden text-white flex flex-col pt-6 h-screen w-full lg:max-w-xl relative ${hLg ? "gap-6" : "gap-2"}`}>
+      <div className="flex justify-center w-full sm:max-w-3xl z-50">
+        <div className={`overflow-hidden text-white flex flex-col pt-6 h-screen w-full relative ${hLg ? "gap-6" : "gap-2"}`}>
           <h1 className="uppercase text-3xl xl:text-[40px] text-center font-jockey">Consulta de horarios</h1>
           <Bloquelocalidadesorigen origen={localidadOrigen} recibirLocalidad={recibirLocalidad} />
           <Bloquelocalidadesdestino origen={localidadOrigen} destino={localidadDestino} recibirLocalidadDestino={recibirLocalidadDestino} />

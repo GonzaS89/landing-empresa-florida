@@ -7,7 +7,7 @@ export const Front = () => {
   return (
     <Element name="front">
        <div className="h-[600px] lg:h-[650px] xl:h-[850px] mt-24">
-      <Carousel slideInterval={10000}>
+      {/* <Carousel slideInterval={10000}>
         <Portada
           titulo={"70 años trabajando para brindar el mejor servicio"}
           contenido={
@@ -15,15 +15,7 @@ export const Front = () => {
           }
           urlimg={1}
         />
-        <Portada
-          titulo={
-            "Mantente siempre informado con nuestra sección de consultas"
-          }
-          contenido={
-            "Facilitamos tus viajes con nuestro sistema de consulta de horarios, siempre actualizado y disponible para que puedas planificar tus trayectos de manera rápida y conveniente."
-          }
-          urlimg={2}
-        />
+       
         <Portada
           titulo={
             "Nuestro recorrido incluye gran parte de la zona este de la provincia"
@@ -33,7 +25,16 @@ export const Front = () => {
           }
           urlimg={3}
         />
-      </Carousel>
+      </Carousel> */}
+      <Portada
+          titulo={
+            "Mantente siempre informado con nuestra sección de consultas"
+          }
+          contenido={
+            "Facilitamos tus viajes con nuestro sistema de consulta de horarios, siempre actualizado y disponible para que puedas planificar tus trayectos de manera rápida y conveniente. Ahora también podrás consultar los precios de nuestros abonos y tarifas."
+          }
+          urlimg={2}
+        />
     </div>
     </Element>
    

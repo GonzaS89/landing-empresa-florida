@@ -1,29 +1,29 @@
-import React, {useState, useEffect} from 'react';
-import { useHeight } from '../HooksCons/useHeight';
-import { useHabilitarBoton } from '../HooksCons/useHabilitarBoton';
-import { Bloquelocalidadesorigen } from '../Componentes/Abonos/Bloquelocalidadesorigen';
-import { Bloquelocalidadesdestino } from '../Componentes/Abonos/Bloquelocalidadesdestino';
-import { Containerviajestarifas } from '../Componentes/Abonos/Containerviajestarifas';
-import { Via } from '../Componentes/Horarios/Via';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from "react";
+import { useHeight } from "../HooksCons/useHeight";
+import { useHabilitarBoton } from "../HooksCons/useHabilitarBoton";
+import { Bloquelocalidadesorigen } from "../Componentes/Abonos/Bloquelocalidadesorigen";
+import { Bloquelocalidadesdestino } from "../Componentes/Abonos/Bloquelocalidadesdestino";
+import { Containerviajestarifas } from "../Componentes/Abonos/Containerviajestarifas";
+import { Via } from "../Componentes/Horarios/Via";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
-export const Maincons = ({enviarParametrosAbonos}) => {
-    useEffect(() => {
-        // Función que maneja la acción de retroceder
-        const handleBackButton = (event) => {
-            // Redirigir a una URL específica cuando se presiona el botón de "back"
-            window.location.href = '/';
-        };
-    
-        // Añadir el listener al evento popstate
-        window.addEventListener('popstate', handleBackButton);
-    
-        // Limpiar el listener cuando el componente se desmonte
-        return () => {
-            window.removeEventListener('popstate', handleBackButton);
-        };
-    }, []);
+export const Maincons = ({ enviarParametrosAbonos }) => {
+  useEffect(() => {
+    // Función que maneja la acción de retroceder
+    const handleBackButton = (event) => {
+      // Redirigir a una URL específica cuando se presiona el botón de "back"
+      window.location.href = "/";
+    };
+
+    // Añadir el listener al evento popstate
+    window.addEventListener("popstate", handleBackButton);
+
+    // Limpiar el listener cuando el componente se desmonte
+    return () => {
+      window.removeEventListener("popstate", handleBackButton);
+    };
+  }, []);
 
   const [localidadOrigen, setLocalidadOrigen] = useState(null);
   const [localidadDestino, setLocalidadDestino] = useState(null);
@@ -32,27 +32,32 @@ export const Maincons = ({enviarParametrosAbonos}) => {
   const [botonDisponible, setBotonDisponible] = useState(false);
   const [via, setVia] = useState(null);
 
-
-  const {esValido} = useHabilitarBoton(localidadOrigen, localidadDestino, via);
-
-  useEffect(() => { 
-    tarifaElegida ? setBotonDisponible(true) : setBotonDisponible(false); }, [tarifaElegida]);
-
-  const recibirLocalidad = (localidad) => { setLocalidadOrigen(localidad); };
-  const recibirLocalidadDestino = (localidad) => { setLocalidadDestino(localidad); };
-  const recibirVia = via => { setVia(via) }
-
-
+  const { esValido } = useHabilitarBoton(
+    localidadOrigen,
+    localidadDestino,
+    via
+  );
 
   useEffect(() => {
-    setVia(null),
-    console.log(via)
-  }, [localidadDestino])
+    tarifaElegida ? setBotonDisponible(true) : setBotonDisponible(false);
+  }, [tarifaElegida]);
 
+  const recibirLocalidad = (localidad) => {
+    setLocalidadOrigen(localidad);
+  };
+  const recibirLocalidadDestino = (localidad) => {
+    setLocalidadDestino(localidad);
+  };
+  const recibirVia = (via) => {
+    setVia(via);
+  };
 
-
-  const recibirTarifaElegida = tarifa => { setTarifaElegida(tarifa) }
-  const recibirViajesIngresados = viajes => { setViajesIngresados(viajes) }
+  const recibirTarifaElegida = (tarifa) => {
+    setTarifaElegida(tarifa);
+  };
+  const recibirViajesIngresados = (viajes) => {
+    setViajesIngresados(viajes);
+  };
 
   const precargarLogo = (url) => {
     const logo = new Image();
@@ -65,34 +70,71 @@ export const Maincons = ({enviarParametrosAbonos}) => {
   };
 
   useEffect(() => {
-    precargarFondo('/img-consultas/fondoabonos.webp');
-    precargarLogo('/img-consultas/logo.webp');
-  },[])
+    precargarFondo("/img-consultas/fondoabonos.webp");
+    precargarLogo("/img-consultas/logo.webp");
+  }, []);
 
-    const {hLg} = useHeight()
+  const { hLg } = useHeight();
 
   return (
-    <div className='flex justify-center w-full relative'>
-      <img src={`/img-consultas/fondoabonos.webp`} alt="" className='w-full h-full absolute object-cover'/>
-      <span className='bg-slate-900 w-full h-full bg-opacity-90 absolute'></span>
-      <div className="flex justify-center w-full sm:max-w-xl z-50">
-    <div className={`overflow-hidden text-white flex flex-col  items-center h-screen-dvh pt-6  h-screen  w-full relative ${hLg ? 'gap-6' : 'gap-2'}`}>
-      <h1 className='uppercase  font-jockey text-2xl md:text-4xl'>Calculá el precio de tu abono</h1>
-      <Bloquelocalidadesorigen origen={localidadOrigen} recibirLocalidad={recibirLocalidad}/>
-      <Bloquelocalidadesdestino origen={localidadOrigen} destino={localidadDestino} recibirLocalidadDestino={recibirLocalidadDestino} />
-      <Via viaElegida={recibirVia} destino={localidadDestino} origen={localidadOrigen} />
-      <Containerviajestarifas enviarTarifaElegida={recibirTarifaElegida} enviarViajesIngresados={recibirViajesIngresados} valido={esValido}/>
-     <Link to='/cotizacion'>
-     <motion.div 
-           initial= {{y: '100%'}}
-           animate={{y: botonDisponible ? 0 : '100%'}}
-           transition={{duration: .5, ease:'easeInOut'}}
-           className={`${botonDisponible ?  'bg-red-700' : 'bg-gray-600'} uppercase py-4 lg:py-2 xl:py-4 text-3xl absolute bottom-0 left-0 w-full flex items-center justify-center font-jockey`}
-           onClick={() => enviarParametrosAbonos(localidadOrigen, localidadDestino, viajesIngresados, tarifaElegida, via)}>calcular</motion.div>
-     </Link>
+    <div className="flex justify-center w-full relative bg-slate-800">
+      <img
+        src={`/img-consultas/fondoabonos.webp`}
+        alt=""
+        className="h-full absolute object-cover"
+      />
+      <span className="bg-slate-900 w-full h-full bg-opacity-90 absolute"></span>
+      <div className="flex justify-center w-full sm:max-w-3xl z-50">
+        <div
+          className={`overflow-hidden text-white flex flex-col items-center h-screen-dvh pt-6 h-screen w-full relative ${
+            hLg ? "gap-6" : "gap-2"
+          }`}
+        >
+          <h1 className="uppercase  font-jockey text-2xl md:text-4xl">
+            Calculá el precio de tu abono
+          </h1>
+          <Bloquelocalidadesorigen
+            origen={localidadOrigen}
+            recibirLocalidad={recibirLocalidad}
+          />
+          <Bloquelocalidadesdestino
+            origen={localidadOrigen}
+            destino={localidadDestino}
+            recibirLocalidadDestino={recibirLocalidadDestino}
+          />
+          <Via
+            viaElegida={recibirVia}
+            destino={localidadDestino}
+            origen={localidadOrigen}
+          />
+          <Containerviajestarifas
+            enviarTarifaElegida={recibirTarifaElegida}
+            enviarViajesIngresados={recibirViajesIngresados}
+            valido={esValido}
+          />
+          <Link to="/cotizacion">
+            <motion.div
+              initial={{ y: "100%" }}
+              animate={{ y: botonDisponible ? 0 : "100%" }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className={`${
+                botonDisponible ? "bg-red-700" : "bg-gray-600"
+              } uppercase py-4 lg:py-2 xl:py-4 text-3xl absolute bottom-0 left-0 w-full flex items-center justify-center font-jockey`}
+              onClick={() =>
+                enviarParametrosAbonos(
+                  localidadOrigen,
+                  localidadDestino,
+                  viajesIngresados,
+                  tarifaElegida,
+                  via
+                )
+              }
+            >
+              calcular
+            </motion.div>
+          </Link>
+        </div>
+      </div>
     </div>
-  </div>
-    </div>
-    
-  )
-}
+  );
+};

@@ -7,7 +7,7 @@ export const Bloquelocalidadesorigen = ({ origen, recibirLocalidad }) => {
   const { hLg } = useHeight();
 
   return (
-    <div className={`flex flex-col px-1  ${hLg ? "gap-2" : "gap-1"} w-full`}>
+    <div className={`flex flex-col px-1 ${hLg ? "gap-2" : "gap-1"} w-full`}>
       <h1 className='text-white text-2xl xl:text-4xl font-jockey'>
         Origen
       </h1>
