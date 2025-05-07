@@ -1,9 +1,6 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { MainScreen } from "./Landing/MainScreen";
-import { Maincons } from "./Consultas/Screens/Maincons";
-import { CotizacionAbonos } from "./Consultas/Screens/CotizacionAbonos";
 import { Mainhorarios } from "./Consultas/Screens/Mainhorarios";
 import Horarios from "./Consultas/Screens/Horarios";
 import { useHora } from "./Consultas/HooksCons/useHora";
@@ -13,8 +10,6 @@ function App() {
 
   const [localidadOrigen, setLocalidadOrigen] = useState(null);
   const [localidadDestino, setLocalidadDestino] = useState(null);
-  const [viajesIngresados, setViajesIngresados] = useState(null);
-  const [tarifaElegida, setTarifaElegida] = useState(null);
   const [via, setVia] = useState(null);
 
   const [listaHorarios, setListaHorarios] = useState(null);
@@ -23,13 +18,6 @@ function App() {
   const [hayDiaAuto, setHayDiaAuto] = useState(null);
   const [diaGrilla, setDiaGrilla] = useState(null);
 
-  const recibirParametrosAbonos = (origen, destino, viajes, tarifa, via) => {
-    setLocalidadOrigen(origen);
-    setLocalidadDestino(destino);
-    setViajesIngresados(viajes);
-    setTarifaElegida(tarifa);
-    setVia(via)
-  }
 
   const recibirParametrosHorarios = (origen, destino, via, listahorarios, horaManualMin, horaAutoMin, diaAuto, diaManual) => {
     setLocalidadOrigen(origen);
@@ -59,10 +47,7 @@ function App() {
     <div className="App relative">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainScreen />}></Route>
-          <Route path="/cotizadordeabonos" element={<Maincons enviarParametrosAbonos={recibirParametrosAbonos} />}></Route>
-          <Route path="/cotizacion" element={<CotizacionAbonos origen={localidadOrigen} destino={localidadDestino} viajes={viajesIngresados} tarifa={tarifaElegida} via={via} />}></Route>
-          <Route path="/consultadehorarios" element={<Mainhorarios enviarParametrosHorarios={recibirParametrosHorarios} />}></Route>
+          <Route path="/" element={<Mainhorarios enviarParametrosHorarios={recibirParametrosHorarios} />}></Route>
           <Route path='/horarios' element={<Horarios grillaDefinitiva={listaHorarios} origen={localidadOrigen} destino={localidadDestino} horaAuto={horaAutoEnMins} horaManual={horaManualEnMins} diaAuto={hayDiaAuto} grilla={diaGrilla} via={via} />}>
           </Route>
         </Routes>
