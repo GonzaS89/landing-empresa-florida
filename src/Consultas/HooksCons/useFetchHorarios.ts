@@ -6,7 +6,7 @@ export const useFetchHorarios = () => {
 
   const obtenerHorarios = async () => {
     try {
-      const resp = await fetch('https://horariosflorida.netlify.app/horarios.json');
+      const resp = await fetch('https://70236255.netlify.app/horarios.json');
       const resultado = await resp.json(); 
       setHorarios(resultado);
     } catch (error) {
