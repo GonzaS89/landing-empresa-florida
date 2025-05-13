@@ -81,7 +81,11 @@ export const Mainhorarios = ({ enviarParametrosHorarios }) => {
   return (
     <div className="w-full bg-[#309898] flex justify-center relative">
       <img src={`/img-consultas/horarios.webp`} alt="" className="absolute h-full object-cover"/>
-      <span className="bg-[#222222] bg-opacity-90 absolute w-full h-full"></span>
+      <span className="bg-gradient-to-b from-gray-800 via-gray-900 to-black
+
+
+
+ absolute w-full h-full "></span>
       <div className="flex justify-center w-full sm:max-w-3xl z-50">
         <div className={`overflow-hidden text-[#F8F8E1] flex flex-col pt-6 h-screen w-full relative ${hLg ? "gap-6" : "gap-2"}`}>
           <h1 className="uppercase text-3xl xl:text-[40px] text-center font-jockey">Consulta de horarios</h1>
